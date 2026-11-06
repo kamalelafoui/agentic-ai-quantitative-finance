@@ -17,6 +17,8 @@ def should_include(path: Path) -> bool:
     parts = set(path.parts)
     if parts & EXCLUDE_DIRS:
         return False
+    if path.name == "MANIFEST.txt" and path.parent == ROOT:
+        return False
     if path.suffix.lower() in EXCLUDE_SUFFIXES:
         return False
     if path.name.startswith("~$"):

@@ -1,5 +1,5 @@
 QuantAgent — Agentic AI for Quantitative Finance
-Archive générée le 2026-11-06T16:41:37.064971+00:00
+Archive générée le 2026-11-06T16:43:49.494602+00:00
 Fichiers : 99
 
 SHA256                                                                Taille  Fichier
@@ -66,7 +66,7 @@ e27126e7f52d9f71b368629c25bbb38ec345338c8e88bf9ee37bd1ebf82f65be        8016  qu
 c96fff76246387bffaa533e93595aff15d1e4e9cd66a8a7f9dc74eb8846470cf        5554  quantagent/security.py
 5daa8e982062e11133d5edf899a886ffe4662c68ec5574e5e6eb5dbb1278b379        5193  quantagent/vector_store.py
 f834af5470f4d0cf0e58dfcb06a84052c9aa0b8057e4b9c85b79b51aa657e856       23588  quantagent/visuals.py
-e2917985405cab26aafe60321904105f3b1e151e9b618d020774f45a0aeda816       10882  README.md
+9d7c1d3ca41b9e8f054925504f1c70d4cd15c871cbc0646437b7152d60ee8623       10912  README.md
 d22f1f11d637bffb13725aa845aa7602d7f6b7b2deccc5f75810e34220da9cfc         105  requirements-dev.txt
 c1984e3dd36a1ffcfe6a72b07498e8c9e1d8b40ef73a267dd11bd5e3a499745b         250  requirements.txt
 2edc25e08a4adb9fde7b821813915409790d97504904c5b548b1e6bf17beb5de      977349  results/answers.json
@@ -92,7 +92,7 @@ c0606c100c3d7b266a62cc67d1d145787d625022ec27f6ac3208e340bb125e7d       31063  sc
 d9ba4d0c271ab891cf98448cd197d3fe69c32b3009771c52ee4ab4fb5aef0d72       37457  scripts/build_graph.py
 c948846d08af8aa2ca9304356fa75ff1c42b5613cc7e3714c6de76bfa5613b3f        6422  scripts/build_notebook.py
 1f4f5e5a177af6bd4f3124af40b2086959c49d1078575b69fdc346f39f2e7508       27789  scripts/build_presentation.py
-a49bd91121c5493cd661c3fd28599093e08b7a294443dcb2b5cb8571cb33e9cb        1957  scripts/build_zip.py
+77a14292bca6258fd33c9b77298633ce847704d5f9e69b242d3ce50277636dd3        2038  scripts/build_zip.py
 cf387e37f4727059ab8df14da4eba3ec0ccbadee45d4caceea24da639df9ff74        2670  scripts/capture_dashboard.py
 7b4e3f3f73580e3f576c47b1843e93e2f67f554f890f9ce4c67cea92ce8be81c        7116  scripts/run_pipeline.py
 0c437adddd34e664df7fba72b6d7c3b8f6926a46166f39f5c36cf3c5b08e294b         936  SECURITY.md

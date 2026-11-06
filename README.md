@@ -230,7 +230,7 @@ Voir [`workflows/README.md`](workflows/README.md).
 | JSON final | `results/JSON_Final.json` |
 | Contrat JSON | `data/response.schema.json` |
 | Workflow n8n | `workflows/QuantAgent_n8n_FINAL.json` |
-| Archive ZIP | `Agentic_AI_Quantitative_Finance_FINAL.zip` |
+| Archive ZIP | `Agentic_AI_Quantitative_Finance_FINAL.zip` (livrée séparément, 10 Mo) |
 
 ## Structure
 
