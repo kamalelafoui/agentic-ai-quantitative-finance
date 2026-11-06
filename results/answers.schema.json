@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://quantagent.local/schemas/response.schema.json",
+  "title": "QuantAgentResponse",
+  "description": "Contrat JSON de sortie de l'agent hybride QuantAgent.",
+  "type": "object",
+  "required": [
+    "request_id",
+    "timestamp",
+    "agent",
+    "question",
+    "intent",
+    "answer",
+    "confidence",
+    "latency_ms",
+    "entities",
+    "sources",
+    "graph",
+    "quant",
+    "hitl",
+    "security",
+    "trace",
+    "disclaimer"
+  ],
+  "properties": {
+    "request_id": {"type": "string", "minLength": 6},
+    "timestamp": {"type": "string", "minLength": 10},
+    "agent": {
+      "type": "object",
+      "required": ["name", "version", "mode"],
+      "properties": {
+        "name": {"type": "string"},
+        "version": {"type": "string"},
+        "mode": {"type": "string", "enum": ["hybrid", "vector", "graph"]}
+      }
+    },
+    "question": {"type": "string", "minLength": 1},
+    "intent": {
+      "type": "string",
+      "enum": ["scenario", "limits", "approval", "esg", "credit", "data_policy", "security", "metrics", "general"]
+    },
+    "answer": {"type": "string", "minLength": 1},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "latency_ms": {"type": "number", "minimum": 0},
+    "entities": {"type": "array", "items": {"type": "string"}},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["doc_id", "title", "snippet", "score"],
+        "properties": {
+          "doc_id": {"type": "string"},
+          "title": {"type": "string"},
+          "snippet": {"type": "string"},
+          "score": {"type": "number"}
+        }
+      }
+    },
+    "graph": {
+      "type": "object",
+      "required": ["nodes", "edges", "paths"],
+      "properties": {
+        "nodes": {"type": "array"},
+        "edges": {"type": "array"},
+        "paths": {"type": "array"},
+        "seed_count": {"type": "integer"}
+      }
+    },
+    "quant": {
+      "type": ["object", "null"]
+    },
+    "hitl": {
+      "type": "object",
+      "required": ["required", "status", "approvals", "rationale", "conditions", "next_step"],
+      "properties": {
+        "required": {"type": "boolean"},
+        "status": {"type": "string", "enum": ["NOT_REQUIRED", "PENDING_APPROVAL", "BLOCKED"]},
+        "approvals": {"type": "array"},
+        "rationale": {"type": "string"},
+        "conditions": {"type": "array", "items": {"type": "string"}},
+        "next_step": {"type": "string"},
+        "decision_options": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "security": {
+      "type": "object",
+      "required": ["status", "risk_score", "flags", "policy", "action"],
+      "properties": {
+        "status": {"type": "string", "enum": ["allowed", "review", "blocked"]},
+        "risk_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "flags": {"type": "array"},
+        "policy": {"type": "string"},
+        "action": {"type": "string"},
+        "sanitized_text": {"type": "string"}
+      }
+    },
+    "trace": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step", "detail"],
+        "properties": {
+          "step": {"type": "string"},
+          "detail": {"type": "string"},
+          "elapsed_ms": {"type": "number"}
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "json_valid": {"type": "boolean"},
+        "schema_version": {"type": "string"},
+        "data_as_of": {"type": "string"}
+      }
+    },
+    "disclaimer": {"type": "string", "minLength": 10}
+  },
+  "additionalProperties": true
+}

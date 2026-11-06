@@ -1,0 +1,289 @@
+{
+  "id": "PF-CORE-EU",
+  "name": "Core Europe",
+  "as_of": "2026-10-31",
+  "currency": "EUR",
+  "nav_eur": 250000000,
+  "benchmark": "STOXX Europe 600",
+  "mandate": "Actions et obligations européennes, client institutionnel",
+  "constraints": {
+    "max_issuer_pct": 12.0,
+    "max_sector_pct": 25.0,
+    "max_duration_years": 5.0,
+    "max_var_99_1d_pct": 2.5,
+    "max_scenario_loss_pct": 3.0,
+    "min_liquidity_t1_pct": 20.0,
+    "max_high_yield_pct": 10.0
+  },
+  "metrics": {
+    "duration_years": 1.7,
+    "var_99_1d_pct": 1.9,
+    "liquidity_t1_pct": 22.4,
+    "scenario_loss_pct": -3.26
+  },
+  "positions": [
+    {
+      "id": "POS-01",
+      "name": "BNP Paribas",
+      "ticker": "BNP.PA",
+      "issuer_id": "ISS-BNP",
+      "sector_id": "SEC-BANKS",
+      "asset_class": "Action",
+      "market_value_eur": 24000000,
+      "modified_duration": 0.0,
+      "rate_beta_pct_per_bp": 0.015,
+      "credit_dv01_eur": -1500,
+      "equity_beta": 1.15,
+      "liquidity_days": 1,
+      "esg_watch": false,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D12",
+        "D20"
+      ],
+      "weight_pct": 9.6
+    },
+    {
+      "id": "POS-02",
+      "name": "TotalEnergies",
+      "ticker": "TTE.PA",
+      "issuer_id": "ISS-TTE",
+      "sector_id": "SEC-ENERGY",
+      "asset_class": "Action",
+      "market_value_eur": 21500000,
+      "modified_duration": 0.0,
+      "rate_beta_pct_per_bp": -0.0056,
+      "credit_dv01_eur": -300,
+      "equity_beta": 0.95,
+      "liquidity_days": 1,
+      "esg_watch": true,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D15",
+        "D20"
+      ],
+      "weight_pct": 8.6
+    },
+    {
+      "id": "POS-03",
+      "name": "Vonovia",
+      "ticker": "VNA.DE",
+      "issuer_id": "ISS-VONOVIA",
+      "sector_id": "SEC-REALESTATE",
+      "asset_class": "Action",
+      "market_value_eur": 18000000,
+      "modified_duration": 0.0,
+      "rate_beta_pct_per_bp": -0.1,
+      "credit_dv01_eur": -2000,
+      "equity_beta": 1.3,
+      "liquidity_days": 2,
+      "esg_watch": true,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D13",
+        "D15",
+        "D20"
+      ],
+      "weight_pct": 7.2
+    },
+    {
+      "id": "POS-04",
+      "name": "Enel",
+      "ticker": "ENEL.MI",
+      "issuer_id": "ISS-ENEL",
+      "sector_id": "SEC-UTILITIES",
+      "asset_class": "Action",
+      "market_value_eur": 17500000,
+      "modified_duration": 0.0,
+      "rate_beta_pct_per_bp": -0.07,
+      "credit_dv01_eur": -1500,
+      "equity_beta": 0.85,
+      "liquidity_days": 1,
+      "esg_watch": false,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D14",
+        "D20"
+      ],
+      "weight_pct": 7.0
+    },
+    {
+      "id": "POS-05",
+      "name": "SAP",
+      "ticker": "SAP.DE",
+      "issuer_id": "ISS-SAP",
+      "sector_id": "SEC-TECH",
+      "asset_class": "Action",
+      "market_value_eur": 22000000,
+      "modified_duration": 0.0,
+      "rate_beta_pct_per_bp": -0.03,
+      "credit_dv01_eur": -300,
+      "equity_beta": 1.05,
+      "liquidity_days": 1,
+      "esg_watch": false,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "weight_pct": 8.8
+    },
+    {
+      "id": "POS-06",
+      "name": "ASML",
+      "ticker": "ASML.AS",
+      "issuer_id": "ISS-ASML",
+      "sector_id": "SEC-TECH",
+      "asset_class": "Action",
+      "market_value_eur": 20000000,
+      "modified_duration": 0.0,
+      "rate_beta_pct_per_bp": -0.035,
+      "credit_dv01_eur": -300,
+      "equity_beta": 1.25,
+      "liquidity_days": 1,
+      "esg_watch": false,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "weight_pct": 8.0
+    },
+    {
+      "id": "POS-07",
+      "name": "Air Liquide",
+      "ticker": "AI.PA",
+      "issuer_id": "ISS-AIRLIQ",
+      "sector_id": "SEC-MATERIALS",
+      "asset_class": "Action",
+      "market_value_eur": 15000000,
+      "modified_duration": 0.0,
+      "rate_beta_pct_per_bp": -0.01,
+      "credit_dv01_eur": -400,
+      "equity_beta": 0.8,
+      "liquidity_days": 1,
+      "esg_watch": false,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "weight_pct": 6.0
+    },
+    {
+      "id": "POS-08",
+      "name": "Obligation EDF 2035",
+      "ticker": "EDF-2035",
+      "issuer_id": "ISS-EDF",
+      "sector_id": "SEC-UTILITIES",
+      "asset_class": "Obligation",
+      "market_value_eur": 25000000,
+      "modified_duration": 7.2,
+      "rate_beta_pct_per_bp": 0.0,
+      "credit_dv01_eur": -2500,
+      "equity_beta": 0.0,
+      "liquidity_days": 3,
+      "esg_watch": true,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D14",
+        "D15",
+        "D20"
+      ],
+      "weight_pct": 10.0
+    },
+    {
+      "id": "POS-09",
+      "name": "Deutsche Telekom",
+      "ticker": "DTE.DE",
+      "issuer_id": "ISS-DT",
+      "sector_id": "SEC-TELECOM",
+      "asset_class": "Action",
+      "market_value_eur": 16000000,
+      "modified_duration": 0.0,
+      "rate_beta_pct_per_bp": -0.02,
+      "credit_dv01_eur": -400,
+      "equity_beta": 0.7,
+      "liquidity_days": 1,
+      "esg_watch": false,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "weight_pct": 6.4
+    },
+    {
+      "id": "POS-10",
+      "name": "Obligation AXA 2034 subordonnée",
+      "ticker": "AXA-2034",
+      "issuer_id": "ISS-AXA",
+      "sector_id": "SEC-INSURANCE",
+      "asset_class": "Obligation",
+      "market_value_eur": 15000000,
+      "modified_duration": 5.1,
+      "rate_beta_pct_per_bp": 0.0,
+      "credit_dv01_eur": -6000,
+      "equity_beta": 0.0,
+      "liquidity_days": 3,
+      "esg_watch": false,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D22",
+        "D20"
+      ],
+      "weight_pct": 6.0
+    },
+    {
+      "id": "POS-11",
+      "name": "Bund allemand 2030",
+      "ticker": "DBR-2030",
+      "issuer_id": "ISS-BUND",
+      "sector_id": "SEC-SOVEREIGN",
+      "asset_class": "Obligation",
+      "market_value_eur": 24000000,
+      "modified_duration": 4.0,
+      "rate_beta_pct_per_bp": 0.0,
+      "credit_dv01_eur": 0,
+      "equity_beta": 0.0,
+      "liquidity_days": 1,
+      "esg_watch": false,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D07",
+        "D20"
+      ],
+      "weight_pct": 9.6
+    },
+    {
+      "id": "POS-12",
+      "name": "Cash EUR",
+      "ticker": "EUR-CASH",
+      "issuer_id": "ISS-CASH",
+      "sector_id": "SEC-CASH",
+      "asset_class": "Cash",
+      "market_value_eur": 32000000,
+      "modified_duration": 0.0,
+      "rate_beta_pct_per_bp": 0.0,
+      "credit_dv01_eur": 0,
+      "equity_beta": 0.0,
+      "liquidity_days": 0,
+      "esg_watch": false,
+      "excluded": false,
+      "docs": [
+        "D02",
+        "D07"
+      ],
+      "weight_pct": 12.8
+    }
+  ]
+}

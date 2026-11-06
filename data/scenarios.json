@@ -1,0 +1,46 @@
+[
+  {
+    "id": "SCN-RATES-100BP",
+    "name": "Hausse parallèle des taux EUR +100 bp",
+    "factor_id": "FACTOR-EUR-RATES",
+    "shock_bps": 100.0,
+    "shock_pct": null,
+    "direction": "up",
+    "description": "Choc instantané et parallèle de +100 points de base sur la courbe EUR.",
+    "limit_loss_pct": 3.0,
+    "method": "P&L = -MV x duration modifiée x Δy pour les obligations ; bêta taux pour les actions.",
+    "docs": [
+      "D04",
+      "D05",
+      "D21"
+    ]
+  },
+  {
+    "id": "SCN-CREDIT-50BP",
+    "name": "Élargissement des spreads de crédit +50 bp",
+    "factor_id": "FACTOR-CREDIT-SPREAD",
+    "shock_bps": 50.0,
+    "shock_pct": null,
+    "direction": "up",
+    "description": "Élargissement instantané de 50 points de base des spreads de crédit.",
+    "limit_loss_pct": 3.0,
+    "method": "P&L = -DV01 crédit x Δspread.",
+    "docs": [
+      "D22"
+    ]
+  },
+  {
+    "id": "SCN-EQUITY-10PCT",
+    "name": "Correction actions -10 %",
+    "factor_id": "FACTOR-EQUITY",
+    "shock_bps": null,
+    "shock_pct": -10.0,
+    "direction": "down",
+    "description": "Choc actions de -10 % appliqué aux positions actions via leur bêta actions.",
+    "limit_loss_pct": 3.0,
+    "method": "P&L = MV x bêta actions x choc actions.",
+    "docs": [
+      "D19"
+    ]
+  }
+]

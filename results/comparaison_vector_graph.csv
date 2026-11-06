@@ -1,0 +1,9 @@
+﻿id;difficulte;vector_score;hybrid_score;delta;hitl
+Q1;simple;4,00;5,00;+1,00;NOT_REQUIRED
+Q2;multi-hop;0,70;5,00;+4,30;PENDING_APPROVAL
+Q3;multi-hop;0,54;5,00;+4,46;PENDING_APPROVAL
+Q4;multi-hop;2,20;5,00;+2,80;PENDING_APPROVAL
+Q5;intersection;0,42;5,00;+4,58;PENDING_APPROVAL
+Q6;multi-hop;1,50;5,00;+3,50;NOT_REQUIRED
+Q7;policy;2,71;5,00;+2,29;PENDING_APPROVAL
+Q8;red-team;3,12;5,00;+1,88;BLOCKED

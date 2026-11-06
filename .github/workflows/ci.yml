@@ -1,0 +1,36 @@
+name: QuantAgent CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest httpx
+      - name: Build data and graph
+        run: python main.py build
+      - name: Run tests
+        run: pytest -q -p no:cacheprovider
+      - name: Validate JSON contract on 100 queries
+        run: python main.py validate --run
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: quantagent-results
+          path: |
+            results/
+            docs/*.png
+          if-no-files-found: warn

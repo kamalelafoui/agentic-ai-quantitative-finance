@@ -1,0 +1,6292 @@
+{
+  "nodes": [
+    {
+      "id": "PF-CORE-EU",
+      "label": "Core Europe",
+      "type": "Portefeuille",
+      "description": "Mandat actions et obligations européennes de 250 M€",
+      "aliases": [
+        "Core Europe",
+        "portefeuille Core Europe",
+        "PF Core Europe",
+        "PF-CORE-EU"
+      ],
+      "docs": [
+        "D01",
+        "D02"
+      ],
+      "properties": {
+        "nav_eur": 250000000,
+        "benchmark": "STOXX Europe 600"
+      }
+    },
+    {
+      "id": "PF-GLOBAL-BAL",
+      "label": "Global Balanced",
+      "type": "Portefeuille",
+      "description": "Portefeuille multi-actifs global (hors périmètre)",
+      "aliases": [
+        "Global Balanced",
+        "PF Global Balanced"
+      ],
+      "docs": [
+        "D01"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "PF-DEFENSIVE",
+      "label": "Defensive Income",
+      "type": "Portefeuille",
+      "description": "Portefeuille défensif à dominante obligataire (hors périmètre)",
+      "aliases": [
+        "Defensive Income",
+        "PF Defensive"
+      ],
+      "docs": [
+        "D01"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "POS-01",
+      "label": "POS-01 BNP Paribas",
+      "type": "Position",
+      "description": "Action — BNP Paribas",
+      "aliases": [
+        "POS-01",
+        "BNP Paribas",
+        "BNP.PA"
+      ],
+      "docs": [
+        "D02",
+        "D12",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 24000000,
+        "weight_pct": 9.6,
+        "asset_class": "Action",
+        "modified_duration": 0.0,
+        "rate_beta_pct_per_bp": 0.015,
+        "credit_dv01_eur": -1500,
+        "equity_beta": 1.15,
+        "liquidity_days": 1,
+        "esg_watch": false,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-02",
+      "label": "POS-02 TotalEnergies",
+      "type": "Position",
+      "description": "Action — TotalEnergies",
+      "aliases": [
+        "POS-02",
+        "TotalEnergies",
+        "TTE.PA"
+      ],
+      "docs": [
+        "D02",
+        "D15",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 21500000,
+        "weight_pct": 8.6,
+        "asset_class": "Action",
+        "modified_duration": 0.0,
+        "rate_beta_pct_per_bp": -0.0056,
+        "credit_dv01_eur": -300,
+        "equity_beta": 0.95,
+        "liquidity_days": 1,
+        "esg_watch": true,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-03",
+      "label": "POS-03 Vonovia",
+      "type": "Position",
+      "description": "Action — Vonovia",
+      "aliases": [
+        "POS-03",
+        "Vonovia",
+        "VNA.DE"
+      ],
+      "docs": [
+        "D02",
+        "D13",
+        "D15",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 18000000,
+        "weight_pct": 7.2,
+        "asset_class": "Action",
+        "modified_duration": 0.0,
+        "rate_beta_pct_per_bp": -0.1,
+        "credit_dv01_eur": -2000,
+        "equity_beta": 1.3,
+        "liquidity_days": 2,
+        "esg_watch": true,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-04",
+      "label": "POS-04 Enel",
+      "type": "Position",
+      "description": "Action — Enel",
+      "aliases": [
+        "POS-04",
+        "Enel",
+        "ENEL.MI"
+      ],
+      "docs": [
+        "D02",
+        "D14",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 17500000,
+        "weight_pct": 7.0,
+        "asset_class": "Action",
+        "modified_duration": 0.0,
+        "rate_beta_pct_per_bp": -0.07,
+        "credit_dv01_eur": -1500,
+        "equity_beta": 0.85,
+        "liquidity_days": 1,
+        "esg_watch": false,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-05",
+      "label": "POS-05 SAP",
+      "type": "Position",
+      "description": "Action — SAP",
+      "aliases": [
+        "POS-05",
+        "SAP",
+        "SAP.DE"
+      ],
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 22000000,
+        "weight_pct": 8.8,
+        "asset_class": "Action",
+        "modified_duration": 0.0,
+        "rate_beta_pct_per_bp": -0.03,
+        "credit_dv01_eur": -300,
+        "equity_beta": 1.05,
+        "liquidity_days": 1,
+        "esg_watch": false,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-06",
+      "label": "POS-06 ASML",
+      "type": "Position",
+      "description": "Action — ASML",
+      "aliases": [
+        "POS-06",
+        "ASML",
+        "ASML.AS"
+      ],
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 20000000,
+        "weight_pct": 8.0,
+        "asset_class": "Action",
+        "modified_duration": 0.0,
+        "rate_beta_pct_per_bp": -0.035,
+        "credit_dv01_eur": -300,
+        "equity_beta": 1.25,
+        "liquidity_days": 1,
+        "esg_watch": false,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-07",
+      "label": "POS-07 Air Liquide",
+      "type": "Position",
+      "description": "Action — Air Liquide",
+      "aliases": [
+        "POS-07",
+        "Air Liquide",
+        "AI.PA"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 15000000,
+        "weight_pct": 6.0,
+        "asset_class": "Action",
+        "modified_duration": 0.0,
+        "rate_beta_pct_per_bp": -0.01,
+        "credit_dv01_eur": -400,
+        "equity_beta": 0.8,
+        "liquidity_days": 1,
+        "esg_watch": false,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-08",
+      "label": "POS-08 Obligation EDF 2035",
+      "type": "Position",
+      "description": "Obligation — Obligation EDF 2035",
+      "aliases": [
+        "POS-08",
+        "Obligation EDF 2035",
+        "EDF-2035"
+      ],
+      "docs": [
+        "D02",
+        "D14",
+        "D15",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 25000000,
+        "weight_pct": 10.0,
+        "asset_class": "Obligation",
+        "modified_duration": 7.2,
+        "rate_beta_pct_per_bp": 0.0,
+        "credit_dv01_eur": -2500,
+        "equity_beta": 0.0,
+        "liquidity_days": 3,
+        "esg_watch": true,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-09",
+      "label": "POS-09 Deutsche Telekom",
+      "type": "Position",
+      "description": "Action — Deutsche Telekom",
+      "aliases": [
+        "POS-09",
+        "Deutsche Telekom",
+        "DTE.DE"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 16000000,
+        "weight_pct": 6.4,
+        "asset_class": "Action",
+        "modified_duration": 0.0,
+        "rate_beta_pct_per_bp": -0.02,
+        "credit_dv01_eur": -400,
+        "equity_beta": 0.7,
+        "liquidity_days": 1,
+        "esg_watch": false,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-10",
+      "label": "POS-10 Obligation AXA 2034 subordonnée",
+      "type": "Position",
+      "description": "Obligation — Obligation AXA 2034 subordonnée",
+      "aliases": [
+        "POS-10",
+        "Obligation AXA 2034 subordonnée",
+        "AXA-2034"
+      ],
+      "docs": [
+        "D02",
+        "D22",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 15000000,
+        "weight_pct": 6.0,
+        "asset_class": "Obligation",
+        "modified_duration": 5.1,
+        "rate_beta_pct_per_bp": 0.0,
+        "credit_dv01_eur": -6000,
+        "equity_beta": 0.0,
+        "liquidity_days": 3,
+        "esg_watch": false,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-11",
+      "label": "POS-11 Bund allemand 2030",
+      "type": "Position",
+      "description": "Obligation — Bund allemand 2030",
+      "aliases": [
+        "POS-11",
+        "Bund allemand 2030",
+        "DBR-2030"
+      ],
+      "docs": [
+        "D02",
+        "D07",
+        "D20"
+      ],
+      "properties": {
+        "market_value_eur": 24000000,
+        "weight_pct": 9.6,
+        "asset_class": "Obligation",
+        "modified_duration": 4.0,
+        "rate_beta_pct_per_bp": 0.0,
+        "credit_dv01_eur": 0,
+        "equity_beta": 0.0,
+        "liquidity_days": 1,
+        "esg_watch": false,
+        "excluded": false
+      }
+    },
+    {
+      "id": "POS-12",
+      "label": "POS-12 Cash EUR",
+      "type": "Position",
+      "description": "Cash — Cash EUR",
+      "aliases": [
+        "POS-12",
+        "Cash EUR",
+        "EUR-CASH"
+      ],
+      "docs": [
+        "D02",
+        "D07"
+      ],
+      "properties": {
+        "market_value_eur": 32000000,
+        "weight_pct": 12.8,
+        "asset_class": "Cash",
+        "modified_duration": 0.0,
+        "rate_beta_pct_per_bp": 0.0,
+        "credit_dv01_eur": 0,
+        "equity_beta": 0.0,
+        "liquidity_days": 0,
+        "esg_watch": false,
+        "excluded": false
+      }
+    },
+    {
+      "id": "ISS-BNP",
+      "label": "BNP Paribas",
+      "type": "Émetteur",
+      "description": "Émetteur BNP Paribas",
+      "aliases": [
+        "BNP",
+        "BNP Paribas",
+        "BNP.PA"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-BANKS",
+        "esg_watch": false
+      }
+    },
+    {
+      "id": "ISS-TTE",
+      "label": "TotalEnergies",
+      "type": "Émetteur",
+      "description": "Émetteur TotalEnergies",
+      "aliases": [
+        "TotalEnergies",
+        "Total",
+        "TTE",
+        "TTE.PA"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-ENERGY",
+        "esg_watch": true
+      }
+    },
+    {
+      "id": "ISS-VONOVIA",
+      "label": "Vonovia",
+      "type": "Émetteur",
+      "description": "Émetteur Vonovia",
+      "aliases": [
+        "Vonovia",
+        "VNA",
+        "VNA.DE"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-REALESTATE",
+        "esg_watch": true
+      }
+    },
+    {
+      "id": "ISS-ENEL",
+      "label": "Enel",
+      "type": "Émetteur",
+      "description": "Émetteur Enel",
+      "aliases": [
+        "Enel",
+        "ENEL",
+        "ENEL.MI"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-UTILITIES",
+        "esg_watch": false
+      }
+    },
+    {
+      "id": "ISS-SAP",
+      "label": "SAP",
+      "type": "Émetteur",
+      "description": "Émetteur SAP",
+      "aliases": [
+        "SAP",
+        "SAP.DE"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-TECH",
+        "esg_watch": false
+      }
+    },
+    {
+      "id": "ISS-ASML",
+      "label": "ASML",
+      "type": "Émetteur",
+      "description": "Émetteur ASML",
+      "aliases": [
+        "ASML",
+        "ASML.AS"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-TECH",
+        "esg_watch": false
+      }
+    },
+    {
+      "id": "ISS-AIRLIQ",
+      "label": "Air Liquide",
+      "type": "Émetteur",
+      "description": "Émetteur Air Liquide",
+      "aliases": [
+        "Air Liquide",
+        "AI.PA"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-MATERIALS",
+        "esg_watch": false
+      }
+    },
+    {
+      "id": "ISS-EDF",
+      "label": "EDF",
+      "type": "Émetteur",
+      "description": "Émetteur EDF",
+      "aliases": [
+        "EDF",
+        "Électricité de France",
+        "EDF-2035"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-UTILITIES",
+        "esg_watch": true
+      }
+    },
+    {
+      "id": "ISS-DT",
+      "label": "Deutsche Telekom",
+      "type": "Émetteur",
+      "description": "Émetteur Deutsche Telekom",
+      "aliases": [
+        "Deutsche Telekom",
+        "DTE",
+        "DTE.DE"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-TELECOM",
+        "esg_watch": false
+      }
+    },
+    {
+      "id": "ISS-AXA",
+      "label": "AXA",
+      "type": "Émetteur",
+      "description": "Émetteur AXA",
+      "aliases": [
+        "AXA",
+        "AXA-2034"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-INSURANCE",
+        "esg_watch": false
+      }
+    },
+    {
+      "id": "ISS-BUND",
+      "label": "Bund allemand",
+      "type": "Émetteur",
+      "description": "Émetteur Bund allemand",
+      "aliases": [
+        "Bund",
+        "DBR",
+        "DBR-2030",
+        "Bund 2030"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-SOVEREIGN",
+        "esg_watch": false
+      }
+    },
+    {
+      "id": "ISS-CASH",
+      "label": "Cash EUR",
+      "type": "Émetteur",
+      "description": "Émetteur Cash EUR",
+      "aliases": [
+        "cash",
+        "liquidités",
+        "EUR cash"
+      ],
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "properties": {
+        "sector_id": "SEC-CASH",
+        "esg_watch": false
+      }
+    },
+    {
+      "id": "SEC-BANKS",
+      "label": "Banques",
+      "type": "Secteur",
+      "description": "Secteur Banques",
+      "aliases": [
+        "Banques"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 9.6
+      }
+    },
+    {
+      "id": "SEC-ENERGY",
+      "label": "Énergie",
+      "type": "Secteur",
+      "description": "Secteur Énergie",
+      "aliases": [
+        "Énergie"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 8.6
+      }
+    },
+    {
+      "id": "SEC-REALESTATE",
+      "label": "Immobilier",
+      "type": "Secteur",
+      "description": "Secteur Immobilier",
+      "aliases": [
+        "Immobilier"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 7.2
+      }
+    },
+    {
+      "id": "SEC-UTILITIES",
+      "label": "Utilities",
+      "type": "Secteur",
+      "description": "Secteur Utilities",
+      "aliases": [
+        "Utilities"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 17.0
+      }
+    },
+    {
+      "id": "SEC-TECH",
+      "label": "Technologie",
+      "type": "Secteur",
+      "description": "Secteur Technologie",
+      "aliases": [
+        "Technologie"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 16.8
+      }
+    },
+    {
+      "id": "SEC-MATERIALS",
+      "label": "Matériaux",
+      "type": "Secteur",
+      "description": "Secteur Matériaux",
+      "aliases": [
+        "Matériaux"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 6.0
+      }
+    },
+    {
+      "id": "SEC-TELECOM",
+      "label": "Télécom",
+      "type": "Secteur",
+      "description": "Secteur Télécom",
+      "aliases": [
+        "Télécom"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 6.4
+      }
+    },
+    {
+      "id": "SEC-INSURANCE",
+      "label": "Assurance",
+      "type": "Secteur",
+      "description": "Secteur Assurance",
+      "aliases": [
+        "Assurance"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 6.0
+      }
+    },
+    {
+      "id": "SEC-SOVEREIGN",
+      "label": "Souverain",
+      "type": "Secteur",
+      "description": "Secteur Souverain",
+      "aliases": [
+        "Souverain"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 9.6
+      }
+    },
+    {
+      "id": "SEC-CASH",
+      "label": "Cash",
+      "type": "Secteur",
+      "description": "Secteur Cash",
+      "aliases": [
+        "Cash"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "weight_pct": 12.8
+      }
+    },
+    {
+      "id": "FACTOR-EUR-RATES",
+      "label": "Taux EUR",
+      "type": "Facteur",
+      "description": "Facteur de risque Taux EUR",
+      "aliases": [
+        "taux EUR",
+        "taux d'intérêt euro",
+        "courbe EUR",
+        "taux d'intérêt",
+        "taux",
+        "hausse des taux",
+        "choc de taux",
+        "sensibilité aux taux"
+      ],
+      "docs": [
+        "D04",
+        "D05"
+      ],
+      "properties": {
+        "unit": "bp"
+      }
+    },
+    {
+      "id": "FACTOR-CREDIT-SPREAD",
+      "label": "Spreads de crédit",
+      "type": "Facteur",
+      "description": "Facteur de risque Spreads de crédit",
+      "aliases": [
+        "spreads de crédit",
+        "spread crédit",
+        "crédit spread"
+      ],
+      "docs": [
+        "D04",
+        "D05"
+      ],
+      "properties": {
+        "unit": "bp"
+      }
+    },
+    {
+      "id": "FACTOR-EQUITY",
+      "label": "Marché actions",
+      "type": "Facteur",
+      "description": "Facteur de risque Marché actions",
+      "aliases": [
+        "marché actions",
+        "actions",
+        "equity"
+      ],
+      "docs": [
+        "D04",
+        "D05"
+      ],
+      "properties": {
+        "unit": ""
+      }
+    },
+    {
+      "id": "FACTOR-FX",
+      "label": "Change EUR/USD",
+      "type": "Facteur",
+      "description": "Facteur de risque Change EUR/USD",
+      "aliases": [
+        "change",
+        "EUR/USD",
+        "devise"
+      ],
+      "docs": [
+        "D04",
+        "D05"
+      ],
+      "properties": {
+        "unit": ""
+      }
+    },
+    {
+      "id": "FACTOR-INFLATION",
+      "label": "Inflation zone euro",
+      "type": "Facteur",
+      "description": "Facteur de risque Inflation zone euro",
+      "aliases": [
+        "inflation",
+        "HICP"
+      ],
+      "docs": [
+        "D04",
+        "D05"
+      ],
+      "properties": {
+        "unit": ""
+      }
+    },
+    {
+      "id": "FACTOR-LIQUIDITY",
+      "label": "Liquidité de marché",
+      "type": "Facteur",
+      "description": "Facteur de risque Liquidité de marché",
+      "aliases": [
+        "liquidité de marché",
+        "liquidité"
+      ],
+      "docs": [
+        "D04",
+        "D05"
+      ],
+      "properties": {
+        "unit": ""
+      }
+    },
+    {
+      "id": "SCN-RATES-100BP",
+      "label": "Hausse parallèle des taux EUR +100 bp",
+      "type": "Scénario",
+      "description": "Choc instantané et parallèle de +100 points de base sur la courbe EUR.",
+      "aliases": [
+        "Hausse parallèle des taux EUR +100 bp",
+        "SCN-RATES-100BP",
+        "choc de +100 pb",
+        "+100 pb",
+        "+100bp",
+        "scénario taux +100",
+        "hausse de 100 bp"
+      ],
+      "docs": [
+        "D04",
+        "D05",
+        "D21"
+      ],
+      "properties": {
+        "shock_bps": 100.0,
+        "shock_pct": null,
+        "limit_loss_pct": 3.0
+      }
+    },
+    {
+      "id": "SCN-CREDIT-50BP",
+      "label": "Élargissement des spreads de crédit +50 bp",
+      "type": "Scénario",
+      "description": "Élargissement instantané de 50 points de base des spreads de crédit.",
+      "aliases": [
+        "Élargissement des spreads de crédit +50 bp",
+        "SCN-CREDIT-50BP"
+      ],
+      "docs": [
+        "D22"
+      ],
+      "properties": {
+        "shock_bps": 50.0,
+        "shock_pct": null,
+        "limit_loss_pct": 3.0
+      }
+    },
+    {
+      "id": "SCN-EQUITY-10PCT",
+      "label": "Correction actions -10 %",
+      "type": "Scénario",
+      "description": "Choc actions de -10 % appliqué aux positions actions via leur bêta actions.",
+      "aliases": [
+        "Correction actions -10 %",
+        "SCN-EQUITY-10PCT"
+      ],
+      "docs": [
+        "D19"
+      ],
+      "properties": {
+        "shock_bps": null,
+        "shock_pct": -10.0,
+        "limit_loss_pct": 3.0
+      }
+    },
+    {
+      "id": "VAL-MODEL-RATES",
+      "label": "Modèle de sensibilité taux",
+      "type": "Modèle",
+      "description": "Modèle Tier 2 de sensibilité taux, calibré sur 252 jours",
+      "aliases": [
+        "VAL-MODEL-RATES",
+        "modèle de sensibilité",
+        "modèle taux"
+      ],
+      "docs": [
+        "D04",
+        "D09"
+      ],
+      "properties": {
+        "tier": 2,
+        "status": "validé",
+        "owner": "Quant Research"
+      }
+    },
+    {
+      "id": "POL-MKT-LIMITS",
+      "label": "Politique limites de marché",
+      "type": "Politique",
+      "description": "Politique limites de marché",
+      "aliases": [
+        "limites de marché",
+        "limites",
+        "politique de limites"
+      ],
+      "docs": [
+        "D03",
+        "D10"
+      ],
+      "properties": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "POL-HITL",
+      "label": "Procédure HITL",
+      "type": "Politique",
+      "description": "Procédure HITL",
+      "aliases": [
+        "HITL",
+        "human-in-the-loop",
+        "validation humaine",
+        "approbation",
+        "approbations",
+        "validation",
+        "circuit HITL",
+        "qui doit approuver"
+      ],
+      "docs": [
+        "D03",
+        "D10"
+      ],
+      "properties": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "POL-MODEL-RISK",
+      "label": "Politique risque de modèle",
+      "type": "Politique",
+      "description": "Politique risque de modèle",
+      "aliases": [
+        "risque de modèle",
+        "model risk",
+        "validation de modèle"
+      ],
+      "docs": [
+        "D03",
+        "D10"
+      ],
+      "properties": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "POL-DATA",
+      "label": "Politique données et PII",
+      "type": "Politique",
+      "description": "Politique données et PII",
+      "aliases": [
+        "données personnelles",
+        "PII",
+        "RGPD",
+        "confidentialité"
+      ],
+      "docs": [
+        "D03",
+        "D10"
+      ],
+      "properties": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "POL-ESG",
+      "label": "Politique ESG",
+      "type": "Politique",
+      "description": "Politique ESG",
+      "aliases": [
+        "ESG",
+        "exclusions",
+        "watchlist ESG",
+        "SFDR"
+      ],
+      "docs": [
+        "D03",
+        "D10"
+      ],
+      "properties": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "POL-LIQUIDITY",
+      "label": "Politique liquidité",
+      "type": "Politique",
+      "description": "Politique liquidité",
+      "aliases": [
+        "liquidité",
+        "T+1",
+        "ratio de liquidité"
+      ],
+      "docs": [
+        "D03",
+        "D10"
+      ],
+      "properties": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "POL-CONDUCT",
+      "label": "Politique conformité et adéquation",
+      "type": "Politique",
+      "description": "Politique conformité et adéquation",
+      "aliases": [
+        "conformité",
+        "adéquation",
+        "MiFID",
+        "communication client"
+      ],
+      "docs": [
+        "D03",
+        "D10"
+      ],
+      "properties": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "POL-COUNTERPARTY",
+      "label": "Politique contreparties",
+      "type": "Politique",
+      "description": "Politique contreparties",
+      "aliases": [
+        "contreparties",
+        "ISDA",
+        "dérivés"
+      ],
+      "docs": [
+        "D03",
+        "D10"
+      ],
+      "properties": {
+        "status": "active"
+      }
+    },
+    {
+      "id": "CTL-VAR",
+      "label": "Limite VaR 99% 1 jour",
+      "type": "Contrôle",
+      "description": "VaR 99% 1 jour ≤ 2,5% NAV",
+      "aliases": [
+        "Limite VaR 99% 1 jour"
+      ],
+      "docs": [
+        "D03"
+      ],
+      "properties": {
+        "rule": "VaR 99% 1 jour ≤ 2,5% NAV",
+        "status": "active"
+      }
+    },
+    {
+      "id": "CTL-SCENARIO-LOSS",
+      "label": "Limite perte scénario",
+      "type": "Contrôle",
+      "description": "Perte scénario ≤ 3,0% NAV",
+      "aliases": [
+        "Limite perte scénario",
+        "limite de perte scénario",
+        "seuil de 3,0 %"
+      ],
+      "docs": [
+        "D03"
+      ],
+      "properties": {
+        "rule": "Perte scénario ≤ 3,0% NAV",
+        "status": "active"
+      }
+    },
+    {
+      "id": "CTL-ISSUER-CAP",
+      "label": "Limite concentration émetteur",
+      "type": "Contrôle",
+      "description": "Émetteur ≤ 12% NAV",
+      "aliases": [
+        "Limite concentration émetteur"
+      ],
+      "docs": [
+        "D03"
+      ],
+      "properties": {
+        "rule": "Émetteur ≤ 12% NAV",
+        "status": "active"
+      }
+    },
+    {
+      "id": "CTL-SECTOR-CAP",
+      "label": "Limite concentration secteur",
+      "type": "Contrôle",
+      "description": "Secteur ≤ 25% NAV",
+      "aliases": [
+        "Limite concentration secteur"
+      ],
+      "docs": [
+        "D03"
+      ],
+      "properties": {
+        "rule": "Secteur ≤ 25% NAV",
+        "status": "active"
+      }
+    },
+    {
+      "id": "CTL-DURATION",
+      "label": "Limite duration",
+      "type": "Contrôle",
+      "description": "Duration ≤ 5,0 ans",
+      "aliases": [
+        "Limite duration"
+      ],
+      "docs": [
+        "D03"
+      ],
+      "properties": {
+        "rule": "Duration ≤ 5,0 ans",
+        "status": "active"
+      }
+    },
+    {
+      "id": "CTL-LIQUIDITY",
+      "label": "Limite liquidité T+1",
+      "type": "Contrôle",
+      "description": "Liquidité T+1 ≥ 20% NAV",
+      "aliases": [
+        "Limite liquidité T+1"
+      ],
+      "docs": [
+        "D03"
+      ],
+      "properties": {
+        "rule": "Liquidité T+1 ≥ 20% NAV",
+        "status": "active"
+      }
+    },
+    {
+      "id": "HITL-RISK",
+      "label": "Validation Risk",
+      "type": "Approbation",
+      "description": "Validation Risk — Risk Manager, SLA 4h",
+      "aliases": [
+        "HITL-RISK",
+        "Validation Risk",
+        "Risk Manager",
+        "Risk",
+        "validation Risk"
+      ],
+      "docs": [
+        "D10"
+      ],
+      "properties": {
+        "role": "Risk Manager",
+        "sla_hours": 4
+      }
+    },
+    {
+      "id": "HITL-IC",
+      "label": "Validation Comité d'Investissement",
+      "type": "Approbation",
+      "description": "Validation Comité d'Investissement — Comité d'Investissement, SLA 24h",
+      "aliases": [
+        "HITL-IC",
+        "Validation Comité d'Investissement",
+        "Comité d'Investissement",
+        "IC",
+        "comité"
+      ],
+      "docs": [
+        "D10"
+      ],
+      "properties": {
+        "role": "Comité d'Investissement",
+        "sla_hours": 24
+      }
+    },
+    {
+      "id": "HITL-COMPLIANCE",
+      "label": "Validation Compliance",
+      "type": "Approbation",
+      "description": "Validation Compliance — Compliance Officer, SLA 24h",
+      "aliases": [
+        "HITL-COMPLIANCE",
+        "Validation Compliance",
+        "Compliance Officer"
+      ],
+      "docs": [
+        "D10"
+      ],
+      "properties": {
+        "role": "Compliance Officer",
+        "sla_hours": 24
+      }
+    },
+    {
+      "id": "HITL-MODEL",
+      "label": "Validation Model Risk",
+      "type": "Approbation",
+      "description": "Validation Model Risk — Model Risk Officer, SLA 48h",
+      "aliases": [
+        "HITL-MODEL",
+        "Validation Model Risk",
+        "Model Risk Officer"
+      ],
+      "docs": [
+        "D10"
+      ],
+      "properties": {
+        "role": "Model Risk Officer",
+        "sla_hours": 48
+      }
+    },
+    {
+      "id": "REG-MIFID",
+      "label": "MiFID II",
+      "type": "Réglementation",
+      "description": "Gouvernance produits, adéquation et communications",
+      "aliases": [
+        "MiFID II"
+      ],
+      "docs": [
+        "D03",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "REG-BASEL",
+      "label": "Bâle III",
+      "type": "Réglementation",
+      "description": "Exigences de fonds propres et de risque de marché",
+      "aliases": [
+        "Bâle III"
+      ],
+      "docs": [
+        "D03",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "REG-SR11-7",
+      "label": "SR 11-7",
+      "type": "Réglementation",
+      "description": "Gestion du risque de modèle",
+      "aliases": [
+        "SR 11-7"
+      ],
+      "docs": [
+        "D03",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "REG-GDPR",
+      "label": "RGPD",
+      "type": "Réglementation",
+      "description": "Protection des données personnelles",
+      "aliases": [
+        "RGPD"
+      ],
+      "docs": [
+        "D03",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "REG-SFDR",
+      "label": "SFDR",
+      "type": "Réglementation",
+      "description": "Transparence ESG et durabilité",
+      "aliases": [
+        "SFDR"
+      ],
+      "docs": [
+        "D03",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "RSK-RATE",
+      "label": "Risque de taux",
+      "type": "Risque",
+      "description": "Perte liée à une hausse des taux",
+      "aliases": [
+        "Risque de taux"
+      ],
+      "docs": [
+        "D03",
+        "D21"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "RSK-CREDIT",
+      "label": "Risque de crédit",
+      "type": "Risque",
+      "description": "Perte liée à l'élargissement des spreads",
+      "aliases": [
+        "Risque de crédit"
+      ],
+      "docs": [
+        "D03",
+        "D21"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "RSK-LIQUIDITY",
+      "label": "Risque de liquidité",
+      "type": "Risque",
+      "description": "Incapacité à honorer les rachats",
+      "aliases": [
+        "Risque de liquidité"
+      ],
+      "docs": [
+        "D03",
+        "D21"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "RSK-MODEL",
+      "label": "Risque de modèle",
+      "type": "Risque",
+      "description": "Erreur de calibration ou d'hypothèse",
+      "aliases": [
+        "Risque de modèle"
+      ],
+      "docs": [
+        "D03",
+        "D21"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "RSK-CONDUCT",
+      "label": "Risque de conduite",
+      "type": "Risque",
+      "description": "Communication trompeuse ou conseil inadapté",
+      "aliases": [
+        "Risque de conduite"
+      ],
+      "docs": [
+        "D03",
+        "D21"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "RSK-CONCENTRATION",
+      "label": "Risque de concentration",
+      "type": "Risque",
+      "description": "Concentration émetteur ou secteur",
+      "aliases": [
+        "Risque de concentration"
+      ],
+      "docs": [
+        "D03",
+        "D21"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "MET-DURATION",
+      "label": "Duration totale",
+      "type": "Métrique",
+      "description": "Duration totale = 1.7 ans (limite 5.0)",
+      "aliases": [
+        "Duration totale"
+      ],
+      "docs": [
+        "D21"
+      ],
+      "properties": {
+        "value": 1.7,
+        "unit": "ans",
+        "limit": 5.0
+      }
+    },
+    {
+      "id": "MET-VAR",
+      "label": "VaR 99% 1 jour",
+      "type": "Métrique",
+      "description": "VaR 99% 1 jour = 1.9 % NAV (limite 2.5)",
+      "aliases": [
+        "VaR 99% 1 jour"
+      ],
+      "docs": [
+        "D21"
+      ],
+      "properties": {
+        "value": 1.9,
+        "unit": "% NAV",
+        "limit": 2.5
+      }
+    },
+    {
+      "id": "MET-SCENARIO-LOSS",
+      "label": "Perte scénario +100 bp",
+      "type": "Métrique",
+      "description": "Perte scénario +100 bp = -3.26 % NAV (limite -3.0)",
+      "aliases": [
+        "Perte scénario +100 bp",
+        "perte scénario",
+        "perte de scénario",
+        "scenario loss"
+      ],
+      "docs": [
+        "D21"
+      ],
+      "properties": {
+        "value": -3.26,
+        "unit": "% NAV",
+        "limit": -3.0
+      }
+    },
+    {
+      "id": "MET-LIQUIDITY-RATIO",
+      "label": "Liquidité T+1",
+      "type": "Métrique",
+      "description": "Liquidité T+1 = 22.4 % NAV (limite 20.0)",
+      "aliases": [
+        "Liquidité T+1"
+      ],
+      "docs": [
+        "D21"
+      ],
+      "properties": {
+        "value": 22.4,
+        "unit": "% NAV",
+        "limit": 20.0
+      }
+    },
+    {
+      "id": "COM-IC",
+      "label": "Comité d'Investissement",
+      "type": "Comité",
+      "description": "Décide des opérations > 2,5% NAV",
+      "aliases": [
+        "Comité d'Investissement"
+      ],
+      "docs": [
+        "D11"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "COM-RISK",
+      "label": "Comité des Risques",
+      "type": "Comité",
+      "description": "Valide les limites et dérogations",
+      "aliases": [
+        "Comité des Risques"
+      ],
+      "docs": [
+        "D11"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "WL-ESG",
+      "label": "Watchlist ESG",
+      "type": "Watchlist",
+      "description": "Vigilance renforcée, pas exclusion",
+      "aliases": [
+        "Watchlist ESG",
+        "watchlist",
+        "vigilance ESG",
+        "surveillance ESG"
+      ],
+      "docs": [
+        "D15"
+      ],
+      "properties": {}
+    },
+    {
+      "id": "D01",
+      "label": "D01 — Mandat du portefeuille Core Europe",
+      "type": "Document",
+      "description": "Mandat, benchmark et contraintes du portefeuille PF-CORE-EU.",
+      "aliases": [
+        "D01",
+        "Mandat du portefeuille Core Europe"
+      ],
+      "docs": [
+        "D01"
+      ],
+      "properties": {
+        "doc_type": "Mandat",
+        "date": "2026-01-15",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D02",
+      "label": "D02 — Snapshot des positions au 31 octobre 2026",
+      "type": "Document",
+      "description": "Positions, poids, duration, VaR et liquidité du portefeuille Core Europe.",
+      "aliases": [
+        "D02",
+        "Snapshot des positions au 31 octobre 2026"
+      ],
+      "docs": [
+        "D02"
+      ],
+      "properties": {
+        "doc_type": "Reporting",
+        "date": "2026-10-31",
+        "classification": "Restricted"
+      }
+    },
+    {
+      "id": "D03",
+      "label": "D03 — Politique de limites de marché",
+      "type": "Document",
+      "description": "Limites de VaR, scénario, concentration, duration et liquidité.",
+      "aliases": [
+        "D03",
+        "Politique de limites de marché"
+      ],
+      "docs": [
+        "D03"
+      ],
+      "properties": {
+        "doc_type": "Politique",
+        "date": "2026-02-01",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D04",
+      "label": "D04 — Méthodologie de sensibilité aux taux",
+      "type": "Document",
+      "description": "Formules de P&L obligataire et bêta taux des actions.",
+      "aliases": [
+        "D04",
+        "Méthodologie de sensibilité aux taux"
+      ],
+      "docs": [
+        "D04"
+      ],
+      "properties": {
+        "doc_type": "Méthodologie",
+        "date": "2026-03-10",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D05",
+      "label": "D05 — Définition du scénario taux +100 pb",
+      "type": "Document",
+      "description": "Choc parallèle instantané de +100 bp sur la courbe EUR.",
+      "aliases": [
+        "D05",
+        "Définition du scénario taux +100 pb"
+      ],
+      "docs": [
+        "D05"
+      ],
+      "properties": {
+        "doc_type": "Scénario",
+        "date": "2026-03-15",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D06",
+      "label": "D06 — Note de concentration sectorielle",
+      "type": "Document",
+      "description": "Poids des secteurs et concentration émetteur du portefeuille.",
+      "aliases": [
+        "D06",
+        "Note de concentration sectorielle"
+      ],
+      "docs": [
+        "D06"
+      ],
+      "properties": {
+        "doc_type": "Note",
+        "date": "2026-10-20",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D07",
+      "label": "D07 — Politique de liquidité",
+      "type": "Document",
+      "description": "Ratio de liquidité T+1 et actifs éligibles.",
+      "aliases": [
+        "D07",
+        "Politique de liquidité"
+      ],
+      "docs": [
+        "D07"
+      ],
+      "properties": {
+        "doc_type": "Politique",
+        "date": "2026-02-01",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D08",
+      "label": "D08 — Politique de conformité et d'adéquation",
+      "type": "Document",
+      "description": "Communications client, conseil personnalisé et avertissements.",
+      "aliases": [
+        "D08",
+        "Politique de conformité et d'adéquation"
+      ],
+      "docs": [
+        "D08"
+      ],
+      "properties": {
+        "doc_type": "Politique",
+        "date": "2026-02-01",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D09",
+      "label": "D09 — Politique de risque de modèle",
+      "type": "Document",
+      "description": "Validation, surveillance et changement de modèle.",
+      "aliases": [
+        "D09",
+        "Politique de risque de modèle"
+      ],
+      "docs": [
+        "D09"
+      ],
+      "properties": {
+        "doc_type": "Politique",
+        "date": "2026-02-15",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D10",
+      "label": "D10 — Procédure Human-in-the-Loop",
+      "type": "Document",
+      "description": "Niveaux d'approbation, seuils et journalisation des décisions.",
+      "aliases": [
+        "D10",
+        "Procédure Human-in-the-Loop"
+      ],
+      "docs": [
+        "D10"
+      ],
+      "properties": {
+        "doc_type": "Procédure",
+        "date": "2026-03-01",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D11",
+      "label": "D11 — PV du Comité d'Investissement du 28 octobre 2026",
+      "type": "Document",
+      "description": "Demande de simulation taux et de réduction de la poche obligataire.",
+      "aliases": [
+        "D11",
+        "PV du Comité d'Investissement du 28 octobre 2026"
+      ],
+      "docs": [
+        "D11"
+      ],
+      "properties": {
+        "doc_type": "PV",
+        "date": "2026-10-28",
+        "classification": "Confidentiel"
+      }
+    },
+    {
+      "id": "D12",
+      "label": "D12 — Recherche banques et taux",
+      "type": "Document",
+      "description": "Sensibilité taux et crédit de BNP Paribas.",
+      "aliases": [
+        "D12",
+        "Recherche banques et taux"
+      ],
+      "docs": [
+        "D12"
+      ],
+      "properties": {
+        "doc_type": "Recherche",
+        "date": "2026-10-15",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D13",
+      "label": "D13 — Recherche immobilier et taux",
+      "type": "Document",
+      "description": "Sensibilité de Vonovia aux taux et vigilance ESG.",
+      "aliases": [
+        "D13",
+        "Recherche immobilier et taux"
+      ],
+      "docs": [
+        "D13"
+      ],
+      "properties": {
+        "doc_type": "Recherche",
+        "date": "2026-10-15",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D14",
+      "label": "D14 — Recherche utilities et taux",
+      "type": "Document",
+      "description": "Enel, EDF et la sensibilité du secteur Utilities.",
+      "aliases": [
+        "D14",
+        "Recherche utilities et taux"
+      ],
+      "docs": [
+        "D14"
+      ],
+      "properties": {
+        "doc_type": "Recherche",
+        "date": "2026-10-16",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D15",
+      "label": "D15 — Politique ESG et exclusions",
+      "type": "Document",
+      "description": "Exclusions, watchlist et approbation Compliance.",
+      "aliases": [
+        "D15",
+        "Politique ESG et exclusions"
+      ],
+      "docs": [
+        "D15"
+      ],
+      "properties": {
+        "doc_type": "Politique",
+        "date": "2026-04-01",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D16",
+      "label": "D16 — Politique contreparties et dérivés",
+      "type": "Document",
+      "description": "Contreparties éligibles, ISDA et couverture par swaps.",
+      "aliases": [
+        "D16",
+        "Politique contreparties et dérivés"
+      ],
+      "docs": [
+        "D16"
+      ],
+      "properties": {
+        "doc_type": "Politique",
+        "date": "2026-04-15",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D17",
+      "label": "D17 — Gouvernance des données et données personnelles",
+      "type": "Document",
+      "description": "Classification, PII, GDPR et journal d'audit.",
+      "aliases": [
+        "D17",
+        "Gouvernance des données et données personnelles"
+      ],
+      "docs": [
+        "D17"
+      ],
+      "properties": {
+        "doc_type": "Politique",
+        "date": "2026-02-01",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D18",
+      "label": "D18 — Red team et défenses contre la prompt injection",
+      "type": "Document",
+      "description": "20 attaques, défenses, taux de blocage et faux positifs.",
+      "aliases": [
+        "D18",
+        "Red team et défenses contre la prompt injection"
+      ],
+      "docs": [
+        "D18"
+      ],
+      "properties": {
+        "doc_type": "Sécurité",
+        "date": "2026-10-30",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D19",
+      "label": "D19 — Glossaire market data",
+      "type": "Document",
+      "description": "Définitions de NAV, duration, DV01, VaR, T+1 et bêta taux.",
+      "aliases": [
+        "D19",
+        "Glossaire market data"
+      ],
+      "docs": [
+        "D19"
+      ],
+      "properties": {
+        "doc_type": "Glossaire",
+        "date": "2026-01-10",
+        "classification": "Public"
+      }
+    },
+    {
+      "id": "D20",
+      "label": "D20 — Liste des instruments approuvés",
+      "type": "Document",
+      "description": "Actions, obligations, dérivés et cash autorisés.",
+      "aliases": [
+        "D20",
+        "Liste des instruments approuvés"
+      ],
+      "docs": [
+        "D20"
+      ],
+      "properties": {
+        "doc_type": "Référentiel",
+        "date": "2026-10-01",
+        "classification": "Interne"
+      }
+    },
+    {
+      "id": "D21",
+      "label": "D21 — Rapport de risque octobre 2026",
+      "type": "Document",
+      "description": "VaR, duration, liquidité et perte scénario +100 bp.",
+      "aliases": [
+        "D21",
+        "Rapport de risque octobre 2026"
+      ],
+      "docs": [
+        "D21"
+      ],
+      "properties": {
+        "doc_type": "Reporting",
+        "date": "2026-10-31",
+        "classification": "Confidentiel"
+      }
+    },
+    {
+      "id": "D22",
+      "label": "D22 — Note spreads de crédit",
+      "type": "Document",
+      "description": "Sensibilité des positions à un élargissement de 50 bp des spreads.",
+      "aliases": [
+        "D22",
+        "Note spreads de crédit"
+      ],
+      "docs": [
+        "D22"
+      ],
+      "properties": {
+        "doc_type": "Recherche",
+        "date": "2026-10-25",
+        "classification": "Interne"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "E001",
+      "head": "PF-CORE-EU",
+      "tail": "POS-01",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D12",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient BNP Paribas (9.6% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E002",
+      "head": "POS-01",
+      "tail": "ISS-BNP",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D12",
+        "D20"
+      ],
+      "evidence": "BNP Paribas est émis par ISS-BNP.",
+      "weight": 1.0
+    },
+    {
+      "id": "E003",
+      "head": "POS-01",
+      "tail": "SEC-BANKS",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D12",
+        "D20"
+      ],
+      "evidence": "BNP Paribas appartient au secteur SEC-BANKS.",
+      "weight": 1.0
+    },
+    {
+      "id": "E004",
+      "head": "POS-01",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D12",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: 0.015%/bp ou duration 0.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E005",
+      "head": "POS-01",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D12",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -1500 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E006",
+      "head": "POS-01",
+      "tail": "FACTOR-EQUITY",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D12",
+        "D20"
+      ],
+      "evidence": "Bêta actions: 1.15.",
+      "weight": 1.0
+    },
+    {
+      "id": "E007",
+      "head": "POS-01",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E008",
+      "head": "POS-01",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E009",
+      "head": "POS-01",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E010",
+      "head": "PF-CORE-EU",
+      "tail": "POS-02",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient TotalEnergies (8.6% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E011",
+      "head": "POS-02",
+      "tail": "ISS-TTE",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D15",
+        "D20"
+      ],
+      "evidence": "TotalEnergies est émis par ISS-TTE.",
+      "weight": 1.0
+    },
+    {
+      "id": "E012",
+      "head": "POS-02",
+      "tail": "SEC-ENERGY",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D15",
+        "D20"
+      ],
+      "evidence": "TotalEnergies appartient au secteur SEC-ENERGY.",
+      "weight": 1.0
+    },
+    {
+      "id": "E013",
+      "head": "POS-02",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: -0.0056%/bp ou duration 0.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E014",
+      "head": "POS-02",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D15",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -300 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E015",
+      "head": "POS-02",
+      "tail": "FACTOR-EQUITY",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Bêta actions: 0.95.",
+      "weight": 1.0
+    },
+    {
+      "id": "E016",
+      "head": "POS-02",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E017",
+      "head": "POS-02",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E018",
+      "head": "POS-02",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E019",
+      "head": "PF-CORE-EU",
+      "tail": "POS-03",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D13",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient Vonovia (7.2% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E020",
+      "head": "POS-03",
+      "tail": "ISS-VONOVIA",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D13",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Vonovia est émis par ISS-VONOVIA.",
+      "weight": 1.0
+    },
+    {
+      "id": "E021",
+      "head": "POS-03",
+      "tail": "SEC-REALESTATE",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D13",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Vonovia appartient au secteur SEC-REALESTATE.",
+      "weight": 1.0
+    },
+    {
+      "id": "E022",
+      "head": "POS-03",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D13",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: -0.1%/bp ou duration 0.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E023",
+      "head": "POS-03",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D13",
+        "D15",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -2000 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E024",
+      "head": "POS-03",
+      "tail": "FACTOR-EQUITY",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D13",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Bêta actions: 1.3.",
+      "weight": 1.0
+    },
+    {
+      "id": "E025",
+      "head": "POS-03",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E026",
+      "head": "POS-03",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E027",
+      "head": "POS-03",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E028",
+      "head": "PF-CORE-EU",
+      "tail": "POS-04",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D14",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient Enel (7.0% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E029",
+      "head": "POS-04",
+      "tail": "ISS-ENEL",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D14",
+        "D20"
+      ],
+      "evidence": "Enel est émis par ISS-ENEL.",
+      "weight": 1.0
+    },
+    {
+      "id": "E030",
+      "head": "POS-04",
+      "tail": "SEC-UTILITIES",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D14",
+        "D20"
+      ],
+      "evidence": "Enel appartient au secteur SEC-UTILITIES.",
+      "weight": 1.0
+    },
+    {
+      "id": "E031",
+      "head": "POS-04",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D14",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: -0.07%/bp ou duration 0.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E032",
+      "head": "POS-04",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D14",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -1500 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E033",
+      "head": "POS-04",
+      "tail": "FACTOR-EQUITY",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D14",
+        "D20"
+      ],
+      "evidence": "Bêta actions: 0.85.",
+      "weight": 1.0
+    },
+    {
+      "id": "E034",
+      "head": "POS-04",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E035",
+      "head": "POS-04",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E036",
+      "head": "POS-04",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E037",
+      "head": "PF-CORE-EU",
+      "tail": "POS-05",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient SAP (8.8% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E038",
+      "head": "POS-05",
+      "tail": "ISS-SAP",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "SAP est émis par ISS-SAP.",
+      "weight": 1.0
+    },
+    {
+      "id": "E039",
+      "head": "POS-05",
+      "tail": "SEC-TECH",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "SAP appartient au secteur SEC-TECH.",
+      "weight": 1.0
+    },
+    {
+      "id": "E040",
+      "head": "POS-05",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: -0.03%/bp ou duration 0.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E041",
+      "head": "POS-05",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -300 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E042",
+      "head": "POS-05",
+      "tail": "FACTOR-EQUITY",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "Bêta actions: 1.05.",
+      "weight": 1.0
+    },
+    {
+      "id": "E043",
+      "head": "POS-05",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E044",
+      "head": "POS-05",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E045",
+      "head": "POS-05",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E046",
+      "head": "PF-CORE-EU",
+      "tail": "POS-06",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient ASML (8.0% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E047",
+      "head": "POS-06",
+      "tail": "ISS-ASML",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "ASML est émis par ISS-ASML.",
+      "weight": 1.0
+    },
+    {
+      "id": "E048",
+      "head": "POS-06",
+      "tail": "SEC-TECH",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "ASML appartient au secteur SEC-TECH.",
+      "weight": 1.0
+    },
+    {
+      "id": "E049",
+      "head": "POS-06",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: -0.035%/bp ou duration 0.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E050",
+      "head": "POS-06",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -300 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E051",
+      "head": "POS-06",
+      "tail": "FACTOR-EQUITY",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D04",
+        "D20"
+      ],
+      "evidence": "Bêta actions: 1.25.",
+      "weight": 1.0
+    },
+    {
+      "id": "E052",
+      "head": "POS-06",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E053",
+      "head": "POS-06",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E054",
+      "head": "POS-06",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E055",
+      "head": "PF-CORE-EU",
+      "tail": "POS-07",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient Air Liquide (6.0% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E056",
+      "head": "POS-07",
+      "tail": "ISS-AIRLIQ",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Air Liquide est émis par ISS-AIRLIQ.",
+      "weight": 1.0
+    },
+    {
+      "id": "E057",
+      "head": "POS-07",
+      "tail": "SEC-MATERIALS",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Air Liquide appartient au secteur SEC-MATERIALS.",
+      "weight": 1.0
+    },
+    {
+      "id": "E058",
+      "head": "POS-07",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: -0.01%/bp ou duration 0.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E059",
+      "head": "POS-07",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -400 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E060",
+      "head": "POS-07",
+      "tail": "FACTOR-EQUITY",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Bêta actions: 0.8.",
+      "weight": 1.0
+    },
+    {
+      "id": "E061",
+      "head": "POS-07",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E062",
+      "head": "POS-07",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E063",
+      "head": "POS-07",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E064",
+      "head": "PF-CORE-EU",
+      "tail": "POS-08",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D14",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient Obligation EDF 2035 (10.0% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E065",
+      "head": "POS-08",
+      "tail": "ISS-EDF",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D14",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Obligation EDF 2035 est émis par ISS-EDF.",
+      "weight": 1.0
+    },
+    {
+      "id": "E066",
+      "head": "POS-08",
+      "tail": "SEC-UTILITIES",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D14",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Obligation EDF 2035 appartient au secteur SEC-UTILITIES.",
+      "weight": 1.0
+    },
+    {
+      "id": "E067",
+      "head": "POS-08",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D14",
+        "D15",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: 0.0%/bp ou duration 7.2.",
+      "weight": 1.0
+    },
+    {
+      "id": "E068",
+      "head": "POS-08",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D14",
+        "D15",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -2500 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E069",
+      "head": "POS-08",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E070",
+      "head": "POS-08",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E071",
+      "head": "POS-08",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E072",
+      "head": "PF-CORE-EU",
+      "tail": "POS-09",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient Deutsche Telekom (6.4% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E073",
+      "head": "POS-09",
+      "tail": "ISS-DT",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Deutsche Telekom est émis par ISS-DT.",
+      "weight": 1.0
+    },
+    {
+      "id": "E074",
+      "head": "POS-09",
+      "tail": "SEC-TELECOM",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Deutsche Telekom appartient au secteur SEC-TELECOM.",
+      "weight": 1.0
+    },
+    {
+      "id": "E075",
+      "head": "POS-09",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: -0.02%/bp ou duration 0.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E076",
+      "head": "POS-09",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -400 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E077",
+      "head": "POS-09",
+      "tail": "FACTOR-EQUITY",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D20"
+      ],
+      "evidence": "Bêta actions: 0.7.",
+      "weight": 1.0
+    },
+    {
+      "id": "E078",
+      "head": "POS-09",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E079",
+      "head": "POS-09",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E080",
+      "head": "POS-09",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E081",
+      "head": "PF-CORE-EU",
+      "tail": "POS-10",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D22",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient Obligation AXA 2034 subordonnée (6.0% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E082",
+      "head": "POS-10",
+      "tail": "ISS-AXA",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D22",
+        "D20"
+      ],
+      "evidence": "Obligation AXA 2034 subordonnée est émis par ISS-AXA.",
+      "weight": 1.0
+    },
+    {
+      "id": "E083",
+      "head": "POS-10",
+      "tail": "SEC-INSURANCE",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D22",
+        "D20"
+      ],
+      "evidence": "Obligation AXA 2034 subordonnée appartient au secteur SEC-INSURANCE.",
+      "weight": 1.0
+    },
+    {
+      "id": "E084",
+      "head": "POS-10",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D22",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: 0.0%/bp ou duration 5.1.",
+      "weight": 1.0
+    },
+    {
+      "id": "E085",
+      "head": "POS-10",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D22",
+        "D20"
+      ],
+      "evidence": "DV01 crédit: -6000 EUR/bp.",
+      "weight": 1.0
+    },
+    {
+      "id": "E086",
+      "head": "POS-10",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E087",
+      "head": "POS-10",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E088",
+      "head": "POS-10",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E089",
+      "head": "PF-CORE-EU",
+      "tail": "POS-11",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D07",
+        "D20"
+      ],
+      "evidence": "Le portefeuille détient Bund allemand 2030 (9.6% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E090",
+      "head": "POS-11",
+      "tail": "ISS-BUND",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D07",
+        "D20"
+      ],
+      "evidence": "Bund allemand 2030 est émis par ISS-BUND.",
+      "weight": 1.0
+    },
+    {
+      "id": "E091",
+      "head": "POS-11",
+      "tail": "SEC-SOVEREIGN",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D07",
+        "D20"
+      ],
+      "evidence": "Bund allemand 2030 appartient au secteur SEC-SOVEREIGN.",
+      "weight": 1.0
+    },
+    {
+      "id": "E092",
+      "head": "POS-11",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D07",
+        "D20"
+      ],
+      "evidence": "Sensibilité taux: 0.0%/bp ou duration 4.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E093",
+      "head": "POS-11",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E094",
+      "head": "POS-11",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E095",
+      "head": "POS-11",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E096",
+      "head": "PF-CORE-EU",
+      "tail": "POS-12",
+      "relation": "HOLDS",
+      "docs": [
+        "D02",
+        "D07"
+      ],
+      "evidence": "Le portefeuille détient Cash EUR (12.8% NAV).",
+      "weight": 1.0
+    },
+    {
+      "id": "E097",
+      "head": "POS-12",
+      "tail": "ISS-CASH",
+      "relation": "ISSUED_BY",
+      "docs": [
+        "D02",
+        "D07"
+      ],
+      "evidence": "Cash EUR est émis par ISS-CASH.",
+      "weight": 1.0
+    },
+    {
+      "id": "E098",
+      "head": "POS-12",
+      "tail": "SEC-CASH",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D07"
+      ],
+      "evidence": "Cash EUR appartient au secteur SEC-CASH.",
+      "weight": 1.0
+    },
+    {
+      "id": "E099",
+      "head": "POS-12",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "SENSITIVE_TO",
+      "docs": [
+        "D02",
+        "D07"
+      ],
+      "evidence": "Sensibilité taux: 0.0%/bp ou duration 0.0.",
+      "weight": 1.0
+    },
+    {
+      "id": "E100",
+      "head": "POS-12",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Concentration émetteur contrôlée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E101",
+      "head": "POS-12",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Position documentée dans le snapshot.",
+      "weight": 1.0
+    },
+    {
+      "id": "E102",
+      "head": "POS-12",
+      "tail": "D20",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D20"
+      ],
+      "evidence": "Instrument approuvé.",
+      "weight": 1.0
+    },
+    {
+      "id": "E103",
+      "head": "ISS-BNP",
+      "tail": "SEC-BANKS",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "BNP Paribas appartient au secteur SEC-BANKS.",
+      "weight": 1.0
+    },
+    {
+      "id": "E104",
+      "head": "ISS-TTE",
+      "tail": "SEC-ENERGY",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "TotalEnergies appartient au secteur SEC-ENERGY.",
+      "weight": 1.0
+    },
+    {
+      "id": "E105",
+      "head": "ISS-TTE",
+      "tail": "WL-ESG",
+      "relation": "WATCHLISTED_BY",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "TotalEnergies est sur la watchlist ESG (vigilance, pas exclusion).",
+      "weight": 1.0
+    },
+    {
+      "id": "E106",
+      "head": "ISS-VONOVIA",
+      "tail": "SEC-REALESTATE",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "Vonovia appartient au secteur SEC-REALESTATE.",
+      "weight": 1.0
+    },
+    {
+      "id": "E107",
+      "head": "ISS-VONOVIA",
+      "tail": "WL-ESG",
+      "relation": "WATCHLISTED_BY",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Vonovia est sur la watchlist ESG (vigilance, pas exclusion).",
+      "weight": 1.0
+    },
+    {
+      "id": "E108",
+      "head": "ISS-ENEL",
+      "tail": "SEC-UTILITIES",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "Enel appartient au secteur SEC-UTILITIES.",
+      "weight": 1.0
+    },
+    {
+      "id": "E109",
+      "head": "ISS-SAP",
+      "tail": "SEC-TECH",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "SAP appartient au secteur SEC-TECH.",
+      "weight": 1.0
+    },
+    {
+      "id": "E110",
+      "head": "ISS-ASML",
+      "tail": "SEC-TECH",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "ASML appartient au secteur SEC-TECH.",
+      "weight": 1.0
+    },
+    {
+      "id": "E111",
+      "head": "ISS-AIRLIQ",
+      "tail": "SEC-MATERIALS",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "Air Liquide appartient au secteur SEC-MATERIALS.",
+      "weight": 1.0
+    },
+    {
+      "id": "E112",
+      "head": "ISS-EDF",
+      "tail": "SEC-UTILITIES",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "EDF appartient au secteur SEC-UTILITIES.",
+      "weight": 1.0
+    },
+    {
+      "id": "E113",
+      "head": "ISS-EDF",
+      "tail": "WL-ESG",
+      "relation": "WATCHLISTED_BY",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "EDF est sur la watchlist ESG (vigilance, pas exclusion).",
+      "weight": 1.0
+    },
+    {
+      "id": "E114",
+      "head": "ISS-DT",
+      "tail": "SEC-TELECOM",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "Deutsche Telekom appartient au secteur SEC-TELECOM.",
+      "weight": 1.0
+    },
+    {
+      "id": "E115",
+      "head": "ISS-AXA",
+      "tail": "SEC-INSURANCE",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "AXA appartient au secteur SEC-INSURANCE.",
+      "weight": 1.0
+    },
+    {
+      "id": "E116",
+      "head": "ISS-BUND",
+      "tail": "SEC-SOVEREIGN",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "Bund allemand appartient au secteur SEC-SOVEREIGN.",
+      "weight": 1.0
+    },
+    {
+      "id": "E117",
+      "head": "ISS-CASH",
+      "tail": "SEC-CASH",
+      "relation": "IN_SECTOR",
+      "docs": [
+        "D02",
+        "D06"
+      ],
+      "evidence": "Cash EUR appartient au secteur SEC-CASH.",
+      "weight": 1.0
+    },
+    {
+      "id": "E118",
+      "head": "SEC-BANKS",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 9.6% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E119",
+      "head": "SEC-ENERGY",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 8.6% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E120",
+      "head": "SEC-REALESTATE",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 7.2% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E121",
+      "head": "SEC-UTILITIES",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 17.0% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E122",
+      "head": "SEC-TECH",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 16.8% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E123",
+      "head": "SEC-MATERIALS",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 6.0% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E124",
+      "head": "SEC-TELECOM",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 6.4% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E125",
+      "head": "SEC-INSURANCE",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 6.0% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E126",
+      "head": "SEC-SOVEREIGN",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 9.6% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E127",
+      "head": "SEC-CASH",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03",
+        "D06"
+      ],
+      "evidence": "Poids 12.8% ; limite 25%.",
+      "weight": 1.0
+    },
+    {
+      "id": "E128",
+      "head": "PF-CORE-EU",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "EXPOSED_TO",
+      "docs": [
+        "D04",
+        "D05",
+        "D21"
+      ],
+      "evidence": "Exposition agrégée du portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E129",
+      "head": "PF-CORE-EU",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "EXPOSED_TO",
+      "docs": [
+        "D04",
+        "D05",
+        "D21"
+      ],
+      "evidence": "Exposition agrégée du portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E130",
+      "head": "PF-CORE-EU",
+      "tail": "FACTOR-EQUITY",
+      "relation": "EXPOSED_TO",
+      "docs": [
+        "D04",
+        "D05",
+        "D21"
+      ],
+      "evidence": "Exposition agrégée du portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E131",
+      "head": "PF-CORE-EU",
+      "tail": "FACTOR-LIQUIDITY",
+      "relation": "EXPOSED_TO",
+      "docs": [
+        "D04",
+        "D05",
+        "D21"
+      ],
+      "evidence": "Exposition agrégée du portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E132",
+      "head": "PF-CORE-EU",
+      "tail": "CTL-VAR",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Contrôle applicable au portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E133",
+      "head": "PF-CORE-EU",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Contrôle applicable au portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E134",
+      "head": "PF-CORE-EU",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Contrôle applicable au portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E135",
+      "head": "PF-CORE-EU",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Contrôle applicable au portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E136",
+      "head": "PF-CORE-EU",
+      "tail": "CTL-DURATION",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Contrôle applicable au portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E137",
+      "head": "PF-CORE-EU",
+      "tail": "CTL-LIQUIDITY",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Contrôle applicable au portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E138",
+      "head": "PF-CORE-EU",
+      "tail": "MET-DURATION",
+      "relation": "MEASURED_BY",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Métrique de suivi du portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E139",
+      "head": "PF-CORE-EU",
+      "tail": "MET-VAR",
+      "relation": "MEASURED_BY",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Métrique de suivi du portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E140",
+      "head": "PF-CORE-EU",
+      "tail": "MET-SCENARIO-LOSS",
+      "relation": "MEASURED_BY",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Métrique de suivi du portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E141",
+      "head": "PF-CORE-EU",
+      "tail": "MET-LIQUIDITY-RATIO",
+      "relation": "MEASURED_BY",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Métrique de suivi du portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E142",
+      "head": "PF-CORE-EU",
+      "tail": "POL-MKT-LIMITS",
+      "relation": "GOVERNED_BY",
+      "docs": [
+        "D01",
+        "D03",
+        "D10"
+      ],
+      "evidence": "Politique applicable au mandat.",
+      "weight": 1.0
+    },
+    {
+      "id": "E143",
+      "head": "PF-CORE-EU",
+      "tail": "POL-HITL",
+      "relation": "GOVERNED_BY",
+      "docs": [
+        "D01",
+        "D03",
+        "D10"
+      ],
+      "evidence": "Politique applicable au mandat.",
+      "weight": 1.0
+    },
+    {
+      "id": "E144",
+      "head": "PF-CORE-EU",
+      "tail": "POL-MODEL-RISK",
+      "relation": "GOVERNED_BY",
+      "docs": [
+        "D01",
+        "D03",
+        "D10"
+      ],
+      "evidence": "Politique applicable au mandat.",
+      "weight": 1.0
+    },
+    {
+      "id": "E145",
+      "head": "PF-CORE-EU",
+      "tail": "POL-DATA",
+      "relation": "GOVERNED_BY",
+      "docs": [
+        "D01",
+        "D03",
+        "D10"
+      ],
+      "evidence": "Politique applicable au mandat.",
+      "weight": 1.0
+    },
+    {
+      "id": "E146",
+      "head": "PF-CORE-EU",
+      "tail": "POL-ESG",
+      "relation": "GOVERNED_BY",
+      "docs": [
+        "D01",
+        "D03",
+        "D10"
+      ],
+      "evidence": "Politique applicable au mandat.",
+      "weight": 1.0
+    },
+    {
+      "id": "E147",
+      "head": "PF-CORE-EU",
+      "tail": "POL-LIQUIDITY",
+      "relation": "GOVERNED_BY",
+      "docs": [
+        "D01",
+        "D03",
+        "D10"
+      ],
+      "evidence": "Politique applicable au mandat.",
+      "weight": 1.0
+    },
+    {
+      "id": "E148",
+      "head": "PF-CORE-EU",
+      "tail": "POL-CONDUCT",
+      "relation": "GOVERNED_BY",
+      "docs": [
+        "D01",
+        "D03",
+        "D10"
+      ],
+      "evidence": "Politique applicable au mandat.",
+      "weight": 1.0
+    },
+    {
+      "id": "E149",
+      "head": "PF-CORE-EU",
+      "tail": "POL-COUNTERPARTY",
+      "relation": "GOVERNED_BY",
+      "docs": [
+        "D01",
+        "D03",
+        "D10"
+      ],
+      "evidence": "Politique applicable au mandat.",
+      "weight": 1.0
+    },
+    {
+      "id": "E150",
+      "head": "SCN-RATES-100BP",
+      "tail": "FACTOR-EUR-RATES",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D04",
+        "D05",
+        "D21"
+      ],
+      "evidence": "Choc instantané et parallèle de +100 points de base sur la courbe EUR.",
+      "weight": 1.0
+    },
+    {
+      "id": "E151",
+      "head": "SCN-RATES-100BP",
+      "tail": "PF-CORE-EU",
+      "relation": "AFFECTS",
+      "docs": [
+        "D04",
+        "D05",
+        "D21"
+      ],
+      "evidence": "Scénario appliqué au portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E152",
+      "head": "SCN-RATES-100BP",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D04",
+        "D05",
+        "D21"
+      ],
+      "evidence": "Le scénario alimente la limite de perte.",
+      "weight": 1.0
+    },
+    {
+      "id": "E153",
+      "head": "SCN-RATES-100BP",
+      "tail": "D05",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D04",
+        "D05",
+        "D21"
+      ],
+      "evidence": "Document de définition.",
+      "weight": 1.0
+    },
+    {
+      "id": "E154",
+      "head": "SCN-CREDIT-50BP",
+      "tail": "FACTOR-CREDIT-SPREAD",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Élargissement instantané de 50 points de base des spreads de crédit.",
+      "weight": 1.0
+    },
+    {
+      "id": "E155",
+      "head": "SCN-CREDIT-50BP",
+      "tail": "PF-CORE-EU",
+      "relation": "AFFECTS",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Scénario appliqué au portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E156",
+      "head": "SCN-CREDIT-50BP",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Le scénario alimente la limite de perte.",
+      "weight": 1.0
+    },
+    {
+      "id": "E157",
+      "head": "SCN-CREDIT-50BP",
+      "tail": "D22",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Document de définition.",
+      "weight": 1.0
+    },
+    {
+      "id": "E158",
+      "head": "SCN-EQUITY-10PCT",
+      "tail": "FACTOR-EQUITY",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D19"
+      ],
+      "evidence": "Choc actions de -10 % appliqué aux positions actions via leur bêta actions.",
+      "weight": 1.0
+    },
+    {
+      "id": "E159",
+      "head": "SCN-EQUITY-10PCT",
+      "tail": "PF-CORE-EU",
+      "relation": "AFFECTS",
+      "docs": [
+        "D19"
+      ],
+      "evidence": "Scénario appliqué au portefeuille.",
+      "weight": 1.0
+    },
+    {
+      "id": "E160",
+      "head": "SCN-EQUITY-10PCT",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "CONSTRAINED_BY",
+      "docs": [
+        "D19"
+      ],
+      "evidence": "Le scénario alimente la limite de perte.",
+      "weight": 1.0
+    },
+    {
+      "id": "E161",
+      "head": "SCN-EQUITY-10PCT",
+      "tail": "D19",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D19"
+      ],
+      "evidence": "Document de définition.",
+      "weight": 1.0
+    },
+    {
+      "id": "E162",
+      "head": "SCN-RATES-100BP",
+      "tail": "RSK-RATE",
+      "relation": "TRIGGERS",
+      "docs": [
+        "D05",
+        "D21"
+      ],
+      "evidence": "Hausse des taux -> risque de taux.",
+      "weight": 1.0
+    },
+    {
+      "id": "E163",
+      "head": "SCN-CREDIT-50BP",
+      "tail": "RSK-CREDIT",
+      "relation": "TRIGGERS",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Élargissement des spreads -> risque de crédit.",
+      "weight": 1.0
+    },
+    {
+      "id": "E164",
+      "head": "SCN-EQUITY-10PCT",
+      "tail": "RSK-RATE",
+      "relation": "TRIGGERS",
+      "docs": [
+        "D19"
+      ],
+      "evidence": "Correction actions -> risque marché.",
+      "weight": 1.0
+    },
+    {
+      "id": "E165",
+      "head": "POL-MKT-LIMITS",
+      "tail": "CTL-VAR",
+      "relation": "IMPLEMENTS",
+      "docs": [
+        "D03",
+        "D07"
+      ],
+      "evidence": "La politique met en œuvre le contrôle.",
+      "weight": 1.0
+    },
+    {
+      "id": "E166",
+      "head": "POL-MKT-LIMITS",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "IMPLEMENTS",
+      "docs": [
+        "D03",
+        "D07"
+      ],
+      "evidence": "La politique met en œuvre le contrôle.",
+      "weight": 1.0
+    },
+    {
+      "id": "E167",
+      "head": "POL-MKT-LIMITS",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "IMPLEMENTS",
+      "docs": [
+        "D03",
+        "D07"
+      ],
+      "evidence": "La politique met en œuvre le contrôle.",
+      "weight": 1.0
+    },
+    {
+      "id": "E168",
+      "head": "POL-MKT-LIMITS",
+      "tail": "CTL-SECTOR-CAP",
+      "relation": "IMPLEMENTS",
+      "docs": [
+        "D03",
+        "D07"
+      ],
+      "evidence": "La politique met en œuvre le contrôle.",
+      "weight": 1.0
+    },
+    {
+      "id": "E169",
+      "head": "POL-MKT-LIMITS",
+      "tail": "CTL-DURATION",
+      "relation": "IMPLEMENTS",
+      "docs": [
+        "D03",
+        "D07"
+      ],
+      "evidence": "La politique met en œuvre le contrôle.",
+      "weight": 1.0
+    },
+    {
+      "id": "E170",
+      "head": "POL-LIQUIDITY",
+      "tail": "CTL-LIQUIDITY",
+      "relation": "IMPLEMENTS",
+      "docs": [
+        "D03",
+        "D07"
+      ],
+      "evidence": "La politique met en œuvre le contrôle.",
+      "weight": 1.0
+    },
+    {
+      "id": "E171",
+      "head": "POL-HITL",
+      "tail": "HITL-RISK",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Tout dépassement de limite requiert Risk.",
+      "weight": 1.0
+    },
+    {
+      "id": "E172",
+      "head": "POL-HITL",
+      "tail": "HITL-IC",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D10",
+        "D11"
+      ],
+      "evidence": "Opération > 2,5% NAV requiert le Comité.",
+      "weight": 1.0
+    },
+    {
+      "id": "E173",
+      "head": "POL-HITL",
+      "tail": "HITL-COMPLIANCE",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D10",
+        "D15"
+      ],
+      "evidence": "Communication client ou ESG requiert Compliance.",
+      "weight": 1.0
+    },
+    {
+      "id": "E174",
+      "head": "POL-HITL",
+      "tail": "HITL-MODEL",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D09",
+        "D10"
+      ],
+      "evidence": "Changement de modèle requiert Model Risk.",
+      "weight": 1.0
+    },
+    {
+      "id": "E175",
+      "head": "POL-ESG",
+      "tail": "HITL-COMPLIANCE",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Opération sur émetteur exclu ou communication ESG.",
+      "weight": 1.0
+    },
+    {
+      "id": "E176",
+      "head": "POL-MODEL-RISK",
+      "tail": "HITL-MODEL",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Changement de modèle.",
+      "weight": 1.0
+    },
+    {
+      "id": "E177",
+      "head": "VAL-MODEL-RATES",
+      "tail": "POL-MODEL-RISK",
+      "relation": "GOVERNED_BY",
+      "docs": [
+        "D04",
+        "D09"
+      ],
+      "evidence": "Le modèle est gouverné par la politique de risque de modèle.",
+      "weight": 1.0
+    },
+    {
+      "id": "E178",
+      "head": "VAL-MODEL-RATES",
+      "tail": "HITL-MODEL",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Toute modification du modèle requiert Model Risk.",
+      "weight": 1.0
+    },
+    {
+      "id": "E179",
+      "head": "VAL-MODEL-RATES",
+      "tail": "D04",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "Méthodologie documentée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E180",
+      "head": "VAL-MODEL-RATES",
+      "tail": "D09",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Validation documentée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E181",
+      "head": "HITL-RISK",
+      "tail": "COM-RISK",
+      "relation": "ESCALATES_TO",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Escalade au Comité des Risques.",
+      "weight": 1.0
+    },
+    {
+      "id": "E182",
+      "head": "HITL-IC",
+      "tail": "COM-IC",
+      "relation": "ESCALATES_TO",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Escalade au Comité d'Investissement.",
+      "weight": 1.0
+    },
+    {
+      "id": "E183",
+      "head": "HITL-COMPLIANCE",
+      "tail": "COM-RISK",
+      "relation": "ESCALATES_TO",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Escalade au Comité des Risques.",
+      "weight": 1.0
+    },
+    {
+      "id": "E184",
+      "head": "HITL-MODEL",
+      "tail": "COM-RISK",
+      "relation": "ESCALATES_TO",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Escalade au Comité des Risques.",
+      "weight": 1.0
+    },
+    {
+      "id": "E185",
+      "head": "REG-MIFID",
+      "tail": "POL-CONDUCT",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D03",
+        "D08",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "evidence": "Exigence réglementaire appliquée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E186",
+      "head": "REG-MIFID",
+      "tail": "POL-MKT-LIMITS",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D03",
+        "D08",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "evidence": "Exigence réglementaire appliquée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E187",
+      "head": "REG-BASEL",
+      "tail": "POL-MKT-LIMITS",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D03",
+        "D08",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "evidence": "Exigence réglementaire appliquée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E188",
+      "head": "REG-BASEL",
+      "tail": "POL-MODEL-RISK",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D03",
+        "D08",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "evidence": "Exigence réglementaire appliquée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E189",
+      "head": "REG-SR11-7",
+      "tail": "POL-MODEL-RISK",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D03",
+        "D08",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "evidence": "Exigence réglementaire appliquée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E190",
+      "head": "REG-GDPR",
+      "tail": "POL-DATA",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D03",
+        "D08",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "evidence": "Exigence réglementaire appliquée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E191",
+      "head": "REG-SFDR",
+      "tail": "POL-ESG",
+      "relation": "APPLIES_TO",
+      "docs": [
+        "D03",
+        "D08",
+        "D09",
+        "D15",
+        "D17"
+      ],
+      "evidence": "Exigence réglementaire appliquée.",
+      "weight": 1.0
+    },
+    {
+      "id": "E192",
+      "head": "POL-MKT-LIMITS",
+      "tail": "D03",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Document de politique.",
+      "weight": 1.0
+    },
+    {
+      "id": "E193",
+      "head": "POL-HITL",
+      "tail": "D10",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Document de politique.",
+      "weight": 1.0
+    },
+    {
+      "id": "E194",
+      "head": "POL-MODEL-RISK",
+      "tail": "D09",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Document de politique.",
+      "weight": 1.0
+    },
+    {
+      "id": "E195",
+      "head": "POL-DATA",
+      "tail": "D17",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D17"
+      ],
+      "evidence": "Document de politique.",
+      "weight": 1.0
+    },
+    {
+      "id": "E196",
+      "head": "POL-ESG",
+      "tail": "D15",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Document de politique.",
+      "weight": 1.0
+    },
+    {
+      "id": "E197",
+      "head": "POL-LIQUIDITY",
+      "tail": "D07",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Document de politique.",
+      "weight": 1.0
+    },
+    {
+      "id": "E198",
+      "head": "POL-CONDUCT",
+      "tail": "D08",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D08"
+      ],
+      "evidence": "Document de politique.",
+      "weight": 1.0
+    },
+    {
+      "id": "E199",
+      "head": "POL-COUNTERPARTY",
+      "tail": "D16",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D16"
+      ],
+      "evidence": "Document de politique.",
+      "weight": 1.0
+    },
+    {
+      "id": "E200",
+      "head": "CTL-VAR",
+      "tail": "RSK-RATE",
+      "relation": "MITIGATES",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Le contrôle réduit le risque.",
+      "weight": 1.0
+    },
+    {
+      "id": "E201",
+      "head": "CTL-SCENARIO-LOSS",
+      "tail": "RSK-RATE",
+      "relation": "MITIGATES",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Le contrôle réduit le risque.",
+      "weight": 1.0
+    },
+    {
+      "id": "E202",
+      "head": "CTL-ISSUER-CAP",
+      "tail": "RSK-CONCENTRATION",
+      "relation": "MITIGATES",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Le contrôle réduit le risque.",
+      "weight": 1.0
+    },
+    {
+      "id": "E203",
+      "head": "CTL-SECTOR-CAP",
+      "tail": "RSK-CONCENTRATION",
+      "relation": "MITIGATES",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Le contrôle réduit le risque.",
+      "weight": 1.0
+    },
+    {
+      "id": "E204",
+      "head": "CTL-DURATION",
+      "tail": "RSK-RATE",
+      "relation": "MITIGATES",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Le contrôle réduit le risque.",
+      "weight": 1.0
+    },
+    {
+      "id": "E205",
+      "head": "CTL-LIQUIDITY",
+      "tail": "RSK-LIQUIDITY",
+      "relation": "MITIGATES",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Le contrôle réduit le risque.",
+      "weight": 1.0
+    },
+    {
+      "id": "E206",
+      "head": "CTL-VAR",
+      "tail": "MET-VAR",
+      "relation": "MEASURES",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "La VaR mesure le risque de marché.",
+      "weight": 1.0
+    },
+    {
+      "id": "E207",
+      "head": "CTL-SCENARIO-LOSS",
+      "tail": "MET-SCENARIO-LOSS",
+      "relation": "MEASURES",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "La perte scénario mesure le risque de taux.",
+      "weight": 1.0
+    },
+    {
+      "id": "E208",
+      "head": "CTL-ISSUER-CAP",
+      "tail": "MET-SCENARIO-LOSS",
+      "relation": "MEASURES",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "La concentration contribue au risque.",
+      "weight": 1.0
+    },
+    {
+      "id": "E209",
+      "head": "CTL-LIQUIDITY",
+      "tail": "MET-LIQUIDITY-RATIO",
+      "relation": "MEASURES",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Le ratio mesure la liquidité.",
+      "weight": 1.0
+    },
+    {
+      "id": "E210",
+      "head": "CTL-DURATION",
+      "tail": "MET-DURATION",
+      "relation": "MEASURES",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "La duration mesure la sensibilité.",
+      "weight": 1.0
+    },
+    {
+      "id": "E211",
+      "head": "RSK-RATE",
+      "tail": "MET-SCENARIO-LOSS",
+      "relation": "MEASURED_BY",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Risque de taux mesuré par la perte scénario.",
+      "weight": 1.0
+    },
+    {
+      "id": "E212",
+      "head": "RSK-LIQUIDITY",
+      "tail": "MET-LIQUIDITY-RATIO",
+      "relation": "MEASURED_BY",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Risque de liquidité mesuré par le ratio T+1.",
+      "weight": 1.0
+    },
+    {
+      "id": "E213",
+      "head": "RSK-CREDIT",
+      "tail": "MET-VAR",
+      "relation": "MEASURED_BY",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Risque de crédit inclus dans la VaR.",
+      "weight": 1.0
+    },
+    {
+      "id": "E214",
+      "head": "RSK-MODEL",
+      "tail": "MET-SCENARIO-LOSS",
+      "relation": "MEASURED_BY",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Risque de modèle affecte le scénario.",
+      "weight": 1.0
+    },
+    {
+      "id": "E215",
+      "head": "PF-CORE-EU",
+      "tail": "D01",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D01"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E216",
+      "head": "POL-MKT-LIMITS",
+      "tail": "D01",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D01"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E217",
+      "head": "POL-LIQUIDITY",
+      "tail": "D01",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D01"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E218",
+      "head": "POL-HITL",
+      "tail": "D01",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D01"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E219",
+      "head": "PF-CORE-EU",
+      "tail": "D02",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E220",
+      "head": "POL-MKT-LIMITS",
+      "tail": "D03",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E221",
+      "head": "CTL-VAR",
+      "tail": "D03",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E222",
+      "head": "CTL-SCENARIO-LOSS",
+      "tail": "D03",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E223",
+      "head": "CTL-ISSUER-CAP",
+      "tail": "D03",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E224",
+      "head": "CTL-SECTOR-CAP",
+      "tail": "D03",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E225",
+      "head": "CTL-DURATION",
+      "tail": "D03",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E226",
+      "head": "CTL-LIQUIDITY",
+      "tail": "D03",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E227",
+      "head": "REG-BASEL",
+      "tail": "D03",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E228",
+      "head": "REG-MIFID",
+      "tail": "D03",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E229",
+      "head": "FACTOR-EUR-RATES",
+      "tail": "D04",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E230",
+      "head": "SCN-RATES-100BP",
+      "tail": "D04",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E231",
+      "head": "VAL-MODEL-RATES",
+      "tail": "D04",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E232",
+      "head": "POS-01",
+      "tail": "D04",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E233",
+      "head": "POS-03",
+      "tail": "D04",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E234",
+      "head": "POS-04",
+      "tail": "D04",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E235",
+      "head": "POS-05",
+      "tail": "D04",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E236",
+      "head": "POL-MODEL-RISK",
+      "tail": "D04",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D04"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E237",
+      "head": "SCN-RATES-100BP",
+      "tail": "D05",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D05"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E238",
+      "head": "FACTOR-EUR-RATES",
+      "tail": "D05",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D05"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E239",
+      "head": "PF-CORE-EU",
+      "tail": "D05",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D05"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E240",
+      "head": "CTL-SCENARIO-LOSS",
+      "tail": "D05",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D05"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E241",
+      "head": "PF-CORE-EU",
+      "tail": "D06",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E242",
+      "head": "SEC-UTILITIES",
+      "tail": "D06",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E243",
+      "head": "SEC-TECH",
+      "tail": "D06",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E244",
+      "head": "SEC-BANKS",
+      "tail": "D06",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E245",
+      "head": "SEC-SOVEREIGN",
+      "tail": "D06",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E246",
+      "head": "SEC-ENERGY",
+      "tail": "D06",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E247",
+      "head": "CTL-SECTOR-CAP",
+      "tail": "D06",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E248",
+      "head": "CTL-ISSUER-CAP",
+      "tail": "D06",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E249",
+      "head": "POL-LIQUIDITY",
+      "tail": "D07",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E250",
+      "head": "CTL-LIQUIDITY",
+      "tail": "D07",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E251",
+      "head": "MET-LIQUIDITY-RATIO",
+      "tail": "D07",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E252",
+      "head": "POS-08",
+      "tail": "D07",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E253",
+      "head": "POS-10",
+      "tail": "D07",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E254",
+      "head": "POS-11",
+      "tail": "D07",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E255",
+      "head": "POS-12",
+      "tail": "D07",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E256",
+      "head": "POL-CONDUCT",
+      "tail": "D08",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D08"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E257",
+      "head": "HITL-COMPLIANCE",
+      "tail": "D08",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D08"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E258",
+      "head": "REG-MIFID",
+      "tail": "D08",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D08"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E259",
+      "head": "REG-SFDR",
+      "tail": "D08",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D08"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E260",
+      "head": "POL-MODEL-RISK",
+      "tail": "D09",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E261",
+      "head": "HITL-MODEL",
+      "tail": "D09",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E262",
+      "head": "REG-SR11-7",
+      "tail": "D09",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E263",
+      "head": "REG-BASEL",
+      "tail": "D09",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E264",
+      "head": "POL-HITL",
+      "tail": "D10",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E265",
+      "head": "HITL-RISK",
+      "tail": "D10",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E266",
+      "head": "HITL-IC",
+      "tail": "D10",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E267",
+      "head": "HITL-COMPLIANCE",
+      "tail": "D10",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E268",
+      "head": "HITL-MODEL",
+      "tail": "D10",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E269",
+      "head": "PF-CORE-EU",
+      "tail": "D10",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D10"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E270",
+      "head": "PF-CORE-EU",
+      "tail": "D11",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E271",
+      "head": "SCN-RATES-100BP",
+      "tail": "D11",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E272",
+      "head": "HITL-IC",
+      "tail": "D11",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E273",
+      "head": "HITL-RISK",
+      "tail": "D11",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E274",
+      "head": "HITL-COMPLIANCE",
+      "tail": "D11",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E275",
+      "head": "POL-ESG",
+      "tail": "D11",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E276",
+      "head": "POS-01",
+      "tail": "D12",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D12"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E277",
+      "head": "ISS-BNP",
+      "tail": "D12",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D12"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E278",
+      "head": "SEC-BANKS",
+      "tail": "D12",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D12"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E279",
+      "head": "FACTOR-EUR-RATES",
+      "tail": "D12",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D12"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E280",
+      "head": "FACTOR-CREDIT-SPREAD",
+      "tail": "D12",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D12"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E281",
+      "head": "POS-03",
+      "tail": "D13",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D13"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E282",
+      "head": "ISS-VONOVIA",
+      "tail": "D13",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D13"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E283",
+      "head": "SEC-REALESTATE",
+      "tail": "D13",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D13"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E284",
+      "head": "FACTOR-EUR-RATES",
+      "tail": "D13",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D13"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E285",
+      "head": "WL-ESG",
+      "tail": "D13",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D13"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E286",
+      "head": "POL-ESG",
+      "tail": "D13",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D13"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E287",
+      "head": "POS-04",
+      "tail": "D14",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D14"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E288",
+      "head": "POS-08",
+      "tail": "D14",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D14"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E289",
+      "head": "ISS-ENEL",
+      "tail": "D14",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D14"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E290",
+      "head": "ISS-EDF",
+      "tail": "D14",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D14"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E291",
+      "head": "SEC-UTILITIES",
+      "tail": "D14",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D14"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E292",
+      "head": "FACTOR-EUR-RATES",
+      "tail": "D14",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D14"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E293",
+      "head": "WL-ESG",
+      "tail": "D14",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D14"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E294",
+      "head": "POL-ESG",
+      "tail": "D15",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E295",
+      "head": "WL-ESG",
+      "tail": "D15",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E296",
+      "head": "HITL-COMPLIANCE",
+      "tail": "D15",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E297",
+      "head": "REG-SFDR",
+      "tail": "D15",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E298",
+      "head": "ISS-VONOVIA",
+      "tail": "D15",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E299",
+      "head": "ISS-EDF",
+      "tail": "D15",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E300",
+      "head": "ISS-TTE",
+      "tail": "D15",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E301",
+      "head": "POL-COUNTERPARTY",
+      "tail": "D16",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D16"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E302",
+      "head": "FACTOR-EUR-RATES",
+      "tail": "D16",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D16"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E303",
+      "head": "PF-CORE-EU",
+      "tail": "D16",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D16"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E304",
+      "head": "POL-DATA",
+      "tail": "D17",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D17"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E305",
+      "head": "REG-GDPR",
+      "tail": "D17",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D17"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E306",
+      "head": "HITL-COMPLIANCE",
+      "tail": "D17",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D17"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E307",
+      "head": "POL-DATA",
+      "tail": "D18",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D18"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E308",
+      "head": "POL-HITL",
+      "tail": "D18",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D18"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E309",
+      "head": "PF-CORE-EU",
+      "tail": "D18",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D18"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E310",
+      "head": "MET-DURATION",
+      "tail": "D19",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D19"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E311",
+      "head": "MET-VAR",
+      "tail": "D19",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D19"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E312",
+      "head": "MET-SCENARIO-LOSS",
+      "tail": "D19",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D19"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E313",
+      "head": "MET-LIQUIDITY-RATIO",
+      "tail": "D19",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D19"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E314",
+      "head": "PF-CORE-EU",
+      "tail": "D21",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E315",
+      "head": "MET-VAR",
+      "tail": "D21",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E316",
+      "head": "MET-DURATION",
+      "tail": "D21",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E317",
+      "head": "MET-LIQUIDITY-RATIO",
+      "tail": "D21",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E318",
+      "head": "MET-SCENARIO-LOSS",
+      "tail": "D21",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E319",
+      "head": "CTL-SCENARIO-LOSS",
+      "tail": "D21",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E320",
+      "head": "SCN-RATES-100BP",
+      "tail": "D21",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E321",
+      "head": "SCN-CREDIT-50BP",
+      "tail": "D22",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E322",
+      "head": "FACTOR-CREDIT-SPREAD",
+      "tail": "D22",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E323",
+      "head": "POS-01",
+      "tail": "D22",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E324",
+      "head": "POS-03",
+      "tail": "D22",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E325",
+      "head": "POS-04",
+      "tail": "D22",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E326",
+      "head": "POS-08",
+      "tail": "D22",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E327",
+      "head": "POS-10",
+      "tail": "D22",
+      "relation": "DOCUMENTED_IN",
+      "docs": [
+        "D22"
+      ],
+      "evidence": "Entité citée dans le document.",
+      "weight": 1.0
+    },
+    {
+      "id": "E328",
+      "head": "D03",
+      "tail": "REG-BASEL",
+      "relation": "CITES",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Le document cite la réglementation.",
+      "weight": 1.0
+    },
+    {
+      "id": "E329",
+      "head": "D03",
+      "tail": "REG-MIFID",
+      "relation": "CITES",
+      "docs": [
+        "D03"
+      ],
+      "evidence": "Le document cite la réglementation.",
+      "weight": 1.0
+    },
+    {
+      "id": "E330",
+      "head": "D08",
+      "tail": "REG-MIFID",
+      "relation": "CITES",
+      "docs": [
+        "D08"
+      ],
+      "evidence": "Le document cite la réglementation.",
+      "weight": 1.0
+    },
+    {
+      "id": "E331",
+      "head": "D08",
+      "tail": "REG-SFDR",
+      "relation": "CITES",
+      "docs": [
+        "D08"
+      ],
+      "evidence": "Le document cite la réglementation.",
+      "weight": 1.0
+    },
+    {
+      "id": "E332",
+      "head": "D09",
+      "tail": "REG-SR11-7",
+      "relation": "CITES",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Le document cite la réglementation.",
+      "weight": 1.0
+    },
+    {
+      "id": "E333",
+      "head": "D09",
+      "tail": "REG-BASEL",
+      "relation": "CITES",
+      "docs": [
+        "D09"
+      ],
+      "evidence": "Le document cite la réglementation.",
+      "weight": 1.0
+    },
+    {
+      "id": "E334",
+      "head": "D15",
+      "tail": "REG-SFDR",
+      "relation": "CITES",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Le document cite la réglementation.",
+      "weight": 1.0
+    },
+    {
+      "id": "E335",
+      "head": "D17",
+      "tail": "REG-GDPR",
+      "relation": "CITES",
+      "docs": [
+        "D17"
+      ],
+      "evidence": "Le document cite la réglementation.",
+      "weight": 1.0
+    },
+    {
+      "id": "E336",
+      "head": "D15",
+      "tail": "WL-ESG",
+      "relation": "DEFINES",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "La politique ESG définit la watchlist.",
+      "weight": 1.0
+    },
+    {
+      "id": "E337",
+      "head": "D21",
+      "tail": "MET-SCENARIO-LOSS",
+      "relation": "REPORTS",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Le rapport publie la perte scénario.",
+      "weight": 1.0
+    },
+    {
+      "id": "E338",
+      "head": "D21",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "REPORTS",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Le rapport constate le dépassement.",
+      "weight": 1.0
+    },
+    {
+      "id": "E339",
+      "head": "D11",
+      "tail": "HITL-IC",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Le PV mandate le Comité.",
+      "weight": 1.0
+    },
+    {
+      "id": "E340",
+      "head": "D11",
+      "tail": "HITL-COMPLIANCE",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Le PV mandate Compliance.",
+      "weight": 1.0
+    },
+    {
+      "id": "E341",
+      "head": "D11",
+      "tail": "HITL-RISK",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D11"
+      ],
+      "evidence": "Le PV mandate Risk.",
+      "weight": 1.0
+    },
+    {
+      "id": "E342",
+      "head": "D06",
+      "tail": "CTL-ISSUER-CAP",
+      "relation": "REPORTS",
+      "docs": [
+        "D06"
+      ],
+      "evidence": "La note vérifie la concentration.",
+      "weight": 1.0
+    },
+    {
+      "id": "E343",
+      "head": "D02",
+      "tail": "MET-DURATION",
+      "relation": "REPORTS",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Le snapshot publie la duration.",
+      "weight": 1.0
+    },
+    {
+      "id": "E344",
+      "head": "D02",
+      "tail": "MET-VAR",
+      "relation": "REPORTS",
+      "docs": [
+        "D02"
+      ],
+      "evidence": "Le snapshot publie la VaR.",
+      "weight": 1.0
+    },
+    {
+      "id": "E345",
+      "head": "D07",
+      "tail": "MET-LIQUIDITY-RATIO",
+      "relation": "REPORTS",
+      "docs": [
+        "D07"
+      ],
+      "evidence": "La politique publie le ratio.",
+      "weight": 1.0
+    },
+    {
+      "id": "E346",
+      "head": "D18",
+      "tail": "POL-DATA",
+      "relation": "IMPLEMENTS",
+      "docs": [
+        "D18"
+      ],
+      "evidence": "Le red team teste la politique données.",
+      "weight": 1.0
+    },
+    {
+      "id": "E347",
+      "head": "D18",
+      "tail": "POL-HITL",
+      "relation": "IMPLEMENTS",
+      "docs": [
+        "D18"
+      ],
+      "evidence": "Le red team teste la procédure HITL.",
+      "weight": 1.0
+    },
+    {
+      "id": "E348",
+      "head": "WL-ESG",
+      "tail": "POL-ESG",
+      "relation": "DEFINED_IN",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Watchlist définie par la politique ESG.",
+      "weight": 1.0
+    },
+    {
+      "id": "E349",
+      "head": "WL-ESG",
+      "tail": "HITL-COMPLIANCE",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "Communication sur watchlist -> Compliance.",
+      "weight": 1.0
+    },
+    {
+      "id": "E350",
+      "head": "WL-ESG",
+      "tail": "ISS-VONOVIA",
+      "relation": "MONITORS",
+      "docs": [
+        "D13",
+        "D15"
+      ],
+      "evidence": "Vonovia sous vigilance ESG.",
+      "weight": 1.0
+    },
+    {
+      "id": "E351",
+      "head": "WL-ESG",
+      "tail": "ISS-EDF",
+      "relation": "MONITORS",
+      "docs": [
+        "D14",
+        "D15"
+      ],
+      "evidence": "EDF sous vigilance ESG.",
+      "weight": 1.0
+    },
+    {
+      "id": "E352",
+      "head": "WL-ESG",
+      "tail": "ISS-TTE",
+      "relation": "MONITORS",
+      "docs": [
+        "D15"
+      ],
+      "evidence": "TotalEnergies sous surveillance ESG.",
+      "weight": 1.0
+    },
+    {
+      "id": "E353",
+      "head": "PF-CORE-EU",
+      "tail": "SCN-RATES-100BP",
+      "relation": "STRESSED_BY",
+      "docs": [
+        "D05",
+        "D21"
+      ],
+      "evidence": "Le portefeuille est stressé par le scénario.",
+      "weight": 1.0
+    },
+    {
+      "id": "E354",
+      "head": "PF-CORE-EU",
+      "tail": "HITL-RISK",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D10",
+        "D21"
+      ],
+      "evidence": "Dépassement de limite -> Risk.",
+      "weight": 1.0
+    },
+    {
+      "id": "E355",
+      "head": "PF-CORE-EU",
+      "tail": "HITL-IC",
+      "relation": "REQUIRES_APPROVAL",
+      "docs": [
+        "D10",
+        "D11"
+      ],
+      "evidence": "Réduction de la poche -> Comité.",
+      "weight": 1.0
+    },
+    {
+      "id": "E356",
+      "head": "POS-03",
+      "tail": "WL-ESG",
+      "relation": "WATCHLISTED_BY",
+      "docs": [
+        "D13",
+        "D15"
+      ],
+      "evidence": "Vonovia sur watchlist ESG.",
+      "weight": 1.0
+    },
+    {
+      "id": "E357",
+      "head": "POS-08",
+      "tail": "WL-ESG",
+      "relation": "WATCHLISTED_BY",
+      "docs": [
+        "D14",
+        "D15"
+      ],
+      "evidence": "EDF sur watchlist ESG.",
+      "weight": 1.0
+    },
+    {
+      "id": "E358",
+      "head": "POS-08",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "CONTRIBUTES_TO",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "EDF contribue à la perte scénario.",
+      "weight": 1.0
+    },
+    {
+      "id": "E359",
+      "head": "POS-03",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "CONTRIBUTES_TO",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Vonovia contribue à la perte scénario.",
+      "weight": 1.0
+    },
+    {
+      "id": "E360",
+      "head": "POS-04",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "CONTRIBUTES_TO",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Enel contribue à la perte scénario.",
+      "weight": 1.0
+    },
+    {
+      "id": "E361",
+      "head": "POS-11",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "CONTRIBUTES_TO",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "Bund contribue à la perte scénario.",
+      "weight": 1.0
+    },
+    {
+      "id": "E362",
+      "head": "POS-10",
+      "tail": "CTL-SCENARIO-LOSS",
+      "relation": "CONTRIBUTES_TO",
+      "docs": [
+        "D21"
+      ],
+      "evidence": "AXA contribue à la perte scénario.",
+      "weight": 1.0
+    }
+  ],
+  "stats": {
+    "nodes": 105,
+    "edges": 362,
+    "node_types": {
+      "Approbation": 4,
+      "Comité": 2,
+      "Contrôle": 6,
+      "Document": 22,
+      "Facteur": 6,
+      "Modèle": 1,
+      "Métrique": 4,
+      "Politique": 8,
+      "Portefeuille": 3,
+      "Position": 12,
+      "Risque": 6,
+      "Réglementation": 5,
+      "Scénario": 3,
+      "Secteur": 10,
+      "Watchlist": 1,
+      "Émetteur": 12
+    },
+    "relations": {
+      "AFFECTS": 3,
+      "APPLIES_TO": 10,
+      "CITES": 8,
+      "CONSTRAINED_BY": 31,
+      "CONTRIBUTES_TO": 5,
+      "DEFINED_IN": 13,
+      "DEFINES": 1,
+      "DOCUMENTED_IN": 138,
+      "ESCALATES_TO": 4,
+      "EXPOSED_TO": 4,
+      "GOVERNED_BY": 9,
+      "HOLDS": 12,
+      "IMPLEMENTS": 8,
+      "IN_SECTOR": 24,
+      "ISSUED_BY": 12,
+      "MEASURED_BY": 8,
+      "MEASURES": 5,
+      "MITIGATES": 6,
+      "MONITORS": 3,
+      "REPORTS": 6,
+      "REQUIRES_APPROVAL": 13,
+      "SENSITIVE_TO": 30,
+      "STRESSED_BY": 1,
+      "TRIGGERS": 3,
+      "WATCHLISTED_BY": 5
+    },
+    "density": 0.0321,
+    "components": 6,
+    "largest_component": 100,
+    "avg_degree": 6.69,
+    "top_nodes": [
+      {
+        "id": "PF-CORE-EU",
+        "label": "Core Europe",
+        "type": "Portefeuille",
+        "degree": 49
+      },
+      {
+        "id": "FACTOR-EUR-RATES",
+        "label": "Taux EUR",
+        "type": "Facteur",
+        "degree": 20
+      },
+      {
+        "id": "CTL-ISSUER-CAP",
+        "label": "Limite concentration émetteur",
+        "type": "Contrôle",
+        "degree": 19
+      },
+      {
+        "id": "CTL-SCENARIO-LOSS",
+        "label": "Limite perte scénario",
+        "type": "Contrôle",
+        "degree": 16
+      },
+      {
+        "id": "CTL-SECTOR-CAP",
+        "label": "Limite concentration secteur",
+        "type": "Contrôle",
+        "degree": 15
+      },
+      {
+        "id": "D02",
+        "label": "D02 — Snapshot des positions au 31 octobre 2026",
+        "type": "Document",
+        "degree": 15
+      },
+      {
+        "id": "POS-03",
+        "label": "POS-03 Vonovia",
+        "type": "Position",
+        "degree": 14
+      },
+      {
+        "id": "FACTOR-CREDIT-SPREAD",
+        "label": "Spreads de crédit",
+        "type": "Facteur",
+        "degree": 14
+      },
+      {
+        "id": "WL-ESG",
+        "label": "Watchlist ESG",
+        "type": "Watchlist",
+        "degree": 14
+      },
+      {
+        "id": "POS-04",
+        "label": "POS-04 Enel",
+        "type": "Position",
+        "degree": 13
+      }
+    ]
+  }
+}

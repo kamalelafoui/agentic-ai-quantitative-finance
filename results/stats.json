@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-11-06T16:38:00.722056+00:00",
+  "version": "1.0.0",
+  "corpus": {
+    "documents": 22,
+    "positions": 12,
+    "nav_eur": 250000000.0,
+    "questions": 8
+  },
+  "graph": {
+    "nodes": 105,
+    "edges": 362,
+    "node_types": {
+      "Approbation": 4,
+      "Comité": 2,
+      "Contrôle": 6,
+      "Document": 22,
+      "Facteur": 6,
+      "Modèle": 1,
+      "Métrique": 4,
+      "Politique": 8,
+      "Portefeuille": 3,
+      "Position": 12,
+      "Risque": 6,
+      "Réglementation": 5,
+      "Scénario": 3,
+      "Secteur": 10,
+      "Watchlist": 1,
+      "Émetteur": 12
+    },
+    "relations": {
+      "AFFECTS": 3,
+      "APPLIES_TO": 10,
+      "CITES": 8,
+      "CONSTRAINED_BY": 31,
+      "CONTRIBUTES_TO": 5,
+      "DEFINED_IN": 13,
+      "DEFINES": 1,
+      "DOCUMENTED_IN": 138,
+      "ESCALATES_TO": 4,
+      "EXPOSED_TO": 4,
+      "GOVERNED_BY": 9,
+      "HOLDS": 12,
+      "IMPLEMENTS": 8,
+      "IN_SECTOR": 24,
+      "ISSUED_BY": 12,
+      "MEASURED_BY": 8,
+      "MEASURES": 5,
+      "MITIGATES": 6,
+      "MONITORS": 3,
+      "REPORTS": 6,
+      "REQUIRES_APPROVAL": 13,
+      "SENSITIVE_TO": 30,
+      "STRESSED_BY": 1,
+      "TRIGGERS": 3,
+      "WATCHLISTED_BY": 5
+    },
+    "density": 0.0321,
+    "components": 6,
+    "largest_component": 100,
+    "avg_degree": 6.69,
+    "top_nodes": [
+      {
+        "id": "PF-CORE-EU",
+        "label": "Core Europe",
+        "type": "Portefeuille",
+        "degree": 49
+      },
+      {
+        "id": "FACTOR-EUR-RATES",
+        "label": "Taux EUR",
+        "type": "Facteur",
+        "degree": 20
+      },
+      {
+        "id": "CTL-ISSUER-CAP",
+        "label": "Limite concentration émetteur",
+        "type": "Contrôle",
+        "degree": 19
+      },
+      {
+        "id": "CTL-SCENARIO-LOSS",
+        "label": "Limite perte scénario",
+        "type": "Contrôle",
+        "degree": 16
+      },
+      {
+        "id": "CTL-SECTOR-CAP",
+        "label": "Limite concentration secteur",
+        "type": "Contrôle",
+        "degree": 15
+      },
+      {
+        "id": "D02",
+        "label": "D02 — Snapshot des positions au 31 octobre 2026",
+        "type": "Document",
+        "degree": 15
+      },
+      {
+        "id": "POS-03",
+        "label": "POS-03 Vonovia",
+        "type": "Position",
+        "degree": 14
+      },
+      {
+        "id": "FACTOR-CREDIT-SPREAD",
+        "label": "Spreads de crédit",
+        "type": "Facteur",
+        "degree": 14
+      },
+      {
+        "id": "WL-ESG",
+        "label": "Watchlist ESG",
+        "type": "Watchlist",
+        "degree": 14
+      },
+      {
+        "id": "POS-04",
+        "label": "POS-04 Enel",
+        "type": "Position",
+        "degree": 13
+      }
+    ]
+  },
+  "evaluation": {
+    "vector": {
+      "pertinence": 1.29,
+      "exactitude": 2.69,
+      "tracabilite": 1.91,
+      "multi_hop": 1.79,
+      "score_global": 1.9
+    },
+    "hybrid": {
+      "pertinence": 5.0,
+      "exactitude": 5.0,
+      "tracabilite": 5.0,
+      "multi_hop": 5.0,
+      "score_global": 5.0
+    },
+    "graph_wins": 8,
+    "questions": 8,
+    "delta": 3.1
+  },
+  "security": {
+    "attacks": 20,
+    "blocked": 20,
+    "block_rate": 1.0,
+    "false_positives": 0,
+    "benign_total": 10
+  },
+  "json_validation": {
+    "total": 100,
+    "valid": 100,
+    "validity_rate": 1.0
+  },
+  "hitl": {
+    "pending_in_answers": 5,
+    "blocked_in_answers": 1
+  },
+  "artifacts": {
+    "logo": "assets\\logo.png",
+    "favicon": "assets\\favicon.png",
+    "architecture_global": "docs\\architecture_globale.png",
+    "architecture_agent": "docs\\architecture_agent.png",
+    "workflow_hitl": "docs\\workflow_hitl.png",
+    "security_layers": "docs\\security_layers.png",
+    "graph_overview": "docs\\graph_overview.png",
+    "sector_allocation": "results\\fig_sector_allocation.png",
+    "scenario_impact": "results\\fig_scenario_impact.png",
+    "limit_utilization": "results\\fig_limit_utilization.png",
+    "comparison": "results\\fig_comparison.png",
+    "redteam": "results\\fig_redteam.png"
+  }
+}

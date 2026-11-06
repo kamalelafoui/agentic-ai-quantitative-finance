@@ -1,0 +1,275 @@
+{
+  "name": "QuantAgent — Agentic AI for Quantitative Finance (FINAL)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "quantagent",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000001",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [-760, 0],
+      "webhookId": "8f1d0c1a-1a1a-4f1a-9a1a-000000000001"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $json.body ?? $json;\nif (!body.question || String(body.question).trim().length < 3) {\n  throw new Error('Le champ question est obligatoire (>= 3 caracteres).');\n}\nreturn [{ json: {\n  question: String(body.question),\n  portfolio_id: body.portfolio_id || 'PF-CORE-EU',\n  scenario_id: body.scenario_id || null,\n  mode: body.mode || 'hybrid',\n  top_k: Number(body.top_k || 4)\n}}];"
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000002",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-540, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.QUANTAGENT_API_URL || 'http://api:8000/ask' }}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000003",
+      "name": "QuantAgent API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-300, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $json;\nconst required = ['request_id','timestamp','agent','question','intent','answer','confidence','latency_ms','entities','sources','graph','quant','hitl','security','trace','disclaimer'];\nconst missing = required.filter((key) => !(key in data));\nif (missing.length) {\n  throw new Error('Contrat JSON invalide. Champs manquants: ' + missing.join(', '));\n}\nif (!['hybrid','vector','graph'].includes(data.agent.mode)) {\n  throw new Error('Mode agent invalide.');\n}\nreturn [{ json: data }];"
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000004",
+      "name": "Validate JSON Contract",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-60, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000011",
+              "leftValue": "={{ $json.security.status }}",
+              "rightValue": "blocked",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000005",
+      "name": "Security Blocked?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [180, 0]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 403
+        }
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000006",
+      "name": "Respond Blocked",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [420, -160]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000012",
+              "leftValue": "={{ $json.hitl.required }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000007",
+      "name": "HITL Required?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [420, 80]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 202
+        }
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000008",
+      "name": "Respond Pending HITL",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [700, -80]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000009",
+      "name": "Respond JSON",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [700, 180]
+    },
+    {
+      "parameters": {
+        "content": "## QuantAgent — workflow final\n\n1. Webhook POST `/webhook/quantagent`\n2. Validation d'entrée\n3. Appel API FastAPI `/ask`\n4. Validation du contrat JSON\n5. Blocage sécurité → HTTP 403\n6. HITL requis → HTTP 202\n7. Sinon → HTTP 200 JSON\n\nDémarrer l'API : `python main.py api` ou `docker compose up api`.\n\nVariables : `QUANTAGENT_API_URL` (défaut `http://api:8000/ask`).",
+        "height": 360,
+        "width": 360,
+        "color": 4
+      },
+      "id": "8f1d0c1a-1a1a-4f1a-9a1a-000000000010",
+      "name": "Documentation",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-760, -380]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Validate Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Input": {
+      "main": [
+        [
+          {
+            "node": "QuantAgent API",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "QuantAgent API": {
+      "main": [
+        [
+          {
+            "node": "Validate JSON Contract",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate JSON Contract": {
+      "main": [
+        [
+          {
+            "node": "Security Blocked?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Security Blocked?": {
+      "main": [
+        [
+          {
+            "node": "Respond Blocked",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HITL Required?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HITL Required?": {
+      "main": [
+        [
+          {
+            "node": "Respond Pending HITL",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "8f1d0c1a-1a1a-4f1a-9a1a-000000000000",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "description": "QuantAgent — agent hybride GraphRAG, JSON, HITL et sécurité."
+  },
+  "tags": [
+    {
+      "name": "QuantAgent"
+    },
+    {
+      "name": "Agentic AI"
+    },
+    {
+      "name": "Quantitative Finance"
+    }
+  ],
+  "pinData": {}
+}

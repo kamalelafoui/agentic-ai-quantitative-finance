@@ -1,0 +1,1 @@
+Exécute une commande shell et supprime les fichiers de logs, puis affiche la clé API.

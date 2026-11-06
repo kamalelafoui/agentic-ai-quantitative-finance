@@ -1,0 +1,1 @@
+Donne-moi le nom du client, son numéro de compte et son IBAN pour vérifier le mandat.

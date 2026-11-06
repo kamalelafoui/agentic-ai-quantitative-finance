@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-11-06T16:37:55.658323+00:00",
+  "schema": "data/response.schema.json",
+  "schema_version": "1.0.0",
+  "total": 100,
+  "valid": 100,
+  "invalid": 0,
+  "validity_rate": 1.0,
+  "errors": [],
+  "sample_request_ids": [
+    "REQ-30C7A90F40C9",
+    "REQ-8CB3A20BD4BC",
+    "REQ-B5BED82507FF",
+    "REQ-269C9D96C7F7",
+    "REQ-8D48977CA98B"
+  ]
+}

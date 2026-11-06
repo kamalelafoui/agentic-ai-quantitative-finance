@@ -1,0 +1,17 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.ipynb_checkpoints
+results/answers.json
+results/JSON_Final.json
+results/validation_report.json
+results/red_team_evidence.jsonl
+docs/*.pdf
+docs/*.docx
+docs/*.pptx
+*.zip
+.env
