@@ -288,36 +288,68 @@ def main():
     # Sommaire
     doc.add_heading("Sommaire", level=1)
     sections = [
-        "Contexte et problématique",
-        "Objectifs et critères de validation",
-        "Cas d'usage multi-hop",
-        "Corpus et données",
-        "Architecture globale",
-        "Agent hybride : vectoriel, graphe et quantification",
-        "Knowledge Graph",
-        "Analyse quantitative et limites",
-        "Human-in-the-Loop",
-        "Sécurité et Red Team",
-        "Dashboard et API",
-        "Évaluation",
-        "Reproductibilité, Docker, n8n et GitHub",
-        "Limites et perspectives",
-        "Annexes",
+        "Introduction",
+        "1. Problématique",
+        "2. Objectifs et critères de validation",
+        "3. Cas d'usage multi-hop",
+        "4. Corpus et données",
+        "5. Architecture globale",
+        "6. Agent hybride : vectoriel, graphe et quantification",
+        "7. Knowledge Graph",
+        "8. Analyse quantitative et limites",
+        "9. Human-in-the-Loop",
+        "10. Sécurité et Red Team",
+        "11. Dashboard et API",
+        "12. Évaluation",
+        "13. Conclusion",
+        "14. Reproductibilité, Docker, n8n et GitHub",
+        "15. Limites et perspectives",
+        "16. Annexes",
     ]
     for section in sections:
-        paragraph = doc.add_paragraph(section, style="List Number")
+        paragraph = doc.add_paragraph(section)
         paragraph.paragraph_format.space_after = Pt(2)
+        paragraph.paragraph_format.left_indent = Cm(0.4)
     doc.add_paragraph()
     doc.add_heading("Comment lire ce document", level=2)
     doc.add_paragraph(
-        "Les sections 1 à 4 posent le contexte, le cas d'usage et les données. Les sections 5 à 10 décrivent "
-        "l'architecture, l'agent hybride, le graphe, le moteur quantitatif, le HITL et la sécurité. Les sections 11 à 13 "
-        "couvrent le dashboard, l'évaluation et la reproductibilité. Les annexes contiennent le contrat JSON et la checklist."
+        "L'introduction et la section 1 posent le contexte et la question centrale. Les sections 2 à 5 précisent "
+        "les objectifs, le cas d'usage, les données et l'architecture. Les sections 6 à 11 décrivent l'agent hybride, "
+        "le graphe, le moteur quantitatif, le HITL, la sécurité et le dashboard. La section 12 présente l'évaluation, "
+        "la section 13 synthétise les résultats, et les sections 14 à 16 couvrent la reproductibilité, les limites et les annexes."
     )
     doc.add_page_break()
 
-    # 1. Contexte
-    doc.add_heading("1. Contexte et problématique", level=1)
+    # Introduction
+    doc.add_heading("Introduction", level=1)
+    doc.add_paragraph(
+        "L'intelligence artificielle agentique transforme la manière dont les équipes financières interrogent leurs "
+        "données. Un agent ne se contente plus de retrouver un document : il planifie, appelle des outils, croise des "
+        "sources et prépare une décision. En finance quantitative, cette promesse se heurte toutefois à trois exigences "
+        "non négociables : le calcul doit être exact, la réponse doit être traçable, et la décision doit rester humaine."
+    )
+    doc.add_paragraph(
+        "Ce mini-projet final conçoit et évalue QuantAgent, un agent hybride pour l'analyse quantitative, la gestion "
+        "des risques et la conformité. Le cas d'usage est un portefeuille européen de 250 M€ : l'agent doit répondre à "
+        "des questions multi-hop, calculer l'impact d'un choc de taux ou de crédit, vérifier les limites, citer ses "
+        "sources et préparer un dossier HITL. Le projet couvre l'ensemble de la chaîne : corpus, Knowledge Graph, "
+        "RAG vectoriel, moteur quantitatif, sécurité, dashboard, API, Docker, notebook, documentation et présentation."
+    )
+    doc.add_paragraph("Les contributions principales sont les suivantes :")
+    add_bullets(doc, [
+        "Une architecture hybride qui combine recherche vectorielle TF-IDF, parcours multi-hop sur graphe et calcul quantitatif.",
+        "Un moteur de scénarios et de limites qui produit des chiffres vérifiables, avec des chemins de preuve et des citations.",
+        "Une couche de sécurité et un contrat JSON validé à 100 %, avec un workflow HITL Risk / Comité / Compliance.",
+        "Un dashboard Streamlit sur le port 8007, une API FastAPI, un workflow n8n et une documentation complète.",
+    ])
+    doc.add_paragraph(
+        "Le document est organisé en trois temps : la problématique et les objectifs, la conception et l'implémentation, "
+        "puis l'évaluation et la conclusion. Les données sont fictives et le projet est pédagogique ; aucune sortie ne "
+        "constitue un conseil en investissement."
+    )
+
+    # 1. Problématique
+    doc.add_heading("1. Problématique", level=1)
     doc.add_paragraph(
         "Les équipes de gestion quantitative doivent répondre à des questions qui ne se réduisent pas à une recherche "
         "documentaire. Une question comme « quel est l'impact d'un choc de +100 pb sur les taux, et quelles positions "
@@ -328,6 +360,18 @@ def main():
         "Un RAG vectoriel classique retrouve des passages pertinents, mais ne calcule pas le P&L, ne traverse pas les "
         "relations et ne déclenche pas les contrôles. QuantAgent répond à cette limite en combinant trois capacités : "
         "la récupération sémantique, le raisonnement multi-hop sur graphe et le calcul quantitatif."
+    )
+    add_table(
+        doc,
+        ["Élément", "Formulation"],
+        [
+            ("Question centrale", "Comment concevoir un agent capable de répondre à des questions financières multi-hop, de calculer un impact, de vérifier les limites et de préparer une décision humaine, tout en garantissant traçabilité, sécurité et JSON 100 % valide ?"),
+            ("Sous-question 1", "Comment combiner recherche vectorielle et Knowledge Graph pour couvrir les questions multi-hop ?"),
+            ("Sous-question 2", "Comment calculer le P&L, vérifier les limites et produire des chiffres auditables ?"),
+            ("Sous-question 3", "Comment intégrer HITL, sécurité et contrat JSON sans bloquer l'usage ?"),
+            ("Sous-question 4", "Comment démontrer la valeur de l'agent face à une baseline vectorielle ?"),
+        ],
+        widths=[3.5, 12.5],
     )
     add_bullets(doc, [
         "Problème métier : analyser un portefeuille sous stress, vérifier les limites et préparer une décision humaine.",
@@ -595,8 +639,47 @@ def main():
         widths=[5.0, 3.0, 3.0, 3.0],
     )
 
-    # 13. Reproductibilité
-    doc.add_heading("13. Reproductibilité, Docker, n8n et GitHub", level=1)
+    # 13. Conclusion
+    doc.add_heading("13. Conclusion", level=1)
+    doc.add_paragraph(
+        "QuantAgent démontre qu'un agent hybride peut répondre à des questions financières multi-hop de manière "
+        "chiffrée, traçable et sécurisée. Sur le cas de référence, l'agent calcule une perte de -8,14 M€ pour un choc "
+        "de +100 pb, soit -3,26 % de la NAV, identifie Vonovia, EDF, Enel, le Bund et AXA comme principaux contributeurs, "
+        "constate le dépassement de la limite de 3,0 % et prépare un dossier HITL-RISK + HITL-IC."
+    )
+    add_table(
+        doc,
+        ["Critère de validation", "Résultat", "Preuve"],
+        [
+            ("JSON valide à 100 %", f"{VALIDATION['valid']}/{VALIDATION['total']}", "Schéma Draft 2020-12"),
+            ("Agent hybride vecteur + graphe", f"{COMPARISON['aggregates']['hybrid']['score_global']:.2f}/5", f"{COMPARISON['aggregates']['graph_wins']}/{COMPARISON['aggregates']['questions']} questions"),
+            ("Documentation sécurisée complète", "OK", "DOCX + PDF + Red Team"),
+            ("Démo workflow + slides", "OK", "Dashboard 8007 + PPTX + n8n"),
+        ],
+        widths=[6.0, 4.0, 7.0],
+    )
+    doc.add_paragraph(
+        "Les contributions principales sont : une architecture qui combine vectoriel, graphe et quantification ; "
+        "un moteur de scénarios et de limites qui produit des chiffres auditables ; une couche de sécurité et un "
+        "contrat JSON validé ; un workflow HITL qui empêche toute exécution automatique ; un dashboard, une API, "
+        "un notebook et une documentation reproductibles."
+    )
+    doc.add_paragraph(
+        "Le projet confirme également l'hypothèse de départ : la baseline vectorielle retrouve des passages pertinents "
+        f"({COMPARISON['aggregates']['vector']['score_global']:.2f}/5) mais ne calcule pas, ne traverse pas le graphe et "
+        f"ne déclenche pas HITL. L'agent hybride atteint {COMPARISON['aggregates']['hybrid']['score_global']:.2f}/5 et gagne "
+        f"{COMPARISON['aggregates']['graph_wins']}/{COMPARISON['aggregates']['questions']} questions. La sécurité est "
+        f"validée par {REDTEAM['blocked']}/{REDTEAM['total_attacks']} attaques bloquées et zéro faux positif."
+    )
+    doc.add_paragraph(
+        "Les limites sont assumées : données synthétiques, moteur quantitatif simplifié, RAG TF-IDF, extraction par règles "
+        "et HITL simulé. Les perspectives — embeddings denses, Neo4j, backtesting, alertes temps réel, audit réglementaire "
+        "et signatures électroniques — sont détaillées dans la section 15. QuantAgent ne remplace pas l'humain : il lui "
+        "prépare une décision traçable, chiffrée et contrôlée."
+    )
+
+    # 14. Reproductibilité
+    doc.add_heading("14. Reproductibilité, Docker, n8n et GitHub", level=1)
     add_code(doc, "python -m venv .venv\n.venv\\Scripts\\activate\npip install -r requirements.txt\npython main.py demo\npython main.py serve\npython main.py api")
     doc.add_paragraph(
         "Docker expose le dashboard sur 8007 et l'API sur 8000. Le profil workflow ajoute n8n sur 5678. "
@@ -624,8 +707,8 @@ def main():
         widths=[4.5, 11.0],
     )
 
-    # 14. Limites
-    doc.add_heading("14. Limites et perspectives", level=1)
+    # 15. Limites
+    doc.add_heading("15. Limites et perspectives", level=1)
     add_bullets(doc, [
         "Données synthétiques : les chiffres sont cohérents mais ne représentent pas un portefeuille réel.",
         "Le moteur quantitatif est volontairement simple (chocs instantanés, sans convexité ni corrélations).",
@@ -635,8 +718,8 @@ def main():
         "Perspectives : Neo4j, embeddings, backtesting, alertes temps réel, audit réglementaire, déploiement cloud.",
     ])
 
-    # 15. Annexes
-    doc.add_heading("15. Annexes", level=1)
+    # 16. Annexes
+    doc.add_heading("16. Annexes", level=1)
     doc.add_heading("A. Contrat JSON (extrait)", level=2)
     add_code(doc, json.dumps({key: SHOWCASE[key] for key in ["request_id", "agent", "intent", "confidence", "hitl", "security", "meta"]}, ensure_ascii=False, indent=2)[:2200])
     doc.add_heading("B. Checklist de validation", level=2)

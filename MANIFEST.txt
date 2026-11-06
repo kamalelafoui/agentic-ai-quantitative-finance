@@ -1,5 +1,5 @@
 QuantAgent — Agentic AI for Quantitative Finance
-Archive générée le 2026-11-06T16:43:49.494602+00:00
+Archive générée le 2026-11-06T17:03:29.630665+00:00
 Fichiers : 99
 
 SHA256                                                                Taille  Fichier
@@ -37,13 +37,13 @@ bf47c2fb238c953d1fcba79b7a3c27f816795e74189ca546a9ccad0569458bab      368164  do
 98eb838e2ddd1a7320d5850039b3a83960901678683f7d3c388b7f99d0dfe87b      360364  docs/dashboard_security.png
 b1f0f8e49f66e456e7b80eca11e4940bc084890766fcb5d4aed6c395dbead476      330824  docs/dashboard_stats.png
 09cd753dd6d9dfaadf816c437fae278782954beac960eeb2251580135c32eaec        2564  docs/demo_script.md
-c5fbaf6c573f02b31167bbdb6ae317928527e68f3833c5255f969e711dfeac41     2008804  docs/Documentation_Agentic_AI_Quantitative_Finance.docx
-bceb4eca2590592364b65df5e48bd4a7c7107a475aa9e8373e39058d03f68cca     1649184  docs/Documentation_Agentic_AI_Quantitative_Finance.pdf
+a9293aafeb81dcaff7192378ab1edb7f3cc7188048a4ac9a5beae626b6fa88fa     2010692  docs/Documentation_Agentic_AI_Quantitative_Finance.docx
+684116e4e1fdedc18583972dc9bb0332b47a305f785628a14932efc3711ea364     1662743  docs/Documentation_Agentic_AI_Quantitative_Finance.pdf
 cfafc092342c1029834103b03b81519d7d5bf070eb70664af9dfdbbbda375c0e      395472  docs/graph_overview.png
 2d182403ca145daf82b4dd08a2a08d03d9872460335bedb0d1a2dbedc73831f1      370621  docs/graph_overview_slide.png
-cbd6413aeee8198498ca319857657844bf2ff6fafec13204297c900dd1499432     1008608  docs/Presentation_Agentic_AI_Quantitative_Finance.pdf
-401864ae388f31939427081cf580c86e4f798634bac3259a59dbd3dbcf427e86     1505162  docs/Presentation_Agentic_AI_Quantitative_Finance.pptx
-73da0bfc591eef0b164e694860f3acb61c5915a5237676f87917139a6aa219b1        1432  docs/README.md
+9b330382e944491d5c03c0248f5660a1871b44eb3f0b81226e355c138abc2c26     1017293  docs/Presentation_Agentic_AI_Quantitative_Finance.pdf
+2c6b81a9bcdf0d7eee0b98a788de61f84b078f7e634024fff233fb8cc1da8ea8     1509215  docs/Presentation_Agentic_AI_Quantitative_Finance.pptx
+2599a6ea9db02a80a7dec312f6efa7d1c3ac332c7d1779a8e6a7321a606b1cfd        1432  docs/README.md
 474b9b66dacd750009b345e93ed7f098de8954c7c3de8910aec506b9d5baf475       78037  docs/security_layers.png
 79790c8a893ebfede9360a197966b2eba023a6c896ac5fb319093585a386ffbd       58915  docs/security_layers_slide.png
 964473c6649fc03f628df33cc18ecbe2ee8bbef39bac569710448bc8e38d25f6       82324  docs/workflow_hitl.png
@@ -88,10 +88,10 @@ affc8629de8bf457bb27d65f5d3037f4a2df279f662c4a40049e0c663756ba35       12896  re
 f125a867f5a932bf670dc86077f6b5a2a4d0bf51d7a82aebf30f02e2cd74e892        4212  results/stats.json
 63f6c25a447871486ef9fd2503168a1e1b72ed7546629d742dcc67c40aaf5095         380  results/validation_report.json
 527914ba730cccbd7d02ae14899fc7328671bed5cea0561d9c241ac2ee30e06a       28441  scripts/build_data.py
-c0606c100c3d7b266a62cc67d1d145787d625022ec27f6ac3208e340bb125e7d       31063  scripts/build_docs.py
+b9e5e5425f9ce3c551227b4ccdc36bdfb50b2e0724d012b3bef9e580216eb0a1       37119  scripts/build_docs.py
 d9ba4d0c271ab891cf98448cd197d3fe69c32b3009771c52ee4ab4fb5aef0d72       37457  scripts/build_graph.py
 c948846d08af8aa2ca9304356fa75ff1c42b5613cc7e3714c6de76bfa5613b3f        6422  scripts/build_notebook.py
-1f4f5e5a177af6bd4f3124af40b2086959c49d1078575b69fdc346f39f2e7508       27789  scripts/build_presentation.py
+34ce54425214fc646259032803e5785cefa3b9a79546e45f080b3912cf719f80       29861  scripts/build_presentation.py
 77a14292bca6258fd33c9b77298633ce847704d5f9e69b242d3ce50277636dd3        2038  scripts/build_zip.py
 cf387e37f4727059ab8df14da4eba3ec0ccbadee45d4caceea24da639df9ff74        2670  scripts/capture_dashboard.py
 7b4e3f3f73580e3f576c47b1843e93e2f67f554f890f9ce4c67cea92ce8be81c        7116  scripts/run_pipeline.py

@@ -118,7 +118,8 @@ def title(slide, heading, subtitle=None, dark=False):
     box(slide, 0.65, 1.48, 0.75, 0.07, GOLD, radius=False)
 
 
-def footer(slide, page, dark=False):
+def footer(slide, page=None, dark=False):
+    page = len(prs.slides) if page is None else page
     color = PALE if dark else SLATE
     text(slide, 0.65, 7.12, 5.5, 0.25, "QuantAgent  ·  Agentic AI for Quantitative Finance", size=8.5, color=color)
     text(slide, 11.4, 7.12, 1.3, 0.25, f"{page:02d}", size=8.5, color=color, align=PP_ALIGN.RIGHT)
@@ -176,13 +177,32 @@ notes(slide, "Bonjour. Je présente QuantAgent, un agent hybride GraphRAG pour l
              "Le projet répond aux quatre critères : JSON 100 %, agent hybride vecteur + graphe, documentation sécurisée, démo workflow et slides.")
 
 # ---------------------------------------------------------------------------
-# 2. Contexte
+# 2. Introduction
 # ---------------------------------------------------------------------------
 slide = add_slide()
-title(slide, "Contexte & problématique", "Pourquoi un RAG vectoriel ne suffit pas en finance quantitative")
-card(slide, 0.65, 1.85, 3.85, 2.3, "Question métier", "Un choc de +100 pb sur les taux : quel impact sur le portefeuille, quelles positions contribuent, quelles limites sont dépassées ?", NAVY)
+title(slide, "Introduction", "Contexte, objectif et démarche du mini-projet final")
+card(slide, 0.65, 1.85, 3.85, 2.35, "Contexte", "IA agentique et finance quantitative : le calcul doit être exact, la réponse traçable et la décision doit rester humaine.", NAVY)
+card(slide, 4.75, 1.85, 3.85, 2.35, "Objectif", "QuantAgent : agent hybride pour un portefeuille de 250 M€ — questions multi-hop, scénarios, limites et HITL.", GOLD)
+card(slide, 8.85, 1.85, 3.85, 2.35, "Démarche", "Corpus → Knowledge Graph → vectoriel → quantification → HITL → JSON → dashboard 8007.", TEAL)
+box(slide, 0.65, 4.55, 12.05, 1.25, NAVY)
+text(slide, 0.95, 4.72, 11.4, 0.3, "PÉRIMÈTRE DU PROJET", size=9, color=GOLD, bold=True)
+text(slide, 0.95, 5.05, 11.4, 0.55, "22 documents · 12 positions · 105 entités · 362 relations · 8 questions · 3 scénarios", size=13, color=WHITE, bold=True)
+kpi(slide, 0.65, 5.95, 2.8, 0.65, "250 M€", "NAV", "Core Europe")
+kpi(slide, 3.65, 5.95, 2.8, 0.65, "22", "documents", "corpus synthétique")
+kpi(slide, 6.65, 5.95, 2.8, 0.65, "105", "entités", "Knowledge Graph")
+kpi(slide, 9.65, 5.95, 3.05, 0.65, "8", "questions", "multi-hop")
+footer(slide)
+notes(slide, "Cette introduction pose le cadre : l'IA agentique appliquée à la finance quantitative exige des garanties de calcul, de traçabilité et de contrôle humain. "
+             "Le projet QuantAgent couvre toute la chaîne, du corpus au dashboard 8007, avec un JSON validé et une démonstration reproductible.")
+
+# ---------------------------------------------------------------------------
+# 3. Problématique
+# ---------------------------------------------------------------------------
+slide = add_slide()
+title(slide, "Problématique", "Pourquoi un RAG vectoriel ne suffit pas en finance quantitative")
+card(slide, 0.65, 1.85, 3.85, 2.3, "Question centrale", "Comment répondre à des questions multi-hop, calculer un impact, vérifier les limites et préparer une décision humaine, avec traçabilité, sécurité et JSON 100 % valide ?", NAVY)
 card(slide, 4.75, 1.85, 3.85, 2.3, "Limite du vectoriel", "Il retrouve des passages, mais ne calcule pas le P&L, ne traverse pas les relations et ne déclenche pas les contrôles.", CORAL)
-card(slide, 8.85, 1.85, 3.85, 2.3, "Réponse QuantAgent", "Vectoriel + graphe + moteur quantitatif + HITL + sécurité, avec un JSON traçable et validé.", TEAL)
+card(slide, 8.85, 1.85, 3.85, 2.3, "Défi de l'agent", "Combiner vectoriel + graphe + quantification + HITL + sécurité, sans jamais exécuter d'ordre.", TEAL)
 box(slide, 0.65, 4.55, 12.05, 1.35, NAVY)
 text(slide, 0.95, 4.75, 5.6, 0.35, "Le problème n'est pas de trouver un document.", size=16, color=WHITE, bold=True)
 text(slide, 0.95, 5.15, 11.4, 0.45, "C'est de relier une position à un facteur, un scénario à une méthode, un résultat à une limite, puis une décision à un humain.", size=13, color=PALE)
@@ -190,8 +210,8 @@ kpi(slide, 0.65, 5.95, 2.8, 0.65, "22", "documents", "corpus synthétique")
 kpi(slide, 3.65, 5.95, 2.8, 0.65, "105", "entités", "Knowledge Graph")
 kpi(slide, 6.65, 5.95, 2.8, 0.65, "8", "questions", "multi-hop")
 kpi(slide, 9.65, 5.95, 3.05, 0.65, "100 %", "JSON valide", "100/100")
-footer(slide, 2)
-notes(slide, "Le cas d'usage est volontairement multi-hop. Un RAG classique va citer des documents, mais ne produira pas -8,14 M€, "
+footer(slide)
+notes(slide, "La problématique est volontairement multi-hop. Un RAG classique va citer des documents, mais ne produira pas -8,14 M€, "
              "ne dira pas que la limite de 3 % est dépassée et ne déclenchera pas HITL-RISK. C'est là que l'agent hybride apporte de la valeur.")
 
 # ---------------------------------------------------------------------------
@@ -223,7 +243,7 @@ text(slide, 0.9, 3.82, 4.4, 0.3, "RÉSULTAT ATTENDU", size=9, color=TEAL, bold=T
 text(slide, 0.9, 4.15, 4.45, 0.55, "-8,14 M€", size=32, color=CORAL, bold=True)
 text(slide, 0.9, 4.75, 4.45, 0.3, "-3,26 % NAV  ·  dépassement 0,64 M€", size=12, color=NAVY, bold=True)
 text(slide, 0.9, 5.15, 4.45, 1.2, "Top contributeurs : Vonovia, EDF, Enel, Bund, AXA.\nStatut : PENDING_APPROVAL.\nPreuves : D04, D05, D21.", size=10.5, color=SLATE)
-footer(slide, 3)
+footer(slide)
 notes(slide, "Le raisonnement est matérialisé par six sauts. Le graphe fournit les chemins de preuve, le moteur quantitatif les chiffres, "
              "et la politique HITL le statut de décision. C'est cette chaîne complète qui est évaluée.")
 
@@ -233,7 +253,7 @@ notes(slide, "Le raisonnement est matérialisé par six sauts. Le graphe fournit
 slide = add_slide()
 title(slide, "Architecture globale", "Séparation des responsabilités et traçabilité de bout en bout")
 image(slide, DOCS / "architecture_globale_slide.png", 1.65, 1.6, w=10.0)
-footer(slide, 4)
+footer(slide)
 notes(slide, "Le dashboard et l'API sont les points d'entrée. L'orchestrateur route l'intention. La sécurité filtre. "
              "Le vectoriel et le graphe apportent les preuves, le moteur quantitatif calcule, HITL décide, le contrat JSON valide et l'audit conserve.")
 
@@ -251,7 +271,7 @@ kpi(slide, 0.65, 5.55, 2.85, 0.85, "5,00 / 5", "score hybride", "8/8 questions")
 kpi(slide, 3.65, 5.55, 2.85, 0.85, "1,90 / 5", "score vectoriel", "baseline")
 kpi(slide, 6.65, 5.55, 2.85, 0.85, "+3,10", "delta", "hybride vs vectoriel")
 kpi(slide, 9.65, 5.55, 3.05, 0.85, "< 300 ms", "latence", "local")
-footer(slide, 5)
+footer(slide)
 notes(slide, "Les trois moteurs sont complémentaires. Le vectoriel apporte le contexte documentaire, le graphe la structure, "
              "le quantitatif les chiffres. L'évaluation montre que l'hybride gagne 8 questions sur 8 avec 5,00/5.")
 
@@ -268,7 +288,7 @@ kpi(slide, 11.25, 1.8, 1.45, 0.8, "6", "composantes", "max 100")
 image(slide, DOCS / "graph_overview_slide.png", 0.55, 2.85, w=6.3)
 card(slide, 7.15, 2.9, 5.55, 3.45, "Types d'entités", "Portefeuille · Position · Émetteur · Secteur · Facteur · Scénario · Politique · Contrôle · Approbation · Réglementation · Risque · Métrique · Document · Watchlist · Comité · Modèle", "#7C3AED")
 text(slide, 7.15, 6.5, 5.5, 0.3, "Export JSON + Cypher pour Neo4j", size=9, color=SLATE, italic=True)
-footer(slide, 6)
+footer(slide)
 notes(slide, "Le graphe est le squelette du raisonnement. Il permet de passer d'un portefeuille à ses positions, puis aux facteurs, "
              "aux scénarios, aux contrôles et aux approbations. Chaque arête est documentée par un ou plusieurs documents.")
 
@@ -285,7 +305,7 @@ image(slide, RESULTS / "fig_scenario_impact.png", 0.55, 2.95, w=6.7)
 image(slide, RESULTS / "fig_limit_utilization.png", 7.35, 2.95, w=5.45)
 box(slide, 0.65, 6.35, 12.05, 0.55, LIGHT, line=RGBColor(0xE2, 0xE9, 0xF2))
 text(slide, 0.9, 6.47, 11.5, 0.3, "Méthode : P&L = -MV × duration × Δy (obligations) ; bêta taux (actions). Sources : D04, D05, D21.", size=9, color=SLATE)
-footer(slide, 7)
+footer(slide)
 notes(slide, "Le choc produit -8,14 M€, soit -3,26 % NAV. La limite de 3 % est dépassée de 0,64 M€. "
              "Les cinq premiers contributeurs sont Vonovia, EDF, Enel, Bund et AXA. C'est un cas de dépassement qui déclenche HITL-RISK.")
 
@@ -299,7 +319,7 @@ card(slide, 0.65, 5.35, 3.85, 1.3, "HITL-RISK", "Dépassement de limite ou impac
 card(slide, 4.75, 5.35, 3.85, 1.3, "HITL-IC", "Opération de portefeuille > 2,5 % NAV. SLA 24 h.", GOLD)
 card(slide, 8.85, 5.35, 3.85, 1.3, "HITL-COMPLIANCE", "Client, ESG, PII, watchlist. SLA 24 h.", TEAL)
 text(slide, 0.65, 6.78, 12.0, 0.3, "Aucune exécution automatique · journalisation reviewer + timestamp + décision + justification", size=9.5, color=SLATE, italic=True)
-footer(slide, 8)
+footer(slide)
 notes(slide, "Le point clé : le agent ne peut pas exécuter un ordre. Il prépare un dossier, identifie les approbations et attend. "
              "Pour une réduction de 10 % de la poche obligataire, HITL-RISK et HITL-IC sont requis. La réduction de 10 % ne suffit pas : il faut environ 19,5 % avec marge.")
 
@@ -315,7 +335,7 @@ kpi(slide, 10.25, 1.8, 2.45, 0.9, "100 %", "JSON", "refus valide", TEAL)
 image(slide, DOCS / "security_layers_slide.png", 0.55, 2.9, w=7.0)
 card(slide, 7.85, 2.95, 4.85, 3.1, "Catégories couvertes", "Injection de prompt · jailbreak · exfiltration · abus d'outils · ingénierie sociale · conseil financier · contenus nuisibles · poisoning.\n\nDocuments piégés isolés dans data/attack_pack.", CORAL)
 text(slide, 0.65, 6.35, 12.0, 0.35, "Filtre d'entrée → isolation documentaire → allowlist d'outils → masquage PII → validation JSON → audit JSONL", size=10, color=SLATE)
-footer(slide, 9)
+footer(slide)
 notes(slide, "La sécurité est une défense en profondeur. Les 20 attaques sont bloquées, aucune requête bénigne n'est bloquée. "
              "Les documents piégés ne sont jamais indexés dans le corpus de production.")
 
@@ -329,7 +349,7 @@ image(slide, DOCS / "dashboard_agent.png", 8.25, 1.65, h=2.9)
 card(slide, 0.65, 6.3, 3.8, 0.65, "Vue d'ensemble", "", NAVY)
 card(slide, 4.65, 6.3, 3.8, 0.65, "Agent hybride", "", GOLD)
 card(slide, 8.65, 6.3, 4.0, 0.65, "Sécurité & stats", "", TEAL)
-footer(slide, 10)
+footer(slide)
 notes(slide, "Le dashboard est le point de démonstration. Il contient le logo, le menu, le formulaire, les graphiques et les statistiques. "
              "On peut poser une question, voir la réponse, le JSON, les chemins de preuve et enregistrer une décision HITL simulée.")
 
@@ -363,7 +383,7 @@ for r, row in enumerate(table_rows, start=1):
                 run.font.size = Pt(7.5); run.font.color.rgb = SLATE
 text(slide, 7.7, 5.85, 5.0, 0.35, "Hybride 5,00/5  ·  Vectoriel 1,90/5  ·  Delta +3,10", size=11, color=NAVY, bold=True)
 text(slide, 0.65, 5.6, 6.8, 0.5, "Le vectoriel retrouve des passages mais ne calcule pas, ne traverse pas et ne déclenche pas HITL.", size=10, color=SLATE)
-footer(slide, 11)
+footer(slide)
 notes(slide, "Le protocole compare les deux approches sur huit questions. L'hybride gagne les huit, avec un score global de 5,00/5. "
              "La différence vient du calcul, des chemins de preuve et du HITL.")
 
@@ -393,7 +413,7 @@ kpi(slide, 8.55, 1.8, 4.15, 0.95, "100/100", "JSON valides", "Draft 2020-12", TE
 kpi(slide, 8.55, 2.95, 4.15, 0.95, "16", "champs racine", "contrat stable", NAVY)
 kpi(slide, 8.55, 4.1, 4.15, 0.95, "0", "erreur de schéma", "validation systématique", TEAL)
 text(slide, 8.55, 5.35, 4.15, 0.9, "Chaque réponse est validée avant sortie. Le workflow n8n revalide le contrat.", size=10, color=SLATE)
-footer(slide, 12)
+footer(slide)
 notes(slide, "Le JSON est le livrable central. Il contient la réponse, les sources, le graphe, le quantitatif, le HITL, la sécurité et la trace. "
              "Le schéma est Draft 2020-12 et 100 requêtes sur 100 sont valides.")
 
@@ -422,7 +442,7 @@ box(slide, 0.65, 4.0, 12.05, 1.45, LIGHT, line=RGBColor(0xE2, 0xE9, 0xF2))
 text(slide, 0.9, 4.18, 11.5, 0.3, "WORKFLOW N8N — QUANTAGENT_N8N_FINAL.JSON", size=9, color=GOLD, bold=True)
 text(slide, 0.9, 4.5, 11.5, 0.8, "Webhook → validation d'entrée → API FastAPI → validation JSON → 403 sécurité / 202 HITL / 200 réponse. Aucune exécution d'ordre.", size=12, color=NAVY)
 text(slide, 0.65, 5.75, 12.0, 0.6, "Démo : python main.py serve  →  http://localhost:8007  ·  formulaire  ·  réponse  ·  JSON  ·  décision HITL simulée", size=10, color=SLATE, italic=True)
-footer(slide, 13)
+footer(slide)
 notes(slide, "La démo suit le workflow n8n : webhook, validation, appel API, validation JSON, sécurité, HITL et réponse. "
              "Le dashboard permet de faire la même chose de façon visuelle sur le port 8007.")
 
@@ -438,17 +458,18 @@ box(slide, 0.65, 4.45, 12.05, 1.15, NAVY)
 text(slide, 0.9, 4.62, 11.5, 0.3, "LIVRABLES", size=9, color=GOLD, bold=True)
 text(slide, 0.9, 4.95, 11.5, 0.45, "JSON Final · main.py · notebook · Docker · dashboard 8007 · architectures · DOCX/PDF · PPTX · GitHub · ZIP", size=12, color=WHITE)
 text(slide, 0.65, 5.85, 12.0, 0.4, "github.com/kamalelafoui/agentic-ai-quantitative-finance", size=11, color=BLUE, bold=True)
-footer(slide, 14)
+footer(slide)
 notes(slide, "Le projet est industrialisable : Docker pour le dashboard et l'API, n8n pour le workflow, GitHub Actions pour les tests et la validation. "
              "Tout est reproductible avec python main.py demo.")
 
 # ---------------------------------------------------------------------------
-# 15. Conclusion
+# 16. Conclusion
 # ---------------------------------------------------------------------------
 slide = add_slide(NAVY)
 image(slide, ROOT / "assets" / "logo.png", 0.8, 0.55, w=3.3)
-text(slide, 0.8, 1.9, 11.5, 0.8, "Ce qu'il faut retenir", size=34, color=WHITE, bold=True)
+text(slide, 0.8, 1.9, 11.5, 0.8, "Conclusion", size=34, color=WHITE, bold=True)
 text(slide, 0.82, 2.75, 11.4, 0.5, "Un agent hybride qui ne se contente pas de retrouver : il calcule, relie, contrôle et prépare la décision.", size=15, color=PALE)
+text(slide, 0.82, 3.3, 11.4, 0.45, "Le projet répond aux quatre critères : JSON 100 %, agent hybride, documentation sécurisée, démo workflow + slides.", size=11, color=GOLD, bold=True)
 items = [
     ("5,00 / 5", "score hybride", GOLD),
     ("8 / 8", "questions gagnées", TEAL),
@@ -460,14 +481,16 @@ for index, (value, label, color) in enumerate(items):
     x = 0.8 + index * 2.45
     text(slide, x, 4.1, 2.2, 0.55, value, size=25, color=color, bold=True)
     text(slide, x, 4.7, 2.2, 0.3, label.upper(), size=8, color=PALE, bold=True)
-text(slide, 0.8, 5.55, 11.5, 0.5, "Perspectives : embeddings denses, Neo4j, backtesting, alertes temps réel, audit réglementaire.", size=11, color=PALE)
+text(slide, 0.8, 5.55, 11.5, 0.5, "Perspectives : embeddings denses, Neo4j, backtesting, alertes temps réel, audit réglementaire et signatures HITL.", size=11, color=PALE)
 text(slide, 0.8, 6.55, 5.5, 0.35, "KAMAL EL AFOUI  ·  Novembre 2026", size=10, color=PALE)
 text(slide, 9.8, 6.55, 2.8, 0.35, "Merci — questions ?", size=12, color=GOLD, bold=True, align=PP_ALIGN.RIGHT)
-notes(slide, "En conclusion : l'agent hybride apporte le calcul, la traçabilité, le HITL et la sécurité. Les perspectives sont les embeddings, Neo4j, le backtesting et l'audit réglementaire. Merci.")
+notes(slide, "En conclusion, QuantAgent répond aux quatre critères : JSON 100 %, agent hybride vecteur + graphe, documentation sécurisée, démo workflow et slides. "
+             "Les perspectives sont les embeddings denses, Neo4j, le backtesting, les alertes temps réel et l'audit réglementaire. Merci.")
 
 output = DOCS / "Presentation_Agentic_AI_Quantitative_Finance.pptx"
 prs.save(output)
 print(output)
+
 
 
 

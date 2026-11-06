@@ -6,7 +6,7 @@ Ce dossier contient les livrables de documentation et les visuels du mini-projet
 |---|---|
 | `Documentation_Agentic_AI_Quantitative_Finance.docx` | Documentation technique et fonctionnelle (Word) |
 | `Documentation_Agentic_AI_Quantitative_Finance.pdf` | Version PDF de la documentation |
-| `Presentation_Agentic_AI_Quantitative_Finance.pptx` | Présentation de soutenance (15 slides, notes orales) |
+| `Presentation_Agentic_AI_Quantitative_Finance.pptx` | Présentation de soutenance (16 slides, notes orales) |
 | `Presentation_Agentic_AI_Quantitative_Finance.pdf` | Version PDF de la présentation |
 | `architecture_globale.png` | Architecture globale |
 | `architecture_agent.png` | Boucle de l'agent en 9 étapes |
