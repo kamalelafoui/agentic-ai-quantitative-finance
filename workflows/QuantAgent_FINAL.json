@@ -1,0 +1,467 @@
+{
+  "data": {
+    "edges": [
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "TextInput",
+            "id": "TextInput-QuantAgent",
+            "name": "text",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "question",
+            "id": "CustomComponent-QuantAgent",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "reactflow__edge-TextInput-QuantAgent-CustomComponent-QuantAgent-question",
+        "selected": false,
+        "source": "TextInput-QuantAgent",
+        "sourceHandle": "{\"dataType\": \"TextInput\", \"id\": \"TextInput-QuantAgent\", \"name\": \"text\", \"output_types\": [\"Message\"]}",
+        "target": "CustomComponent-QuantAgent",
+        "targetHandle": "{\"fieldName\": \"question\", \"id\": \"CustomComponent-QuantAgent\", \"inputTypes\": [\"Message\"], \"type\": \"str\"}"
+      },
+      {
+        "animated": false,
+        "className": "",
+        "data": {
+          "sourceHandle": {
+            "dataType": "CustomComponent",
+            "id": "CustomComponent-QuantAgent",
+            "name": "answer",
+            "output_types": [
+              "Message"
+            ]
+          },
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "TextOutput-QuantAgent",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          }
+        },
+        "id": "reactflow__edge-CustomComponent-QuantAgent-TextOutput-QuantAgent-input_value",
+        "selected": false,
+        "source": "CustomComponent-QuantAgent",
+        "sourceHandle": "{\"dataType\": \"CustomComponent\", \"id\": \"CustomComponent-QuantAgent\", \"name\": \"answer\", \"output_types\": [\"Message\"]}",
+        "target": "TextOutput-QuantAgent",
+        "targetHandle": "{\"fieldName\": \"input_value\", \"id\": \"TextOutput-QuantAgent\", \"inputTypes\": [\"Message\"], \"type\": \"str\"}"
+      }
+    ],
+    "nodes": [
+      {
+        "data": {
+          "id": "TextInput-QuantAgent",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Get user text inputs.",
+            "display_name": "Question QuantAgent",
+            "documentation": "https://docs.langflow.org/text-input-and-output",
+            "edited": false,
+            "field_order": [
+              "input_value"
+            ],
+            "frozen": false,
+            "icon": "type",
+            "legacy": false,
+            "lf_version": "1.7.0",
+            "metadata": {
+              "code_hash": "3d80f125b734",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "lfx",
+                    "version": null
+                  }
+                ],
+                "total_dependencies": 1
+              },
+              "module": "lfx.components.input_output.text.TextInputComponent"
+            },
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Output Text",
+                "group_outputs": false,
+                "method": "text_response",
+                "name": "text",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from lfx.base.io.text import TextComponent\nfrom lfx.io import MultilineInput, Output\nfrom lfx.schema.message import Message\n\n\nclass TextInputComponent(TextComponent):\n    display_name = \"Text Input\"\n    description = \"Get user text inputs.\"\n    documentation: str = \"https://docs.langflow.org/text-input-and-output\"\n    icon = \"type\"\n    name = \"TextInput\"\n\n    inputs = [\n        MultilineInput(\n            name=\"input_value\",\n            display_name=\"Text\",\n            info=\"Text to be passed as input.\",\n        ),\n    ]\n    outputs = [\n        Output(display_name=\"Output Text\", name=\"text\", method=\"text_response\"),\n    ]\n\n    def text_response(self) -> Message:\n        return Message(\n            text=self.input_value,\n        )\n"
+              },
+              "input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "ai_enabled": false,
+                "copy_field": false,
+                "display_name": "Text",
+                "dynamic": false,
+                "info": "Text to be passed as input.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input_value",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": "Quel est l'impact estimé d'un choc de +100 pb sur les taux EUR pour le portefeuille Core Europe, et quelles positions contribuent le plus ?"
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "TextInput"
+        },
+        "id": "TextInput-QuantAgent",
+        "measured": {
+          "height": 190,
+          "width": 340
+        },
+        "position": {
+          "x": 80,
+          "y": 220
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "CustomComponent-QuantAgent",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Appelle l'API FastAPI QuantAgent et retourne la réponse JSON.",
+            "display_name": "QuantAgent API",
+            "documentation": "http://localhost:8000/docs",
+            "edited": false,
+            "field_order": [
+              "question",
+              "api_url",
+              "timeout",
+              "code"
+            ],
+            "frozen": false,
+            "icon": "bot",
+            "legacy": false,
+            "lf_version": "1.7.0",
+            "minimized": false,
+            "output_types": [
+              "Message"
+            ],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Réponse",
+                "group_outputs": false,
+                "method": "build",
+                "name": "answer",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "CustomComponent",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from lfx.custom import Component\nfrom lfx.io import MessageTextInput, Output, StrInput, IntInput\nfrom lfx.schema.message import Message\nimport json\nimport requests\n\n\nclass QuantAgentAPI(Component):\n    display_name = \"QuantAgent API\"\n    description = \"Appelle l'API FastAPI QuantAgent et retourne la réponse JSON.\"\n    documentation = \"http://localhost:8000/docs\"\n    icon = \"bot\"\n    name = \"QuantAgentAPI\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"question\",\n            display_name=\"Question\",\n            info=\"Question métier envoyée à l'agent hybride.\",\n            required=True,\n        ),\n        StrInput(\n            name=\"api_url\",\n            display_name=\"API URL\",\n            value=\"http://127.0.0.1:8000/ask\",\n            info=\"Endpoint FastAPI /ask.\",\n        ),\n        IntInput(\n            name=\"timeout\",\n            display_name=\"Timeout (s)\",\n            value=30,\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Réponse\", name=\"answer\", method=\"build\"),\n    ]\n\n    def build(self, question: Message, api_url: str, timeout: int) -> Message:\n        text = question.text if hasattr(question, \"text\") else str(question)\n        response = requests.post(\n            api_url,\n            json={\"question\": text, \"mode\": \"hybrid\"},\n            timeout=timeout,\n        )\n        response.raise_for_status()\n        payload = response.json()\n        answer = payload.get(\"answer\", json.dumps(payload, ensure_ascii=False, indent=2))\n        hitl = payload.get(\"hitl\", {}).get(\"status\")\n        if hitl == \"PENDING_APPROVAL\":\n            answer += \"\\n\\n[HITL] Dossier en attente d'approbation humaine.\"\n        self.status = answer\n        return Message(text=answer)\n"
+              },
+              "question": {
+                "_input_type": "MessageTextInput",
+                "advanced": false,
+                "display_name": "Question",
+                "dynamic": false,
+                "info": "Question métier envoyée à l'agent hybride.",
+                "input_types": [
+                  "Message",
+                  "Text"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "name": "question",
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": ""
+              },
+              "api_url": {
+                "_input_type": "StrInput",
+                "advanced": false,
+                "display_name": "API URL",
+                "dynamic": false,
+                "info": "Endpoint FastAPI /ask.",
+                "input_types": [
+                  "Text"
+                ],
+                "list": false,
+                "load_from_db": false,
+                "name": "api_url",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "str",
+                "value": "http://127.0.0.1:8000/ask"
+              },
+              "timeout": {
+                "_input_type": "IntInput",
+                "advanced": false,
+                "display_name": "Timeout (s)",
+                "dynamic": false,
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "name": "timeout",
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "type": "int",
+                "value": 30
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "CustomComponent"
+        },
+        "id": "CustomComponent-QuantAgent",
+        "measured": {
+          "height": 300,
+          "width": 340
+        },
+        "position": {
+          "x": 560,
+          "y": 190
+        },
+        "selected": false,
+        "type": "genericNode"
+      },
+      {
+        "data": {
+          "id": "TextOutput-QuantAgent",
+          "node": {
+            "base_classes": [
+              "Message"
+            ],
+            "beta": false,
+            "conditional_paths": [],
+            "custom_fields": {},
+            "description": "Sends text output via API.",
+            "display_name": "Réponse QuantAgent",
+            "documentation": "https://docs.langflow.org/text-input-and-output",
+            "edited": false,
+            "field_order": [
+              "input_value"
+            ],
+            "frozen": false,
+            "icon": "type",
+            "legacy": false,
+            "lf_version": "1.7.0",
+            "metadata": {
+              "code_hash": "6aba888f4632",
+              "dependencies": {
+                "dependencies": [
+                  {
+                    "name": "lfx",
+                    "version": null
+                  }
+                ],
+                "total_dependencies": 1
+              },
+              "module": "lfx.components.input_output.text_output.TextOutputComponent"
+            },
+            "minimized": false,
+            "output_types": [],
+            "outputs": [
+              {
+                "allows_loop": false,
+                "cache": true,
+                "display_name": "Output Text",
+                "group_outputs": false,
+                "method": "text_response",
+                "name": "text",
+                "selected": "Message",
+                "tool_mode": true,
+                "types": [
+                  "Message"
+                ],
+                "value": "__UNDEFINED__"
+              }
+            ],
+            "pinned": false,
+            "template": {
+              "_type": "Component",
+              "code": {
+                "advanced": true,
+                "dynamic": true,
+                "fileTypes": [],
+                "file_path": "",
+                "info": "",
+                "list": false,
+                "load_from_db": false,
+                "multiline": true,
+                "name": "code",
+                "password": false,
+                "placeholder": "",
+                "required": true,
+                "show": true,
+                "title_case": false,
+                "type": "code",
+                "value": "from lfx.base.io.text import TextComponent\nfrom lfx.io import MultilineInput, Output\nfrom lfx.schema.message import Message\n\n\nclass TextOutputComponent(TextComponent):\n    display_name = \"Text Output\"\n    description = \"Sends text output via API.\"\n    documentation: str = \"https://docs.langflow.org/text-input-and-output\"\n    icon = \"type\"\n    name = \"TextOutput\"\n\n    inputs = [\n        MultilineInput(\n            name=\"input_value\",\n            display_name=\"Inputs\",\n            info=\"Text to be passed as output.\",\n        ),\n    ]\n    outputs = [\n        Output(display_name=\"Output Text\", name=\"text\", method=\"text_response\"),\n    ]\n\n    def text_response(self) -> Message:\n        message = Message(\n            text=self.input_value,\n        )\n        self.status = self.input_value\n        return message\n"
+              },
+              "input_value": {
+                "_input_type": "MultilineInput",
+                "advanced": false,
+                "ai_enabled": false,
+                "copy_field": false,
+                "display_name": "Inputs",
+                "dynamic": false,
+                "info": "Text to be passed as output.",
+                "input_types": [
+                  "Message"
+                ],
+                "list": false,
+                "list_add_label": "Add More",
+                "load_from_db": false,
+                "multiline": true,
+                "name": "input_value",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "track_in_telemetry": false,
+                "type": "str",
+                "value": ""
+              }
+            },
+            "tool_mode": false
+          },
+          "showNode": true,
+          "type": "TextOutput"
+        },
+        "id": "TextOutput-QuantAgent",
+        "measured": {
+          "height": 190,
+          "width": 340
+        },
+        "position": {
+          "x": 1120,
+          "y": 220
+        },
+        "selected": false,
+        "type": "genericNode"
+      }
+    ],
+    "viewport": {
+      "x": 0,
+      "y": 0,
+      "zoom": 0.8
+    }
+  },
+  "description": "Workflow final QuantAgent — Agentic AI for Quantitative Finance. Le Text Input envoie la question à un Custom Component qui appelle l'API FastAPI /ask (agent hybride vectoriel + Knowledge Graph + quantification + HITL + sécurité). La réponse est affichée dans Text Output. Lancer l'API avec `python main.py api` ou `docker compose up api`, puis ouvrir le Playground Langflow.",
+  "endpoint_name": null,
+  "id": "6513e86a-a8e8-4606-bafe-ee5b7ed58e51",
+  "is_component": false,
+  "last_tested_version": "1.7.0",
+  "name": "QuantAgent_FINAL",
+  "tags": [
+    "QuantAgent",
+    "Agentic AI",
+    "Quantitative Finance",
+    "HITL",
+    "GraphRAG"
+  ]
+}

@@ -78,7 +78,7 @@ Le dashboard Streamlit contient :
 - **graphiques** : allocation sectorielle, contributeurs au scénario, utilisation des limites, comparaison vectoriel vs hybride, Red Team ;
 - **statistiques** : KPI, scores, JSON, HITL, tableau par question ;
 - **journal HITL** : approuver / rejeter / escalader une proposition (mode simulation) ;
-- **téléchargements** : JSON, documentation, présentation, notebook.
+- **téléchargements** : JSON, documentation, présentation, notebook, vidéo Playground.
 
 ![Dashboard QuantAgent](docs/dashboard_home.png)
 
@@ -116,7 +116,8 @@ Le graphe fournit les **chemins de preuve** ; le moteur quantitatif fournit les 
 | Contrat JSON | schéma Draft 2020-12 | `data/response.schema.json` |
 | Dashboard | Streamlit port 8007 | `app.py` |
 | API | FastAPI `/ask`, `/stats`, `/graph` | `api.py` |
-| Workflow | n8n FINAL | `workflows/QuantAgent_n8n_FINAL.json` |
+| Workflow Langflow | Playground : Text Input → API → Text Output | `workflows/QuantAgent_FINAL.json` |
+| Workflow n8n | Automatisation webhook → API → 403/202/200 | `workflows/QuantAgent_n8n_FINAL.json` |
 
 ![Boucle de l'agent](docs/architecture_agent.png)
 
@@ -191,9 +192,19 @@ docker compose down
 - API : http://localhost:8000/docs
 - n8n : http://localhost:5678
 
-## Workflow n8n
+## Workflows Langflow & n8n
 
-`workflows/QuantAgent_n8n_FINAL.json` :
+### Langflow — `workflows/QuantAgent_FINAL.json`
+
+Flow Playground : **Text Input → Custom Component « QuantAgent API » → Text Output**.  
+Le composant appelle `POST /ask`, récupère le JSON et ajoute la mention HITL si nécessaire.
+
+1. `python main.py api`
+2. Langflow → **New Flow → Import from JSON** → `QuantAgent_FINAL.json`
+3. Vérifier `API URL` (`http://127.0.0.1:8000/ask`)
+4. Ouvrir le **Playground** et poser une question.
+
+### n8n — `workflows/QuantAgent_n8n_FINAL.json`
 
 ```text
 Webhook POST /webhook/quantagent
@@ -229,7 +240,9 @@ Voir [`workflows/README.md`](workflows/README.md).
 | Présentation PDF | `docs/Presentation_Agentic_AI_Quantitative_Finance.pdf` |
 | JSON final | `results/JSON_Final.json` |
 | Contrat JSON | `data/response.schema.json` |
+| Workflow Langflow | `workflows/QuantAgent_FINAL.json` |
 | Workflow n8n | `workflows/QuantAgent_n8n_FINAL.json` |
+| Vidéo Playground | `docs/demo_playground.mp4` (56 s) |
 | Archive ZIP | `Agentic_AI_Quantitative_Finance_FINAL.zip` (livrée séparément, 10 Mo) |
 
 ## Structure

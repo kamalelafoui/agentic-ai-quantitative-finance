@@ -302,7 +302,7 @@ def main():
         "11. Dashboard et API",
         "12. Évaluation",
         "13. Conclusion",
-        "14. Reproductibilité, Docker, n8n et GitHub",
+        "14. Reproductibilité, Docker, Langflow/n8n et GitHub",
         "15. Limites et perspectives",
         "16. Annexes",
     ]
@@ -340,7 +340,7 @@ def main():
         "Une architecture hybride qui combine recherche vectorielle TF-IDF, parcours multi-hop sur graphe et calcul quantitatif.",
         "Un moteur de scénarios et de limites qui produit des chiffres vérifiables, avec des chemins de preuve et des citations.",
         "Une couche de sécurité et un contrat JSON validé à 100 %, avec un workflow HITL Risk / Comité / Compliance.",
-        "Un dashboard Streamlit sur le port 8007, une API FastAPI, un workflow n8n et une documentation complète.",
+        "Un dashboard Streamlit sur le port 8007, une API FastAPI, des workflows Langflow et n8n, et une documentation complète.",
     ])
     doc.add_paragraph(
         "Le document est organisé en trois temps : la problématique et les objectifs, la conception et l'implémentation, "
@@ -679,12 +679,13 @@ def main():
     )
 
     # 14. Reproductibilité
-    doc.add_heading("14. Reproductibilité, Docker, n8n et GitHub", level=1)
+    doc.add_heading("14. Reproductibilité, Docker, Langflow/n8n et GitHub", level=1)
     add_code(doc, "python -m venv .venv\n.venv\\Scripts\\activate\npip install -r requirements.txt\npython main.py demo\npython main.py serve\npython main.py api")
     doc.add_paragraph(
         "Docker expose le dashboard sur 8007 et l'API sur 8000. Le profil workflow ajoute n8n sur 5678. "
-        "Le workflow n8n QuantAgent_n8n_FINAL.json appelle l'API, valide le contrat JSON, retourne 403 si la sécurité "
-        "bloque, 202 si HITL est requis, 200 sinon."
+        "Le workflow Langflow QuantAgent_FINAL.json appelle l'API via un composant personnalisé et affiche la réponse "
+        "dans le Playground. Le workflow n8n QuantAgent_n8n_FINAL.json valide le contrat JSON et retourne 403 si la "
+        "sécurité bloque, 202 si HITL est requis, 200 sinon."
     )
     add_code(doc, "docker compose up --build\ndocker compose --profile workflow up -d\n\n"
                   "POST http://localhost:5678/webhook/quantagent\n"
@@ -693,11 +694,13 @@ def main():
         doc,
         ["Livrable", "Fichier"],
         [
-            ("Dashboard", "app.py — port 8007"),
-            ("API", "api.py — port 8000"),
+            ("Dashboard", "app.py - port 8007"),
+            ("API", "api.py - port 8000"),
             ("CLI", "main.py"),
             ("Notebook", "notebooks/QuantAgent_Agentic_AI_Quantitative_Finance.ipynb"),
+            ("Workflow Langflow", "workflows/QuantAgent_FINAL.json"),
             ("Workflow n8n", "workflows/QuantAgent_n8n_FINAL.json"),
+            ("Vidéo Playground", "docs/demo_playground.mp4 (56 s)"),
             ("Docker", "Dockerfile + docker-compose.yml"),
             ("JSON final", "results/JSON_Final.json"),
             ("Documentation", "docs/Documentation_Agentic_AI_Quantitative_Finance.docx / .pdf"),
@@ -705,6 +708,11 @@ def main():
             ("GitHub", "github.com/kamalelafoui/agentic-ai-quantitative-finance"),
         ],
         widths=[4.5, 11.0],
+    )
+    doc.add_paragraph(
+        "Le workflow Langflow est volontairement minimal : Text Input → Custom Component « QuantAgent API » → Text Output. "
+        "Il ne duplique pas la logique métier dans Langflow ; il appelle l'API FastAPI, ce qui garantit une seule source "
+        "de vérité pour le RAG, le graphe, le calcul, le HITL et la sécurité. La vidéo Playground montre ce parcours de bout en bout."
     )
 
     # 15. Limites

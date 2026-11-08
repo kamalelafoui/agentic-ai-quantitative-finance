@@ -18,6 +18,8 @@ Ce dossier contient les livrables de documentation et les visuels du mini-projet
 | `dashboard_security.png` | Dashboard — sécurité et Red Team |
 | `dashboard_stats.png` | Dashboard — statistiques |
 | `dashboard_graph.png` | Dashboard — graphe interactif |
+| `demo_playground.mp4` | Vidéo Playground — démonstration 56 s |
+| `demo_playground_poster.png` | Poster de la vidéo |
 | `demo_script.md` | Script de démonstration (5 minutes) |
 
 ## Régénérer

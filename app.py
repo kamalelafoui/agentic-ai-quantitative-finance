@@ -547,6 +547,7 @@ elif menu == "Documentation":
         ("Présentation PPTX", DOCS_DIR / "Presentation_Agentic_AI_Quantitative_Finance.pptx", "application/vnd.openxmlformats-officedocument.presentationml.presentation"),
         ("Présentation PDF", DOCS_DIR / "Presentation_Agentic_AI_Quantitative_Finance.pdf", "application/pdf"),
         ("JSON Final", RESULTS_DIR / "JSON_Final.json", "application/json"),
+        ("Vidéo Playground", DOCS_DIR / "demo_playground.mp4", "video/mp4"),
         ("Notebook", BASE / "notebooks" / "QuantAgent_Agentic_AI_Quantitative_Finance.ipynb", "application/json"),
     ]
     cols = st.columns(3)
@@ -566,7 +567,7 @@ elif menu == "Documentation":
         ✅ Démo workflow + slides — dashboard port 8007 + PPTX<br>
         ✅ HITL — Risk, Comité, Compliance, Model Risk<br>
         ✅ Red Team — 20/20 attaques bloquées, 0 faux positif<br>
-        ✅ Docker, n8n, notebook, GitHub Actions et ZIP
+        ✅ Docker, Langflow, n8n, vidéo Playground, notebook, GitHub Actions et ZIP
         </div>
         """,
         unsafe_allow_html=True,

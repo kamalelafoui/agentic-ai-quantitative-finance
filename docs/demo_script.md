@@ -1,5 +1,11 @@
 # Démo — QuantAgent (5 minutes)
 
+## 0. Playground (vidéo)
+
+- Vidéo : `docs/demo_playground.mp4` — 56 s.
+- Workflow Langflow : `workflows/QuantAgent_FINAL.json` (Text Input → QuantAgent API → Text Output).
+- Lancer l'API : `python main.py api`.
+
 ## 1. Lancer le dashboard
 
 ```bash

@@ -1,8 +1,53 @@
-# Workflow n8n — QuantAgent FINAL
+# Workflows — QuantAgent FINAL
 
-Fichier : `QuantAgent_n8n_FINAL.json`
+Deux workflows sont fournis :
 
-## Importer dans n8n
+| Workflow | Fichier | Usage |
+|---|---|---|
+| **Langflow 1.7.0** | `QuantAgent_FINAL.json` | Playground Langflow — question → API FastAPI → réponse |
+| **n8n** | `QuantAgent_n8n_FINAL.json` | Automatisation webhook → API → 403/202/200 |
+
+La vidéo de démonstration est disponible dans `docs/demo_playground.mp4` (56 s).
+
+---
+
+## 1. Langflow — `QuantAgent_FINAL.json`
+
+### Importer
+
+1. Lancer l'API QuantAgent :
+   ```bash
+   python main.py api
+   # ou : docker compose up api
+   ```
+2. Ouvrir Langflow 1.7.x.
+3. **New Flow → Import from JSON** → sélectionner `QuantAgent_FINAL.json`.
+4. Vérifier le champ **API URL** du composant `QuantAgent API` :
+   - local : `http://127.0.0.1:8000/ask`
+   - Docker : `http://api:8000/ask`
+5. Ouvrir le **Playground**, saisir une question et exécuter.
+
+### Structure du flow
+
+```text
+Text Input (question)
+   → Custom Component « QuantAgent API »
+        → POST /ask
+        → réponse JSON + statut HITL
+   → Text Output (réponse)
+```
+
+Le composant appelle l'API FastAPI et ajoute une mention `[HITL]` lorsque le dossier est en attente d'approbation.
+
+### Vidéo Playground
+
+`docs/demo_playground.mp4` — 56 s : dashboard, formulaire, réponse chiffrée, JSON, HITL, sécurité et statistiques.
+
+---
+
+## 2. n8n — `QuantAgent_n8n_FINAL.json`
+
+### Importer
 
 1. Lancer n8n :
    ```bash
@@ -16,7 +61,7 @@ Fichier : `QuantAgent_n8n_FINAL.json`
    - Local : `http://host.docker.internal:8000/ask` ou `http://localhost:8000/ask`
 5. Activer le workflow.
 
-## Endpoint
+### Endpoint
 
 ```http
 POST http://localhost:5678/webhook/quantagent
@@ -29,7 +74,7 @@ Content-Type: application/json
 }
 ```
 
-## Codes de réponse
+### Codes de réponse
 
 | Situation | Code | Contenu |
 |---|---:|---|

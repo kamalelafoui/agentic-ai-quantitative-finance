@@ -1,4 +1,4 @@
-﻿"""Génère la présentation PPTX de QuantAgent."""
+"""Génère la présentation PPTX de QuantAgent."""
 
 from __future__ import annotations
 
@@ -418,33 +418,45 @@ notes(slide, "Le JSON est le livrable central. Il contient la réponse, les sour
              "Le schéma est Draft 2020-12 et 100 requêtes sur 100 sont valides.")
 
 # ---------------------------------------------------------------------------
-# 13. Démo workflow
+# 13. Workflow & Playground
 # ---------------------------------------------------------------------------
 slide = add_slide()
-title(slide, "Démo workflow", "Du webhook n8n à la décision humaine")
+title(slide, "Workflow & Playground", "Langflow pour la démo interactive, n8n pour l'automatisation")
+text(slide, 0.65, 1.72, 7.0, 0.3, "LANGFLOW — QUANTAGENT_FINAL.JSON", size=9, color=GOLD, bold=True)
 flow = [
-    ("1. Webhook", "POST /webhook/quantagent", NAVY),
-    ("2. Validation", "question + mode", NAVY_2),
-    ("3. API", "POST /ask", BLUE),
-    ("4. JSON", "contrat validé", TEAL),
-    ("5. Sécurité", "403 si bloqué", CORAL),
-    ("6. HITL", "202 si requis", GOLD),
-    ("7. Réponse", "200 JSON", "#059669"),
+    ("1. Text Input", "question métier", NAVY),
+    ("2. QuantAgent API", "Custom Component → POST /ask", BLUE),
+    ("3. Text Output", "réponse + JSON + HITL", TEAL),
 ]
 for index, (label, detail, color) in enumerate(flow):
-    x = 0.55 + index * 1.82
-    box(slide, x, 2.25, 1.55, 1.15, color)
-    text(slide, x + 0.08, 2.4, 1.4, 0.3, label, size=10.5, color=WHITE, bold=True, align=PP_ALIGN.CENTER)
-    text(slide, x + 0.08, 2.78, 1.4, 0.4, detail, size=7.5, color=WHITE, align=PP_ALIGN.CENTER)
+    x = 0.65 + index * 4.0
+    box(slide, x, 2.0, 3.5, 0.95, color)
+    text(slide, x + 0.12, 2.14, 3.25, 0.3, label, size=12, color=WHITE, bold=True, align=PP_ALIGN.CENTER)
+    text(slide, x + 0.12, 2.52, 3.25, 0.3, detail, size=8.5, color=WHITE, align=PP_ALIGN.CENTER)
     if index < len(flow) - 1:
-        text(slide, x + 1.56, 2.65, 0.25, 0.25, "→", size=14, color=SLATE)
-box(slide, 0.65, 4.0, 12.05, 1.45, LIGHT, line=RGBColor(0xE2, 0xE9, 0xF2))
-text(slide, 0.9, 4.18, 11.5, 0.3, "WORKFLOW N8N — QUANTAGENT_N8N_FINAL.JSON", size=9, color=GOLD, bold=True)
-text(slide, 0.9, 4.5, 11.5, 0.8, "Webhook → validation d'entrée → API FastAPI → validation JSON → 403 sécurité / 202 HITL / 200 réponse. Aucune exécution d'ordre.", size=12, color=NAVY)
-text(slide, 0.65, 5.75, 12.0, 0.6, "Démo : python main.py serve  →  http://localhost:8007  ·  formulaire  ·  réponse  ·  JSON  ·  décision HITL simulée", size=10, color=SLATE, italic=True)
+        text(slide, x + 3.55, 2.3, 0.35, 0.3, "→", size=18, color=SLATE, align=PP_ALIGN.CENTER)
+text(slide, 0.65, 3.25, 7.0, 0.3, "N8N — QUANTAGENT_N8N_FINAL.JSON", size=9, color=GOLD, bold=True)
+flow2 = [
+    ("Webhook", "POST /quantagent", NAVY),
+    ("Validation", "question + mode", NAVY_2),
+    ("API", "POST /ask", BLUE),
+    ("JSON", "contrat validé", TEAL),
+    ("Réponse", "403 / 202 / 200", CORAL),
+]
+for index, (label, detail, color) in enumerate(flow2):
+    x = 0.65 + index * 2.48
+    box(slide, x, 3.55, 2.15, 0.8, color)
+    text(slide, x + 0.08, 3.67, 2.0, 0.25, label, size=10, color=WHITE, bold=True, align=PP_ALIGN.CENTER)
+    text(slide, x + 0.08, 3.96, 2.0, 0.25, detail, size=7.5, color=WHITE, align=PP_ALIGN.CENTER)
+    if index < len(flow2) - 1:
+        text(slide, x + 2.18, 3.78, 0.25, 0.25, "→", size=14, color=SLATE)
+box(slide, 0.65, 4.75, 12.05, 1.1, LIGHT, line=RGBColor(0xE2, 0xE9, 0xF2))
+text(slide, 0.9, 4.92, 11.5, 0.3, "VIDÉO PLAYGROUND — DOCS/DEMO_PLAYGROUND.MP4 · 56 S", size=9, color=GOLD, bold=True)
+text(slide, 0.9, 5.23, 11.5, 0.45, "Dashboard 8007 · formulaire · réponse chiffrée · JSON · HITL · sécurité · statistiques", size=11, color=NAVY, bold=True)
+text(slide, 0.65, 6.1, 12.0, 0.45, "Démo : python main.py api puis python main.py serve → Langflow Playground / dashboard 8007", size=10, color=SLATE, italic=True)
 footer(slide)
-notes(slide, "La démo suit le workflow n8n : webhook, validation, appel API, validation JSON, sécurité, HITL et réponse. "
-             "Le dashboard permet de faire la même chose de façon visuelle sur le port 8007.")
+notes(slide, "Deux workflows complémentaires : Langflow pour le Playground interactif (Text Input → Custom Component API → Text Output), "
+             "et n8n pour l'automatisation webhook → API → validation JSON → 403/202/200. La vidéo Playground de 56 secondes montre le parcours complet.")
 
 # ---------------------------------------------------------------------------
 # 14. Docker / GitHub
