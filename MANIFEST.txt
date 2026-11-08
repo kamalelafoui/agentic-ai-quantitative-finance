@@ -1,6 +1,6 @@
 QuantAgent — Agentic AI for Quantitative Finance
-Archive générée le 2026-11-08T14:57:24.466675+00:00
-Fichiers : 113
+Archive générée le 2026-11-08T15:10:43.532493+00:00
+Fichiers : 103
 
 SHA256                                                                Taille  Fichier
 --------------------------------------------------------------------------------------------------------------
@@ -28,16 +28,6 @@ b80ab24b763363d1ca6af2da3bd3eac7f11c701368d21ff6a38d04ae03bdd9cf        7619  da
 1d9fe8437f0d7248d371e1736c4743c95d48ad1a929b6191c2ae0eaea3c7a962        1344  data/scenarios.json
 c699c253efa29cbf36df784030644550430babfe9f7e062ae2aadb5a37930029        1564  docker-compose.yml
 4bdff3dd880ba1c50dcef61b0ea3cbee134698ddfe83c078ae6d2fa3c3731810         742  Dockerfile
-921ac33e2146ef8d5d2069f83de442cddd94be2d05a481e63476604fcfae2ade        7115  docs/_video_frames/frame_05.png
-b969e75c274f103b696758df70a2ee4ba68b6e66211694362c2bdc2f76b75746      453711  docs/_video_frames/frame_15.png
-f59145e68e3e0711795e6bfa677cf7f264b9a11cad1a2d1e5831c3876c8ffa4c      534966  docs/_video_frames/frame_20.png
-8e7e4f7f9704bd126ddaa8e5bfe87607a854ae656dd65f754047f8a1226b5a22      533210  docs/_video_frames/frame_22.png
-809f31e216c6aa4e73e29bd8a84911644b0a324033dfac433072ea2e4543aeb4      534094  docs/_video_frames/frame_25.png
-1101333eb45476d1b063116d949dc18fe67d58100ca100f2abfd6ae16d9480ba      428864  docs/_video_frames/frame_35.png
-f78ccd066f231ce6d2cadb564357624afbc692f08166925dda16a7eb55d8c38f      541334  docs/_video_frames/frame_50.png
-1b76dd0d93f6f0f069d617e8fbae2700c7b74e4b054ea9901c2efc046b7f4c53      500877  docs/_video_frames/frame_65.png
-a0f3059553eea5957a7cf230ce0a98b59557c425f740a3904e47a795336d9d2e      512880  docs/_video_frames/frame_70.png
-b9b67e0dac1a432b430d2b692a9d8403fe11ae71f60caeb80dd5e1a0601ae917      509237  docs/_video_frames/frame_75.png
 f1f00a2595a5f283e827640eacc132a98146d2f494eb83df0494261cc17108ce      110888  docs/architecture_agent.png
 28d9aa925f1bcfb80f8c5084821908185f54b0caf737b99799181b09c0c39d7e      165337  docs/architecture_globale.png
 734e072eb0a0ee00ca68684cf2a555e361fbf8a9bf4a94de95c89f6d50b8151d      144405  docs/architecture_globale_slide.png
