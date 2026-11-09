@@ -1,4 +1,4 @@
-# Documentation — QuantAgent
+﻿# Documentation — QuantAgent
 
 Ce dossier contient les livrables de documentation et les visuels du mini-projet final.
 
@@ -6,8 +6,9 @@ Ce dossier contient les livrables de documentation et les visuels du mini-projet
 |---|---|
 | `Documentation_Agentic_AI_Quantitative_Finance.docx` | Documentation technique et fonctionnelle (Word) |
 | `Documentation_Agentic_AI_Quantitative_Finance.pdf` | Version PDF de la documentation |
-| `Presentation_Agentic_AI_Quantitative_Finance.pptx` | Présentation de soutenance (16 slides, notes orales) |
-| `Presentation_Agentic_AI_Quantitative_Finance.pdf` | Version PDF de la présentation |
+| `Presentation_Agentic_AI_Quantitative_Finance.pptx` | Présentation de soutenance — **5 slides** (version courte) |
+| `Presentation_Agentic_AI_Quantitative_Finance.pdf` | Version PDF — 5 slides |
+| `archive/Presentation_Agentic_AI_Quantitative_Finance_16slides.pptx` | Version longue archivée (16 slides) |
 | `architecture_globale.png` | Architecture globale |
 | `architecture_agent.png` | Boucle de l'agent en 9 étapes |
 | `workflow_hitl.png` | Workflow HITL |
@@ -32,3 +33,4 @@ python scripts/build_notebook.py
 ```
 
 La conversion PDF utilise Microsoft Word / PowerPoint (COM) ou LibreOffice selon l'environnement.
+

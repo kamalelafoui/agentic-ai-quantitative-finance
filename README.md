@@ -236,8 +236,9 @@ Voir [`workflows/README.md`](workflows/README.md).
 |---|---|
 | Documentation DOCX | `docs/Documentation_Agentic_AI_Quantitative_Finance.docx` |
 | Documentation PDF | `docs/Documentation_Agentic_AI_Quantitative_Finance.pdf` |
-| Présentation PPTX | `docs/Presentation_Agentic_AI_Quantitative_Finance.pptx` |
-| Présentation PDF | `docs/Presentation_Agentic_AI_Quantitative_Finance.pdf` |
+| Présentation PPTX | `docs/Presentation_Agentic_AI_Quantitative_Finance.pptx` — 5 slides |
+| Présentation PDF | `docs/Presentation_Agentic_AI_Quantitative_Finance.pdf` — 5 slides |
+| Version longue archivée | `docs/archive/Presentation_Agentic_AI_Quantitative_Finance_16slides.pptx` |
 | JSON final | `results/JSON_Final.json` |
 | Contrat JSON | `data/response.schema.json` |
 | Workflow Langflow | `workflows/QuantAgent_FINAL.json` |

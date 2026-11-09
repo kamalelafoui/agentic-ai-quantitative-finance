@@ -1,6 +1,6 @@
 QuantAgent — Agentic AI for Quantitative Finance
-Archive générée le 2026-11-08T15:10:43.532493+00:00
-Fichiers : 103
+Archive générée le 2026-11-09T10:51:18.830987+00:00
+Fichiers : 106
 
 SHA256                                                                Taille  Fichier
 --------------------------------------------------------------------------------------------------------------
@@ -31,6 +31,8 @@ c699c253efa29cbf36df784030644550430babfe9f7e062ae2aadb5a37930029        1564  do
 f1f00a2595a5f283e827640eacc132a98146d2f494eb83df0494261cc17108ce      110888  docs/architecture_agent.png
 28d9aa925f1bcfb80f8c5084821908185f54b0caf737b99799181b09c0c39d7e      165337  docs/architecture_globale.png
 734e072eb0a0ee00ca68684cf2a555e361fbf8a9bf4a94de95c89f6d50b8151d      144405  docs/architecture_globale_slide.png
+d5ec33ce52f46f9dc9e8861b7f775ab5a966599a012c334200ee1deec7a985fb     1008819  docs/archive/Presentation_Agentic_AI_Quantitative_Finance_16slides.pdf
+1cc9313d023719b83f0fd671ea5ea99bd2b1341575e1c727c1b2766e73ebde0b     1509451  docs/archive/Presentation_Agentic_AI_Quantitative_Finance_16slides.pptx
 4ab1ab2929130bd7a18caf3bf5c207eb795f533912de39e08adffbf5fc4b809c      323785  docs/dashboard_agent.png
 a6658b4e34ad497abfd408d288dfc4a2eb89c1dca1ea6e90c58da5e9af6aba2b      499910  docs/dashboard_graph.png
 bf47c2fb238c953d1fcba79b7a3c27f816795e74189ca546a9ccad0569458bab      368164  docs/dashboard_home.png
@@ -43,9 +45,9 @@ b428c46d8304d28d701ca4a945b7ed27e044ca0cea9cab817082148831d9ccc1     2010982  do
 a97b776c18ba9c76fdd34d7d224aee0d71426b45801bff4209830edf31ebd32b     1664818  docs/Documentation_Agentic_AI_Quantitative_Finance.pdf
 cfafc092342c1029834103b03b81519d7d5bf070eb70664af9dfdbbbda375c0e      395472  docs/graph_overview.png
 2d182403ca145daf82b4dd08a2a08d03d9872460335bedb0d1a2dbedc73831f1      370621  docs/graph_overview_slide.png
-d5ec33ce52f46f9dc9e8861b7f775ab5a966599a012c334200ee1deec7a985fb     1008819  docs/Presentation_Agentic_AI_Quantitative_Finance.pdf
-1cc9313d023719b83f0fd671ea5ea99bd2b1341575e1c727c1b2766e73ebde0b     1509451  docs/Presentation_Agentic_AI_Quantitative_Finance.pptx
-6bf2e7652e8f5607d4d6fbffecfe7a37408743dbb8ecc339baf028e16ea4bbf0        1557  docs/README.md
+97def8a363d42c425d6fc34b4a904ce310cd012e636ff847c1246ab0695bda62      409129  docs/Presentation_Agentic_AI_Quantitative_Finance.pdf
+24001d0134149ccbbe5a13bf7a7ba6e4bc219532ccdb08837db0e9b5dc2aeed3      785244  docs/Presentation_Agentic_AI_Quantitative_Finance.pptx
+12eb8d2ac525d81825b2f42fea33f28b614742188ae5ff594a6010497da0e9ac        1675  docs/README.md
 474b9b66dacd750009b345e93ed7f098de8954c7c3de8910aec506b9d5baf475       78037  docs/security_layers.png
 79790c8a893ebfede9360a197966b2eba023a6c896ac5fb319093585a386ffbd       58915  docs/security_layers_slide.png
 964473c6649fc03f628df33cc18ecbe2ee8bbef39bac569710448bc8e38d25f6       82324  docs/workflow_hitl.png
@@ -68,7 +70,7 @@ e27126e7f52d9f71b368629c25bbb38ec345338c8e88bf9ee37bd1ebf82f65be        8016  qu
 c96fff76246387bffaa533e93595aff15d1e4e9cd66a8a7f9dc74eb8846470cf        5554  quantagent/security.py
 5daa8e982062e11133d5edf899a886ffe4662c68ec5574e5e6eb5dbb1278b379        5193  quantagent/vector_store.py
 f834af5470f4d0cf0e58dfcb06a84052c9aa0b8057e4b9c85b79b51aa657e856       23588  quantagent/visuals.py
-4434d95f78e2133bf3e35e971ede3a935e7aa7637e3c9b0086a6c83dc1ab97db       11667  README.md
+56be1e8da8580520f189b9505ea07f5f5d80ffef06f37110e46e8f39933b040c       11798  README.md
 d22f1f11d637bffb13725aa845aa7602d7f6b7b2deccc5f75810e34220da9cfc         105  requirements-dev.txt
 c1984e3dd36a1ffcfe6a72b07498e8c9e1d8b40ef73a267dd11bd5e3a499745b         250  requirements.txt
 2edc25e08a4adb9fde7b821813915409790d97504904c5b548b1e6bf17beb5de      977349  results/answers.json
@@ -93,7 +95,8 @@ f125a867f5a932bf670dc86077f6b5a2a4d0bf51d7a82aebf30f02e2cd74e892        4212  re
 a5c484bbf1fa16e1ca131e8a67bfe612eb1ec76b1e0c09629e7f48756f428455       37841  scripts/build_docs.py
 d9ba4d0c271ab891cf98448cd197d3fe69c32b3009771c52ee4ab4fb5aef0d72       37457  scripts/build_graph.py
 c948846d08af8aa2ca9304356fa75ff1c42b5613cc7e3714c6de76bfa5613b3f        6422  scripts/build_notebook.py
-25f3dea50f3b8e87339ac19d3700012eaecb66350abf14aa40bf4d5c24a60c42       31165  scripts/build_presentation.py
+0af3c0884863ef69ac2be14f96f76404d30418bed66758417ea5707bef93bddc       12960  scripts/build_presentation.py
+25f3dea50f3b8e87339ac19d3700012eaecb66350abf14aa40bf4d5c24a60c42       31165  scripts/build_presentation_long.py
 77a14292bca6258fd33c9b77298633ce847704d5f9e69b242d3ce50277636dd3        2038  scripts/build_zip.py
 cf387e37f4727059ab8df14da4eba3ec0ccbadee45d4caceea24da639df9ff74        2670  scripts/capture_dashboard.py
 5c3b30ce3069b540c48709cc2c7bbfcfc12c2f72d488a44e0041744d3c9bc340        3924  scripts/record_demo_video.py
